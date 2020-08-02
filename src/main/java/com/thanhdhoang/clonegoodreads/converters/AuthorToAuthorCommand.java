@@ -9,12 +9,10 @@ import org.springframework.stereotype.Component;
 public class AuthorToAuthorCommand implements Converter<Author, AuthorCommand> {
 
     private final GenreToGenreCommand genreConverter;
-    private final BookToBookCommand bookConverter;
 
-    public AuthorToAuthorCommand(GenreToGenreCommand genreConverter,
-                                 BookToBookCommand bookConverter) {
+    public AuthorToAuthorCommand(GenreToGenreCommand genreConverter) {
         this.genreConverter = genreConverter;
-        this.bookConverter = bookConverter;
+
     }
 
     @Override
@@ -36,11 +34,6 @@ public class AuthorToAuthorCommand implements Converter<Author, AuthorCommand> {
         if (source.getGenres() != null && source.getGenres().size() > 0) {
             source.getGenres().forEach(command ->
                     authorCommand.getGenres().add(genreConverter.convert(command)));
-        }
-
-        if (source.getBooks() != null && source.getBooks().size() > 0) {
-            source.getBooks().forEach(command ->
-                    authorCommand.getBooks().add(bookConverter.convert(command)));
         }
 
         return authorCommand;

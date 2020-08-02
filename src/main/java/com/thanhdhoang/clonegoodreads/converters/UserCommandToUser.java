@@ -8,12 +8,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserCommandToUser implements Converter<UserCommand, User> {
 
-    private final ReviewCommandToReview reviewConverter;
-
-    public UserCommandToUser(ReviewCommandToReview reviewConverter) {
-        this.reviewConverter = reviewConverter;
-    }
-
     @Override
     public User convert(UserCommand source) {
         if (source == null) {
@@ -29,11 +23,6 @@ public class UserCommandToUser implements Converter<UserCommand, User> {
         user.setFirstName(source.getFirstName());
         user.setLastName(source.getLastName());
         user.setEmail(source.getEmail());
-
-        if (source.getReviews() != null && source.getReviews().size() >0) {
-            source.getReviews().forEach(command ->
-                    user.getReviews().add(reviewConverter.convert(command)));
-        }
 
         return user;
     }

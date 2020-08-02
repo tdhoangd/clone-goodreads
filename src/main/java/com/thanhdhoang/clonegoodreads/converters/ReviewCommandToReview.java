@@ -9,12 +9,9 @@ import org.springframework.stereotype.Component;
 public class ReviewCommandToReview implements Converter<ReviewCommand, Review> {
 
     private final UserCommandToUser userConverter;
-    private final BookCommandToBook bookConverter;
 
-    public ReviewCommandToReview(UserCommandToUser userConverter,
-                                 BookCommandToBook bookConverter) {
+    public ReviewCommandToReview(UserCommandToUser userConverter) {
         this.userConverter = userConverter;
-        this.bookConverter = bookConverter;
     }
 
     @Override
@@ -30,7 +27,6 @@ public class ReviewCommandToReview implements Converter<ReviewCommand, Review> {
         review.setReviewDate(source.getReviewDate());
         review.setRating(source.getRating());
         review.setUser(userConverter.convert(source.getUser()));
-        review.setBook(bookConverter.convert(source.getBook()));
 
         return review;
     }
