@@ -23,5 +23,5 @@ public class Genre extends BaseEntity {
 
     @ManyToMany(mappedBy = "genres",
             cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
-    private Set<Author> books = new HashSet<>();
+    private Set<Book> books = new HashSet<>();
 }

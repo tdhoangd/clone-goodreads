@@ -10,7 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Date;
 import java.util.Set;
-import java.util.Arrays;
 import java.util.HashSet;
 
 @Component
@@ -57,6 +56,7 @@ public class DataLoader implements CommandLineRunner {
         Genre yongAdult = genreRepository.findByGenre("Young Adult");
         Genre fantasy = genreRepository.findByGenre("Fantasy");
         Genre scienceFiction = genreRepository.findByGenre("Science Fiction");
+
         Set<Genre> genres1 = new HashSet<>();
         genres1.add(fiction);
         genres1.add(fantasy);
