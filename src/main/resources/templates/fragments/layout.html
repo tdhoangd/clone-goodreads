@@ -39,14 +39,14 @@
                         <span>Home</span>
                     </li>
 
-                    <li th:replace="::menuItem ('/owners/find','owners','find owners','search','Find owners')">
+                    <li th:replace="::menuItem ('/books/find','books','find books','search','Find books')">
                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                        <span>Find owners</span>
+                        <span>Find books</span>
                     </li>
 
-                    <li th:replace="::menuItem ('/vets.html','vets','veterinarians','th-list','Veterinarians')">
+                    <li th:replace="::menuItem ('genre','genres','Genres','th-list','Genres')">
                         <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
-                        <span>Veterinarians</span>
+                        <span>Genres</span>
                     </li>
 
                     <li th:replace="::menuItem ('/oups','error','trigger a RuntimeException to see how it is handled','warning-sign','Error')">
@@ -68,8 +68,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <img src="../static/resources/images/spring-pivotal-logo.png" th:src="@{/resources/images/spring-pivotal-logo.png}"
-                             alt="Sponsored by Pivotal"/></div>
+                        <img src="../static/resources/images/logo.png" th:src="@{/resources/images/logo.png}"
+                             alt="@tdh"/></div>
                 </div>
             </div>
         </div>
