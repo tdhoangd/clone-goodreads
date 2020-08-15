@@ -1,4 +1,4 @@
-package com.thanhdhoang.clonegoodreads.domain;
+package com.thanhdhoang.clonegoodreads.persistence.model;
 
 import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;

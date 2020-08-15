@@ -1,7 +1,7 @@
 package com.thanhdhoang.clonegoodreads.converters;
 
 import com.thanhdhoang.clonegoodreads.commands.GenreCommand;
-import com.thanhdhoang.clonegoodreads.domain.Genre;
+import com.thanhdhoang.clonegoodreads.persistence.model.Genre;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
@@ -16,7 +16,8 @@ public class GenreCommandToGenre implements Converter<GenreCommand, Genre> {
 
         final Genre genre = new Genre();
         genre.setId(source.getId());
-        genre.setGenre(source.getGenre());
+        genre.setName(source.getName());
+        genre.setDescription(source.getDescription());
 
         return genre;
     }

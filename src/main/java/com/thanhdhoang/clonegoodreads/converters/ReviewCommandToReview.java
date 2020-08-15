@@ -1,7 +1,7 @@
 package com.thanhdhoang.clonegoodreads.converters;
 
 import com.thanhdhoang.clonegoodreads.commands.ReviewCommand;
-import com.thanhdhoang.clonegoodreads.domain.Review;
+import com.thanhdhoang.clonegoodreads.persistence.model.Review;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 

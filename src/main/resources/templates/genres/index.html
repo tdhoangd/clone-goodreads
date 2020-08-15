@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout :: layout (~{::body}, 'genres')}" >
+<head>
+    <meta charset="UTF-8">
+    <title>List of Genres</title>
+</head>
+<body>
+
+<h3>Genres </h3>
+<hr>
+<!--/*@thymesVar id="genre" type="com.thanhdhoang.clonegoodreads.persistence.model.Genre "*/-->
+<ul th:each="genre : ${genres}" class="list-group">
+    <a class="list-group-item" th:href="@{'/genres/' + ${genre.name}}">
+        <span th:text="${genre.name}">Genre Name</span>
+    </a>
+
+
+<!--    <li class="list-group-item">-->
+<!--        <a th:href="@{'/genres/' + ${genre.name}}">-->
+<!--            <span th:text="${genre.name}">Genre Name</span>-->
+<!--        </a>-->
+<!--    </li>-->
+
+
+</ul>
+
+
+</body>
+</html>

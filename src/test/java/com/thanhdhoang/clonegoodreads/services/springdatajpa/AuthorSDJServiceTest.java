@@ -1,20 +1,11 @@
 package com.thanhdhoang.clonegoodreads.services.springdatajpa;
 
-import com.thanhdhoang.clonegoodreads.domain.Author;
-import com.thanhdhoang.clonegoodreads.repositories.AuthorRepository;
-import com.thanhdhoang.clonegoodreads.services.AuthorService;
+import com.thanhdhoang.clonegoodreads.persistence.model.Author;
+import com.thanhdhoang.clonegoodreads.persistence.repositories.AuthorRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.ArgumentMatchers.anyLong;
-import static org.mockito.Mockito.when;
-
-import java.util.HashSet;
-import java.util.Optional;
-import java.util.Set;
 
 class AuthorSDJServiceTest {
 

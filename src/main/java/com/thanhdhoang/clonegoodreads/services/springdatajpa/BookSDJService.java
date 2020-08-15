@@ -1,9 +1,9 @@
 package com.thanhdhoang.clonegoodreads.services.springdatajpa;
 
-import com.thanhdhoang.clonegoodreads.domain.Book;
-import com.thanhdhoang.clonegoodreads.repositories.BookRepository;
-import com.thanhdhoang.clonegoodreads.repositories.GenreRepository;
-import com.thanhdhoang.clonegoodreads.repositories.ReviewRepository;
+import com.thanhdhoang.clonegoodreads.persistence.model.Book;
+import com.thanhdhoang.clonegoodreads.persistence.repositories.BookRepository;
+import com.thanhdhoang.clonegoodreads.persistence.repositories.GenreRepository;
+import com.thanhdhoang.clonegoodreads.persistence.repositories.ReviewRepository;
 import com.thanhdhoang.clonegoodreads.services.BookService;
 import org.springframework.stereotype.Service;
 

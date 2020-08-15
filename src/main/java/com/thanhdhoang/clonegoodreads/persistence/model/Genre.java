@@ -1,4 +1,4 @@
-package com.thanhdhoang.clonegoodreads.domain;
+package com.thanhdhoang.clonegoodreads.persistence.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,7 +15,10 @@ import javax.persistence.*;
 @Entity
 public class Genre extends BaseEntity {
 
-    private String genre;
+    private String name;
+
+    @Column(columnDefinition = "TEXT")
+    private String description;
 
     @ManyToMany(mappedBy = "genres",
             cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)

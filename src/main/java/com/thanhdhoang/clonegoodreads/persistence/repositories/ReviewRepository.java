@@ -1,6 +1,6 @@
-package com.thanhdhoang.clonegoodreads.repositories;
+package com.thanhdhoang.clonegoodreads.persistence.repositories;
 
-import com.thanhdhoang.clonegoodreads.domain.Review;
+import com.thanhdhoang.clonegoodreads.persistence.model.Review;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 

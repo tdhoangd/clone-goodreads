@@ -15,7 +15,9 @@ public class GenreCommand {
     private Long id;
 
     @NotBlank
-    private String genre;
+    private String name;
+
+    private String description;
 
     private Set<AuthorCommand> authors = new HashSet<>();
     private Set<BookCommand> books = new HashSet<>();

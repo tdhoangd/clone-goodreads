@@ -1,9 +1,9 @@
 package com.thanhdhoang.clonegoodreads.bootstrap;
 
-import com.thanhdhoang.clonegoodreads.domain.Author;
-import com.thanhdhoang.clonegoodreads.domain.Book;
-import com.thanhdhoang.clonegoodreads.domain.Genre;
-import com.thanhdhoang.clonegoodreads.repositories.*;
+import com.thanhdhoang.clonegoodreads.persistence.model.Author;
+import com.thanhdhoang.clonegoodreads.persistence.model.Book;
+import com.thanhdhoang.clonegoodreads.persistence.model.Genre;
+import com.thanhdhoang.clonegoodreads.persistence.repositories.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -38,24 +38,247 @@ public class DataLoader implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         // load genres
-        String[] genresArr  = {"Art", "Biography", "Business", "Children's",
-                "Christian", "Classics", "Comics", "Cookbooks", "Ebooks",
-                "Ebooks", "Fantasy", "Fiction", "Graphic Novels", "Historical Fiction",
-                "History", "Horror", "Memoir", "Music", "Mystery", "Nonfiction",
-                "Poetry", "Psychology", "Romance", "Science", "Science Fiction",
-                "Self Help", "Sports", "Thriller", "Travel", "Young Adult"
-        };
-        for (String s: genresArr) {
-            Genre genre = new Genre();
-            genre.setGenre(s);
-            genreRepository.save(genre);
-        }
+        String name;
+        String description;
+
+        name = "Art";
+        description = "Books that showcase particular types of art. ";
+        loadGenre(name, description);
+
+        name = "Biography";
+        description = "A biography (from the Greek words bios meaning \"life\", and graphos meaning \"write\") " +
+                "is a non-fictional account of a person's life. Biographies are written by an author who is not " +
+                "the subject/focus of the book. ";
+        loadGenre(name, description);
+
+        name = "Business";
+        description = "A business (also known as enterprise or firm) is an organization engaged in the trade of " +
+                "goods, services, or both to consumers. Businesses are predominant in capitalist economies, " +
+                "where most of them are privately owned and administered to earn profit to increase the wealth " +
+                "of their owners. Businesses may also be not-for-profit or state-owned. A business owned by multiple" +
+                " individuals may be referred to as a company, although that term also has a more precise meaning.";
+        loadGenre(name, description);
+
+        name = "Children's";
+        description = "Children's literature is for readers and listeners up to about age 12. It is often " +
+                "illustrated. The term is used in senses that sometimes exclude young-adult fiction, " +
+                "comic books, or other genres. Books specifically for children existed at least several hundred years ago";
+        loadGenre(name, description);
+
+        name = "Christian";
+        description = "The term \"Christian\" is used adjectivally to describe anything associated with " +
+                "Christianity, or in a proverbial sense \"all that is noble, and good, and Christ-like\". " +
+                "It can also refer" +
+                " to content produced by a christian without the content being explicitly Christian.";
+        loadGenre(name, description);
+
+        name = "Classics";
+        description = "A classic stands the test of time. The work is usually considered to be a representation of the " +
+                "period in which it was written; and the work merits lasting recognition. In other words, if the book " +
+                "was published in the recent past, the work is not a classic.\n" +
+                "\n" +
+                "A classic has a certain universal appeal. Great works of literature touch us to our very core " +
+                "beings--partly because they integrate themes that are understood by readers from a wide range " +
+                "of backgrounds and levels of experience. Themes of love, hate, death, life, and faith touch upon " +
+                "some of our most basic emotional responses.\n" +
+                "\n" +
+                "Although the term is often associated with the Western canon, it can be applied to works of " +
+                "literature from all traditions, such as the Chinese classics or the Indian Vedas.";
+        loadGenre(name, description);
+
+        name = "Comics";
+        description = "A comic book or comicbook, also called comic magazine or simply comic, is a publication " +
+                "that consists of comic art in the form of sequential juxtaposed panels that represent individual " +
+                "scenes. Panels are often accompanied by brief descriptive prose and written narrative, " +
+                "usually dialog contained in word balloons emblematic of the comics art form. ";
+        loadGenre(name, description);
+
+        name = "Cookbooks";
+        description = "Non-fiction books that contain a collection of recipes, techniques, and tricks of the " +
+                "trade or else focus on the exploration of food, cooking, and culture of food. Many cookbooks " +
+                "are divided into sections such as baking, dinner, and breakfast. A specialty cookbook may focus " +
+                "only on a certain country's cuisine, such as Italian or Cajun. There are some cookbooks that are " +
+                "written to highlight one ingredient (i.e. honey), and some cookbooks focused on only one branch " +
+                "of cooking (such as bread.) Even further, " +
+                "some cookbooks focus on types of cooking (microwave, barbecue, baking.)";
+        loadGenre(name, description);
+
+        name = "Ebooks";
+        description = "An electronic book (eBook) is a digital form of a book that consists of text and sometimes" +
+                " images, or both. Common formats of ebooks include: .iba(Apple iBooks), .azw(Amazon Kindle)," +
+                " EPUB and PDF files. ";
+        loadGenre(name, description);
+
+        name = "Fantasy";
+        description = "Fantasy is a genre that uses magic and other supernatural forms as a primary element of" +
+                " plot, theme, and/or setting. Fantasy is generally distinguished from science fiction " +
+                "and horror by the expectation that it steers clear of technological and macabre themes, " +
+                "respectively, though there is a great deal of overlap between the three (collectively" +
+                " known as speculative fiction or science fiction/fantasy)\n" +
+                "\n" +
+                "In its broadest sense, fantasy comprises works by many writers, artists, " +
+                "filmmakers, and musicians, from ancient myths and legends to many recent works" +
+                " embraced by" +
+                " a wide audience today, including young adults, most of whom are represented " +
+                "by the works below.";
+        loadGenre(name, description);
+
+        name = "Fiction";
+        description = "Fiction is the telling of stories which are not real. More specifically, fiction is an " +
+                "imaginative form of narrative, one of the four basic rhetorical modes. Although the word " +
+                "fiction is derived from the Latin fingo, fingere, finxi, fictum, \"to form, create\", works " +
+                "of fiction need not be entirely imaginary and may include real people, places, and events. " +
+                "Fiction may be either written or oral. Although not all fiction is necessarily artistic, fiction" +
+                "is largely perceived as a form of art or entertainment. The ability to create fiction and other" +
+                " artistic works is considered to be a fundamental aspect of " +
+                "human culture, one of the defining characteristics of humanity.";
+        loadGenre(name, description);
+
+        name = "Graphic Novels";
+        description = "A graphic novel is a narrative work in which the story is conveyed to the reader" +
+                " using sequential art in either an experimental design or in a traditional " +
+                "comics format. The term is employed in a broad manner, encompassing non-fiction works and " +
+                "thematically linked short stories as well as fictional stories across a number of genres.\n" +
+                "--from Wikipedia";
+        loadGenre(name, description);
+
+        name = "Historical Fiction";
+        description = "Historical fiction presents a story set in the past, often during a significant time period." +
+                " In historical fiction, the time period is an important part of the setting and often of the story itself.\n" +
+                "\n" +
+                "Historical fiction may include fictional characters, well-known historical figures or " +
+                "a mixture of the two. Authors of historical fiction usually pay close attention to the details" +
+                " of their stories (settings, clothing, dialogue, etc.) to ensure that they fit the time periods in " +
+                "which the narratives take place.\n" +
+                "\n" +
+                "In some historical fiction, famous events appear from points of view not recorded in history," +
+                " showing historical figures dealing with actual events while depicting them in a way that is " +
+                "not recorded in history. Other times, the historical event or time period complements a story's" +
+                " narrative, forming a framework and background for the characters' lives. Sometimes, historical " +
+                "fiction can be for the most part true, but the names of people and places have been in some way altered.\n" +
+                "\n" +
+                "As this is fiction, artistic license is permitted in regard to presentation and subject matter, " +
+                "so long as it does not deviate in significant ways from established history. If events should deviate " +
+                "significantly, the story may then fall into the genre of alternate history, which is known for " +
+                "speculating on what could have happened if a significant historical event had gone differently. " +
+                "On a similar note, events occurring in historical fiction must adhere to the laws of physics. " +
+                "Stories that extend into the magical or " +
+                "fantastic are often considered historical fantasy.";
+        loadGenre(name, description);
+
+        name = "History";
+        description = "History (from Greek ἱστορία - historia, meaning \"inquiry, " +
+                "knowledge acquired by investigation\") is the discovery, collection, organization, and presentation" +
+                " of information about past events. History can also mean the period of time after writing " +
+                "was invented. Scholars who write about history are called historians. It is a field of research" +
+                " which uses a narrative to examine and analyse the sequence of events, and it sometimes attempts " +
+                "to investigate objectively the patterns of cause and effect that determine events. Historians " +
+                "debate the nature of history and its usefulness. This includes discussing the study of the d" +
+                "iscipline as an end in itself and as a way of providing \"perspective\" on the problems of " +
+                "the present. The stories common to a particular culture, but not supported by external sources " +
+                "(such as the legends surrounding King Arthur) are usually classified as cultural heritage " +
+                "rather than the \"disinterested investigation\" needed by the discipline of history. Events " +
+                "of the past prior to written record are considered prehistory.\n" +
+                "Amongst scholars, the fifth century BC Greek historian Herodotus is considered to be the \"father " +
+                "of history\", and, along with his contemporary Thucydides, forms the foundations for the modern " +
+                "study of history. Their influence, along with other historical traditions in other parts of their " +
+                "world, have spawned many different interpretations of the nature of history which has evolved over" +
+                " the centuries and are continuing to change. The modern study of history has many different fields " +
+                "including those that focus on certain regions and those which focus on certain topical or thematical" +
+                " elements of historical investigation. Often history is taught as part of primary and " +
+                "secondary education, " +
+                "and the academic study of history is a major discipline in University studies. ";
+        loadGenre(name, description);
+
+        name = "Horror";
+        description = "";
+        loadGenre(name, description);
+
+        name = "Memoir";
+        description = "";
+        loadGenre(name, description);
+
+        name = "Music";
+        description = "";
+        loadGenre(name, description);
+
+        name = "Mystery";
+        description = "";
+        loadGenre(name, description);
+
+        name = "Nonfiction";
+        description = "";
+        loadGenre(name, description);
+
+        name = "Poetry";
+        description = "";
+        loadGenre(name, description);
+
+        name = "Psychology";
+        description = "";
+        loadGenre(name, description);
+
+        name = "Romance";
+        description = "";
+        loadGenre(name, description);
+
+        name = "Science";
+        description = "";
+        loadGenre(name, description);
+
+        name = "Science Fiction";
+        description = "";
+        loadGenre(name, description);
+
+        name = "Self Help";
+        description = "";
+        loadGenre(name, description);
+
+        name = "Sports";
+        description = "";
+        loadGenre(name, description);
+
+        name = "Thriller";
+        description = "";
+        loadGenre(name, description);
+
+        name = "Travel";
+        description = "Travel is the movement of people or objects (such as airplanes, boats, trains and other " +
+                "conveyances) between relatively distant geographical locations. The term \"travel\" originates " +
+                "from the Old French word travail. Travel writing is a genre that has, as its focus, accounts " +
+                "of real or imaginary places. The genre encompasses a number of styles that may range from the" +
+                " documentary to the evocative, from literary to journalistic, and from the humorous to the " +
+                "serious. Travel writing is often associated with tourism, and includes works of an ephemeral " +
+                "nature such as guide books and reviews, with the intent being to educate the reader about the " +
+                "destination, provide helpful advice for those visiting the destination, and inspire readers " +
+                "to travel to the destination. Travel writing has also been produced by other types of travelers," +
+                " such as military officers, missionaries, explorers, scientists, pilgrims, and migrants. ";
+        loadGenre(name, description);
+
+        name = "Young Adult";
+        description = "Young-adult fiction (often abbreviated as YA) is fiction written for, published for, or " +
+                "marketed to adolescents and young adults, roughly ages 13 to 18.\n" +
+                "\n" +
+                "Young-adult fiction, whether in the form of novels or short stories, has distinct attributes " +
+                "that distinguish it from the other age categories of fiction. The vast majority of YA stories " +
+                "portray an adolescent as the protagonist, rather than an adult or a child. The subject matter and " +
+                "story lines are typically consistent with the age and experience of the main character, " +
+                "but beyond that YA stories span the entire spectrum of fiction genres. The settings of YA stories " +
+                "are limited only by the imagination and skill of the author.\n" +
+                "\n" +
+                "Themes in YA stories often focus on the challenges of youth, so much so that the entire age category " +
+                "is sometimes referred to as problem novels or coming of age novel. Writing styles of YA stories " +
+                "range widely, from the richness of literary style to the clarity and speed of the unobtrusive. " +
+                "Despite its unique characteristics, YA shares the fundamental elements" +
+                " of fiction with other stories: character, plot, setting, theme, and style. ";
+        loadGenre(name, description);
+
 
 //        Fiction, Young Adult, Fantasy
-        Genre fiction = genreRepository.findByGenre("Fiction");
-        Genre yongAdult = genreRepository.findByGenre("Young Adult");
-        Genre fantasy = genreRepository.findByGenre("Fantasy");
-        Genre scienceFiction = genreRepository.findByGenre("Science Fiction");
+        Genre fiction = genreRepository.findByName("Fiction").get();
+        Genre yongAdult = genreRepository.findByName("Young Adult").get();
+        Genre fantasy = genreRepository.findByName("Fantasy").get();
+        Genre scienceFiction = genreRepository.findByName("Science Fiction").get();
 
         Set<Genre> genres1 = new HashSet<>();
         genres1.add(fiction);
@@ -163,6 +386,13 @@ public class DataLoader implements CommandLineRunner {
         // REVIEW
 
 
+    }
+
+    private void loadGenre(String name, String description) {
+        Genre genre = new Genre();
+        genre.setName(name);
+        genre.setDescription(description);
+        genreRepository.save(genre);
     }
 
 }

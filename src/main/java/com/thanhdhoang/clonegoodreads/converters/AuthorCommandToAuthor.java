@@ -1,7 +1,7 @@
 package com.thanhdhoang.clonegoodreads.converters;
 
 import com.thanhdhoang.clonegoodreads.commands.AuthorCommand;
-import com.thanhdhoang.clonegoodreads.domain.Author;
+import com.thanhdhoang.clonegoodreads.persistence.model.Author;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 

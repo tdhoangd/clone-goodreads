@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+    th:fragment="layout (template, menu)"
+>
+<head >
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" th:href="@{/css/index.css}"/>
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.5.0/css/bootstrap.min.css} "/>
+
+    <title >Clone Goodreads</title>
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><b>CG</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item" th:fragment="menuItem (path,active,title,text)"
+                th:class="${active==menu ? 'active' : ''}">
+                <a class="nav-link"  th:href="@{__${path}__}" th:title="${title}">
+                    <span th:text="${text}">Template</span>
+                </a>
+            </li>
+
+            <li th:replace="::menuItem ('/','home','home page', 'Home')">
+            </li>
+
+            <li th:replace="::menuItem ('/books/find','books','Find Books', 'Find Books')">
+            </li>
+
+            <li th:replace="::menuItem ('/genres','genres','Genres','Genres')">
+            </li>
+
+        </ul>
+
+<!--        <form class="form-inline">-->
+<!--            <input class="form-control mr-sm-2" type="search" placeholder="Search books"-->
+<!--                   aria-label="Search" >-->
+<!--            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--        </form>-->
+
+    </div>
+</nav>
+
+<br>
+
+<!-- Content -->
+<div class="container-fluid">
+    <div class="container xd-container">
+
+        <th:block th:include="${template}"/>
+
+        <br/>
+        <br/>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="../static/resources/images/spring-pivotal-logo.png"
+                         th:src="@{/resources/images/spring-pivotal-logo.png}"
+                         alt="@CG"/></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Footer-->
+
+
+
+
+
+<script th:src="@{/webjars/jquery/3.5.1/jquery.min.js}"></script>
+<script th:src="@{/webjars/popper.js/2.0.2/umd/popper.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/4.5.0/js/bootstrap.min.js}"></script>
+<!--<script th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>-->
+
+
+</body>
+</html>

@@ -1,12 +1,10 @@
-package com.thanhdhoang.clonegoodreads.domain;
+package com.thanhdhoang.clonegoodreads.persistence.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
-import java.sql.Date;
 import java.util.HashSet;
 import java.util.Set;
 
