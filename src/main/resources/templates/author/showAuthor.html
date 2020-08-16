@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout :: layout (~{::body}, 'author')}" >
+<head>
+    <meta charset="UTF-8">
+    <title>Show Authors</title>
+</head>
+<body>
+<!--/*@thymesVar id="author" type="com.thanhdhoang.clonegoodreads.persistence.model.Author "*/-->
+<!--/*@thymesVar id="genre" type="com.thanhdhoang.clonegoodreads.persistence.model.Genre "*/-->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <img th:src="${(author.urlImage != null) ? author.urlImage : '/images/user_image.png'}"
+                 alt="Author Image" class="pull-left">
+
+<!--            <img src="https://images.gr-assets.com/authors/1596216614p5/1077326.jpg"-->
+<!--                alt="A photograph of sliced kiwifruit on a while plate" class="pull-left">-->
+        </div>
+        <div class="col">
+            <h3 th:text="${author.name}">Author Name</h3>
+            <hr>
+
+            <div th:if="${author.birthPlace != null ||  author.birthday != null}" class="row">
+                <div class="col-md-2">
+                    <b>Born</b>
+                </div>
+                <div class="col">
+                    <div th:if="${author.birthPlace != null}">
+                        <span th:text="${author.birthPlace}"></span>
+                    </div>
+                    <div th:if="${author.birthday != null}">
+                        <span th:text="${author.birthday}"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div th:if="${author.website != null}" class="row">
+                <div class="col-md-2">
+                    <b>Website</b>
+                </div>
+                <div class="col">
+                    <a th:href="${author.website}" th:text="${author.website}"></a>
+                </div>
+            </div>
+
+            <div th:if="${author.twitter != null}" class="row">
+                <div class="col-md-2">
+                    <b>Twitter</b>
+                </div>
+                <div class="col">
+                    <a th:href="${'https://twitter.com/' + author.twitter}"
+                       th:text="${author.twitter}"></a>
+                </div>
+            </div>
+
+            <div th:if="${author.genres.size() > 0}" class="row">
+                <div class="col-md-2">
+                    <b>Genres</b>
+                </div>
+                <div class="col">
+                    <span th:each="genre,iterStat : ${author.genres}">
+                        <a th:href="@{'/genres/' + ${genre.name}}"
+                           th:text="!${iterStat.last} ? ${genre.name} + ', ' : ${genre.name}" ></a>
+                    </span>
+                </div>
+            </div>
+
+            <div style="float: right;">
+                <a th:href="${'/author/edit/' + author.id}">edit data</a>
+            </div>
+
+            <div th:if="${author.bio != null && author.bio.length() > 0}">
+                <br>
+                <p th:text="${author.bio}"></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

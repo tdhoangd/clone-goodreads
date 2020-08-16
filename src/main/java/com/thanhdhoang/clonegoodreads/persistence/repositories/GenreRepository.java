@@ -9,5 +9,5 @@ import java.util.Optional;
 @Repository
 public interface GenreRepository extends CrudRepository<Genre,Long> {
 
-    Optional<Genre> findByName(String name);
+    Optional<Genre> findByNameIgnoreCase(String name);
 }

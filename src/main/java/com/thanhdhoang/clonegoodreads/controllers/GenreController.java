@@ -22,14 +22,14 @@ public class GenreController {
     public String getGenres(Model model) {
         log.debug("Getting genre list");
         model.addAttribute("genres", genreService.findAll());
-        return "genres/index";
+        return "genre/index";
     }
 
     @RequestMapping("/{name}")
     public String getGenre(@PathVariable String name, Model model) {
         log.debug("Getting genre" + name);
-        model.addAttribute("genre", genreService.findCommandByName(name));
-        return "genres/viewGenre";
+        model.addAttribute("genre", genreService.findByName(name));
+        return "genre/showGenre";
     }
 
 }

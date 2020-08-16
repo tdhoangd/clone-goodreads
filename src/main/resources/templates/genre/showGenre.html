@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout :: layout (~{::body}, 'genres')}" >
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${'View genre: ' + genre.name}">View genre: ${}</title>
+</head>
+<body>
+
+<h3 th:text="${genre.name}">Genre Name</h3>
+<div>
+    <span th:text="${genre.description}">Description</span>
+</div>
+
+<br>
+<div>
+    <span><b>NEW RELEASE</b></span>
+</div>
+<hr>
+<div>
+<!--    TODO: display list of new release books that have tagged "genre"-->
+</div>
+
+<br>
+<div>
+    <span><b>MOST READ THIS WEEK</b></span>
+</div>
+<hr>
+<div>
+<!-- TODO: display a list of most read books -->
+</div>
+
+</body>
+</html>

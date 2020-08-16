@@ -16,15 +16,15 @@ import java.util.Set;
 public class Author extends BaseEntity {
 
     @Builder
-    public Author(Long id, String name, String gender, Date birthday,
-                  String bio, String website, String urlImage,
-                  Set<Genre> genres) {
+    public Author(Long id, String name, Date birthday, String birthPlace, String bio,
+                  String website, String twitter, String urlImage, Set<Genre> genres) {
         super(id);
         this.name = name;
-        this.gender = gender;
         this.birthday = birthday;
+        this.birthPlace = birthPlace;
         this.bio = bio;
         this.website = website;
+        this.twitter = twitter;
         this.urlImage = urlImage;
         if (genres == null || genres.size() > 0) {
             this.genres = genres;
@@ -32,14 +32,16 @@ public class Author extends BaseEntity {
     }
 
     private String name;
-    private String gender;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date birthday;
 
+    private String birthPlace;
+
     @Column(columnDefinition = "TEXT")
     private String bio;
     private String website;
+    private String twitter;
     private String urlImage;
 
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.EAGER)

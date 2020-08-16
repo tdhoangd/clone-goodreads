@@ -275,10 +275,10 @@ public class DataLoader implements CommandLineRunner {
 
 
 //        Fiction, Young Adult, Fantasy
-        Genre fiction = genreRepository.findByName("Fiction").get();
-        Genre yongAdult = genreRepository.findByName("Young Adult").get();
-        Genre fantasy = genreRepository.findByName("Fantasy").get();
-        Genre scienceFiction = genreRepository.findByName("Science Fiction").get();
+        Genre fiction = genreRepository.findByNameIgnoreCase("Fiction").get();
+        Genre yongAdult = genreRepository.findByNameIgnoreCase("Young Adult").get();
+        Genre fantasy = genreRepository.findByNameIgnoreCase("Fantasy").get();
+        Genre scienceFiction = genreRepository.findByNameIgnoreCase("Science Fiction").get();
 
         Set<Genre> genres1 = new HashSet<>();
         genres1.add(fiction);
@@ -316,8 +316,8 @@ public class DataLoader implements CommandLineRunner {
         // author 1
         Author author1 = new Author();
         author1.setName("J.K. Rowling");
-        author1.setGender("Female");
         author1.setBirthday(Date.valueOf("1965-07-31"));
+        author1.setBirthPlace("Yate, South Gloucestershire, England, The United Kingdom ");
         author1.setBio("Although she writes under the pen name J.K. Rowling, pronounced like rolling, her name when her first Harry Potter book was published was simply Joanne Rowling. Anticipating that the target audience of young boys might not want to read a book written by a woman, her publishers demanded that she use two initials, rather than her full name. As she had no middle name, she chose K as the second initial of her pen name, from her paternal grandmother Kathleen Ada Bulgen Rowling. She calls herself Jo and has said, \"No one ever called me 'Joanne' when I was young, unless they were angry.\" Following her marriage, she has sometimes used the name Joanne Murray when conducting personal business. During the Leveson Inquiry she gave evidence under the name of Joanne Kathleen Rowling. In a 2012 interview, Rowling noted that she no longer cared that people pronounced her name incorrectly.\n" +
                 "\n" +
                 "Rowling was born to Peter James Rowling, a Rolls-Royce aircraft engineer, and Anne Rowling (née Volant), on 31 July 1965 in Yate, Gloucestershire, England, 10 miles (16 km) northeast of Bristol. Her mother Anne was half-French and half-Scottish. Her parents first met on a train departing from King's Cross Station bound for Arbroath in 1964. They married on 14 March 1965. Her mother's maternal grandfather, Dugald Campbell, was born in Lamlash on the Isle of Arran. Her mother's paternal grandfather, Louis Volant, was awarded the Croix de Guerre for exceptional bravery in defending the village of Courcelles-le-Comte during the First World War.\n" +
@@ -327,7 +327,9 @@ public class DataLoader implements CommandLineRunner {
                 "As a child, Rowling often wrote fantasy stories, which she would usually then read to her sister. She recalls that: \"I can still remember me telling her a story in which she fell down a rabbit hole and was fed strawberries by the rabbit family inside it. Certainly the first story I ever wrote down (when I was five or six) was about a rabbit called Rabbit. He got the measles and was visited by his friends, including a giant bee called Miss Bee.\" At the age of nine, Rowling moved to Church Cottage in the Gloucestershire village of Tutshill, close to Chepstow, Wales. When she was a young teenager, her great aunt, who Rowling said \"taught classics and approved of a thirst for knowledge, even of a questionable kind,\" gave her a very old copy of Jessica Mitford's autobiography, Hons and Rebels. Mitford became Rowling's heroine, and Rowling subsequently read all of her books.\n" +
                 "\n" +
                 "Rowling has said of her teenage years, in an interview with The New Yorker, \"I wasn’t particularly happy. I think it’s a dreadful time of life.\" She had a difficult homelife; her mother was ill and she had a difficult relationship with her father (she is no longer on speaking terms with him). She attended secondary school at Wyedean School and College, where her mother had worked as a technician in the science department. Rowling said of her adolescence, \"Hermione [a bookish, know-it-all Harry Potter character] is loosely based on me. She's a caricature of me when I was eleven, which I'm not particularly proud of.\" Steve Eddy, who taught Rowling English when she first arrived, remembers her as \"not exceptional\" but \"one of a group of girls who were bright, and quite good at English.\" Sean Harris, her best friend in the Upper Sixth owned a turquoise Ford Anglia, which she says inspired the one in her books. ");
+
         author1.setWebsite("http://www.jkrowling.com");
+        author1.setTwitter("jk_rowling");
         author1.setGenres(genres1);
         author1.setUrlImage("https://images.gr-assets.com/authors/1596216614p5/1077326.jpg");
 
@@ -360,8 +362,8 @@ public class DataLoader implements CommandLineRunner {
 
         Author author2 = new Author();
         author2.setName("Suzanne Collins");
-        author2.setGender("Female");
         author2.setBirthday(Date.valueOf("1962-08-11"));
+        author2.setBirthPlace("Hartford, Connecticut, The United States");
         author2.setBio("Since 1991, Suzanne Collins has been busy writing for children’s television. She has worked on the staffs of several Nickelodeon shows, including the Emmy-nominated hit Clarissa Explains it All and The Mystery Files of Shelby Woo. For preschool viewers, she penned multiple stories for the Emmy-nominated Little Bear and Oswald. She also co-wrote the critically acclaimed Rankin/Bass Christmas special, Santa, Baby! Most recently she was the Head Writer for Scholastic Entertainment’s Clifford’s Puppy Days.\n" +
                 "\n" +
                 "While working on a Kids WB show called Generation O! she met children’s author James Proimos, who talked her into giving children’s books a try.\n" +

@@ -9,7 +9,7 @@ public class CustomErrorController implements ErrorController {
 
     @GetMapping(value = "/error")
     public String error() {
-        return "notfound";
+        return "error";
     }
 
 
