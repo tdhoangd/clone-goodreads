@@ -66,38 +66,39 @@ Rowling has said of her teenage years, in an interview with The New Yorker, "I w
 insert into book
 (id, isbn, author_id, title, image_url )
 values
-(1,'439023483',1,'The Hunger Games (The Hunger Games\, #1)','https://images.gr-assets.com/books/1447303603m/2767052.jpg'),
-(2,'439554934',2,'Harry Potter and the Sorcerer''s Stone (Harry Potter\, #1)','https://images.gr-assets.com/books/1474154022m/3.jpg'),
-(3,'316015849',3,'Twilight (Twilight\, #1)','https://images.gr-assets.com/books/1361039443m/41865.jpg'),
+(1,'439023483',1,'The Hunger Games (The Hunger Games #1)','https://images.gr-assets.com/books/1447303603m/2767052.jpg'),
+(2,'439554934',2,'Harry Potter and the Sorcerer''s Stone (Harry Potter, #1)',
+ 'https://images.gr-assets.com/books/1474154022m/3.jpg'),
+(3,'316015849',3,'Twilight (Twilight, #1)','https://images.gr-assets.com/books/1361039443m/41865.jpg'),
 (4,'61120081',4,'To Kill a Mockingbird','https://images.gr-assets.com/books/1361975680m/2657.jpg'),
 (5,'743273567',5,'The Great Gatsby','https://images.gr-assets.com/books/1490528560m/4671.jpg'),
 (6,'525478817',6,'The Fault in Our Stars','https://images.gr-assets.com/books/1360206420m/11870085.jpg'),
 (7,'618260307',7,'The Hobbit','https://images.gr-assets.com/books/1372847500m/5907.jpg'),
 (8,'316769177',8,'The Catcher in the Rye','https://images.gr-assets.com/books/1398034300m/5107.jpg'),
-(9,'1416524797',9,'Angels & Demons  (Robert Langdon\, #1)','https://images.gr-assets.com/books/1303390735m/960.jpg'),
+(9,'1416524797',9,'Angels & Demons  (Robert Langdon, #1)','https://images.gr-assets.com/books/1303390735m/960.jpg'),
 (10,'679783261',10,'Pride and Prejudice','https://images.gr-assets.com/books/1320399351m/1885.jpg'),
 (11,'1594480001',11,'The Kite Runner','https://images.gr-assets.com/books/1484565687m/77203.jpg'),
-(12,'62024035',12,'Divergent (Divergent\, #1)','https://images.gr-assets.com/books/1328559506m/13335037.jpg'),
+(12,'62024035',12,'Divergent (Divergent, #1)','https://images.gr-assets.com/books/1328559506m/13335037.jpg'),
 (13,'451524934',13,'1984','https://images.gr-assets.com/books/1348990566m/5470.jpg'),
 (15,'553296981',14,'The Diary of a Young Girl','https://images.gr-assets.com/books/1358276407m/48855.jpg'),
-(17,'439023491',1,'Catching Fire (The Hunger Games\, #2)','https://images.gr-assets.com/books/1358273780m/6148028.jpg'),
+(17,'439023491',1,'Catching Fire (The Hunger Games, #2)','https://images.gr-assets.com/books/1358273780m/6148028.jpg'),
 (18,'043965548X',2,'Harry Potter and the Prisoner of Azkaban (Harry Potter\, #3)','https://images.gr-assets.com/books/1499277281m/5.jpg'),
 (19,'618346252',7,'The Fellowship of the Ring (The Lord of the Rings\, #1)','https://images.gr-assets.com/books/1298411339m/34.jpg'),
-(20,'439023513',1,'Mockingjay (The Hunger Games\, #3)','https://images.gr-assets.com/books/1358275419m/7260188.jpg'),
+(20,'439023513',1,'Mockingjay (The Hunger Games, #3)','https://images.gr-assets.com/books/1358275419m/7260188.jpg'),
 (21,'439358078',2,'Harry Potter and the Order of the Phoenix (Harry Potter\, #5)','https://images.gr-assets.com/books/1387141547m/2.jpg'),
 (22,'316166685',15,'The Lovely Bones','https://images.gr-assets.com/books/1457810586m/12232938.jpg'),
 (23,'439064864',2,'Harry Potter and the Chamber of Secrets (Harry Potter\, #2)','https://images.gr-assets.com/books/1474169725m/15881.jpg'),
 (24,'439139600',2,'Harry Potter and the Goblet of Fire (Harry Potter\, #4)','https://images.gr-assets.com/books/1361482611m/6.jpg'),
 (25,'545010225',2,'Harry Potter and the Deathly Hallows (Harry Potter\, #7)','https://images.gr-assets.com/books/1474171184m/136251.jpg'),
-(26,'307277674',9,'The Da Vinci Code (Robert Langdon\, #2)','https://images.gr-assets.com/books/1303252999m/968.jpg'),
-(27,'439785960',2,'Harry Potter and the Half-Blood Prince (Harry Potter\, #6)','https://images.gr-assets.com/books/1361039191m/1.jpg'),
+(26,'307277674',9,'The Da Vinci Code (Robert Langdon, #2)','https://images.gr-assets.com/books/1303252999m/968.jpg'),
+(27,'439785960',2,'Harry Potter and the Half-Blood Prince (Harry Potter, #6)','https://images.gr-assets.com/books/1361039191m/1.jpg'),
 (28,'140283331',16,'Lord of the Flies','https://images.gr-assets.com/books/1327869409m/7624.jpg'),
 (30,'297859382',17,'Gone Girl','https://images.gr-assets.com/books/1339602131m/8442457.jpg'),
 (31,'399155341',18,'The Help','https://images.gr-assets.com/books/1346100365m/4667024.jpg'),
 (32,'142000671',19,'Of Mice and Men','https://images.gr-assets.com/books/1437235233m/890.jpg'),
 (33,'739326228',21,'Memoirs of a Geisha','https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png'),
 (34,'1612130291',22,'Fifty Shades of Grey (Fifty Shades\, #1)','https://images.gr-assets.com/books/1385207843m/10818853.jpg'),
-(36,'385732554',23,'The Giver (The Giver\, #1)','https://images.gr-assets.com/books/1342493368m/3636.jpg'),
+(36,'385732554',23,'The Giver (The Giver, #1)','https://images.gr-assets.com/books/1342493368m/3636.jpg'),
 (38,'965818675',24,'The Time Traveler''s Wife','https://images.gr-assets.com/books/1437728815m/14050.jpg'),
 (39,'553588486',25,'A Game of Thrones (A Song of Ice and Fire\, #1)','https://images.gr-assets.com/books/1436732693m/13496.jpg'),
 (40,'143038419',26,'Eat\, Pray\, Love','https://images.gr-assets.com/books/1503066414m/19501.jpg'),
@@ -105,17 +106,17 @@ values
 (42,'451529308',28,'Little Women (Little Women\, #1)','https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png'),
 (44,'553816713',29,'The Notebook (The Notebook\, #1)','https://images.gr-assets.com/books/1385738917m/15931.jpg'),
 (45,'770430074',30,'Life of Pi','https://images.gr-assets.com/books/1320562005m/4214.jpg'),
-(49,'316160199',3,'New Moon (Twilight\, #2)','https://images.gr-assets.com/books/1361039440m/49041.jpg'),
-(52,'316160202',3,'Eclipse (Twilight\, #3)','https://images.gr-assets.com/books/1361038355m/428263.jpg'),
-(56,'031606792X',3,'Breaking Dawn (Twilight\, #4)','https://images.gr-assets.com/books/1361039438m/1162543.jpg'),
+(49,'316160199',3,'New Moon (Twilight, #2)','https://images.gr-assets.com/books/1361039440m/49041.jpg'),
+(52,'316160202',3,'Eclipse (Twilight, #3)','https://images.gr-assets.com/books/1361038355m/428263.jpg'),
+(56,'031606792X',3,'Breaking Dawn (Twilight, #4)','https://images.gr-assets.com/books/1361039438m/1162543.jpg'),
 (67,'1594489505',11,'A Thousand Splendid Suns','https://images.gr-assets.com/books/1345958969m/128029.jpg'),
-(69,'7442912',12,'Insurgent (Divergent\, #2)','https://images.gr-assets.com/books/1325667729m/11735983.jpg'),
-(73,'316068047',3,'The Host (The Host\, #1)','https://images.gr-assets.com/books/1318009171m/1656001.jpg'),
+(69,'7442912',12,'Insurgent (Divergent, #2)','https://images.gr-assets.com/books/1325667729m/11735983.jpg'),
+(73,'316068047',3,'The Host (The Host, #1)','https://images.gr-assets.com/books/1318009171m/1656001.jpg'),
 (74,'142402516',6,'Looking for Alaska','https://images.gr-assets.com/books/1394798630m/99561.jpg'),
 (88,'014241493X',6,'Paper Towns','https://images.gr-assets.com/books/1349013610m/6442769.jpg'),
-(96,'345803507',22,'Fifty Shades Freed (Fifty Shades\, #3)','https://images.gr-assets.com/books/1336418837m/13536860.jpg'),
+(96,'345803507',22,'Fifty Shades Freed (Fifty Shades, #3)','https://images.gr-assets.com/books/1336418837m/13536860.jpg'),
 (99,'1612130585',22,'Fifty Shades Darker (Fifty Shades\, #2)','https://images.gr-assets.com/books/1358266080m/11857408.jpg'),
-(105,'7524277',12,'Allegiant (Divergent\, #3)','https://images.gr-assets.com/books/1395582745m/18710190.jpg'),
+(105,'7524277',12,'Allegiant (Divergent, #3)','https://images.gr-assets.com/books/1395582745m/18710190.jpg'),
 (107,'446693804',29,'A Walk to Remember','https://images.gr-assets.com/books/1385738968m/3473.jpg'),
 (110,'553381695',25,'A Clash of Kings  (A Song of Ice and Fire\, #2)','https://images.gr-assets.com/books/1358254974m/10572.jpg'),
 (131,'142000663',19,'The Grapes of Wrath','https://images.gr-assets.com/books/1352912927m/4395.jpg'),
@@ -124,38 +125,38 @@ values
 (145,'671027387',9,'Deception Point','https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png'),
 (151,'786856866',27,'The Sea of Monsters (Percy Jackson and the Olympians\, #2)','https://images.gr-assets.com/books/1400602661m/28186.jpg'),
 (152,'446528056',29,'Dear John','https://images.gr-assets.com/books/1397749854m/5526.jpg'),
-(155,'618346260',7,'The Two Towers (The Lord of the Rings\, #2)','https://images.gr-assets.com/books/1298415523m/15241.jpg'),
+(155,'618346260',7,'The Two Towers (The Lord of the Rings, #2)','https://images.gr-assets.com/books/1298415523m/15241.jpg'),
 (159,'1423101464',27,'The Battle of the Labyrinth (Percy Jackson and the Olympians\, #4)','https://images.gr-assets.com/books/1443142158m/2120932.jpg'),
 (161,'345339738',7,'The Return of the King (The Lord of the Rings\, #3)','https://images.gr-assets.com/books/1389977161m/18512.jpg'),
-(163,'142311339X',27,'The Lost Hero (The Heroes of Olympus\, #1)','https://images.gr-assets.com/books/1464201003m/7736182.jpg'),
+(163,'142311339X',27,'The Lost Hero (The Heroes of Olympus, #1)','https://images.gr-assets.com/books/1464201003m/7736182.jpg'),
 (165,'055358202X',25,'A Feast for Crows (A Song of Ice and Fire\, #4)','https://images.gr-assets.com/books/1429538615m/13497.jpg'),
 (169,'446547565',29,'The Last Song','https://images.gr-assets.com/books/1286549186m/6400090.jpg'),
 (170,'552151696',9,'Digital Fortress','https://images.gr-assets.com/books/1360095966m/11125.jpg'),
-(175,'739380338',27,'The Last Olympian (Percy Jackson and the Olympians\, #5)','https://images.gr-assets.com/books/1327924597m/4502507.jpg'),
-(188,'',25,'A Dance with Dragons (A Song of Ice and Fire\, #5)','https://images.gr-assets.com/books/1327885335m/10664113.jpg'),
-(189,'618640150',7,'The Lord of the Rings (The Lord of the Rings\, #1-3)','https://images.gr-assets.com/books/1411114164m/33.jpg'),
-(201,'385504225',9,'The Lost Symbol (Robert Langdon\, #3)','https://images.gr-assets.com/books/1358274396m/6411961.jpg'),
-(214,'141382899',27,'The Titan''s Curse (Percy Jackson and the Olympians\, #3)','https://images.gr-assets.com/books/1361038385m/561456.jpg'),
+(175,'739380338',27,'The Last Olympian (Percy Jackson and the Olympians, #5)','https://images.gr-assets.com/books/1327924597m/4502507.jpg'),
+(188,'',25,'A Dance with Dragons (A Song of Ice and Fire, #5)','https://images.gr-assets.com/books/1327885335m/10664113.jpg'),
+(189,'618640150',7,'The Lord of the Rings (The Lord of the Rings, #1-3)','https://images.gr-assets.com/books/1411114164m/33.jpg'),
+(201,'385504225',9,'The Lost Symbol (Robert Langdon, #3)','https://images.gr-assets.com/books/1358274396m/6411961.jpg'),
+(214,'141382899',27,'The Titan''s Curse (Percy Jackson and the Olympians, #3)','https://images.gr-assets.com/books/1361038385m/561456.jpg'),
 (225,'142000655',19,'East of Eden','https://images.gr-assets.com/books/1441547516m/4406.jpg'),
 (226,'307341569',17,'Dark Places','https://images.gr-assets.com/books/1354988288m/5886881.jpg'),
-(240,'385537859',9,'Inferno (Robert Langdon\, #4)','https://images.gr-assets.com/books/1397093185m/17212231.jpg'),
+(240,'385537859',9,'Inferno (Robert Langdon, #4)','https://images.gr-assets.com/books/1397093185m/17212231.jpg'),
 (241,'440227534',23,'Number the Stars','https://images.gr-assets.com/books/1370917812m/47281.jpg'),
 (244,'307341542',17,'Sharp Objects','https://images.gr-assets.com/books/1423241485m/66559.jpg'),
 (275,'525476881',6,'An Abundance of Katherines','https://images.gr-assets.com/books/1360206426m/49750.jpg'),
 (286,'446579939',29,'The Lucky One','https://images.gr-assets.com/books/1420816338m/3063499.jpg'),
-(294,'1423140591',27,'The Son of Neptune (The Heroes of Olympus\, #2)','https://images.gr-assets.com/books/1464201114m/9520360.jpg'),
+(294,'1423140591',27,'The Son of Neptune (The Heroes of Olympus, #2)','https://images.gr-assets.com/books/1464201114m/9520360.jpg'),
 (302,'044654759X',29,'Safe Haven','https://images.gr-assets.com/books/1344268800m/7812659.jpg'),
 (359,'159463176X',11,'And the Mountains Echoed','https://images.gr-assets.com/books/1358190204m/16115612.jpg'),
 (420,'446676071',29,'Message in a Bottle','https://images.gr-assets.com/books/1163789140m/3478.jpg'),
-(428,'1423140605',27,'The Mark of Athena (The Heroes of Olympus\, #3)','https://images.gr-assets.com/books/1464201354m/12127750.jpg'),
+(428,'1423140605',27,'The Mark of Athena (The Heroes of Olympus, #3)','https://images.gr-assets.com/books/1464201354m/12127750.jpg'),
 (552,'446696129',29,'The Rescue','https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png'),
-(370,'1423113381',27,'The Red Pyramid (Kane Chronicles\, #1)','https://images.gr-assets.com/books/1366227978m/7090447.jpg'),
+(370,'1423113381',27,'The Red Pyramid (Kane Chronicles, #1)','https://images.gr-assets.com/books/1366227978m/7090447.jpg'),
 (571,'446696110',29,'The Guardian','https://images.gr-assets.com/books/1388195339m/15925.jpg'),
 (622,'446612707',29,'Nights in Rodanthe','https://images.gr-assets.com/books/1328145638m/15926.jpg'),
 (533,'62409859',4,'Go Set a Watchman','https://images.gr-assets.com/books/1451442088m/24817626.jpg'),
 (683,'446696137',29,'A Bend in the Road','https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png'),
-(684,'1423146727',27,'The House of Hades (The Heroes of Olympus\, #4)','https://images.gr-assets.com/books/1464201430m/12127810.jpg'),
-(686,'446615862',29,'The Wedding (The Notebook\, #2)','https://images.gr-assets.com/books/1385738787m/3466.jpg'),
+(684,'1423146727',27,'The House of Hades (The Heroes of Olympus, #4)','https://images.gr-assets.com/books/1464201430m/12127810.jpg'),
+(686,'446615862',29,'The Wedding (The Notebook, #2)','https://images.gr-assets.com/books/1385738787m/3466.jpg'),
 (716,'446579920',29,'The Choice','https://images.gr-assets.com/books/1385739133m/531350.jpg'),
 (784,'1401303277',20,'For One More Day','https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png'),
 (709,'316767727',8,'Nine Stories','https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png'),
@@ -216,11 +217,66 @@ values
 ;
 
 
+UPDATE book
+SET
+description = 'WINNING MEANS FAME AND FORTUNE.
+LOSING MEANS CERTAIN DEATH.
+THE HUNGER GAMES HAVE BEGUN. . . .
 
+In the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line by forcing them all to send one boy and once girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV.
 
+Sixteen-year-old Katniss Everdeen regards it as a death sentence when she steps forward to take her sister''s place in the Games. But Katniss has been close to dead before—and survival, for her, is second nature. Without really meaning to, she becomes a contender. But if she is to win, she will have to start making choices that weight survival against humanity and life against love. '
+where id = 1;
+;
 
+UPDATE book
+SET
+    description = 'Harry Potter''s life is miserable. His parents are dead and he''s stuck with his heartless relatives, who force him to live in a tiny closet under the stairs. But his fortune changes when he receives a letter that tells him the truth about himself: he''s a wizard. A mysterious visitor rescues him from his relatives and takes him to his new home, Hogwarts School of Witchcraft and Wizardry.
 
+After a lifetime of bottling up his magical powers, Harry finally feels like a normal kid. But even within the Wizarding community, he is special. He is the boy who lived: the only person to have ever survived a killing curse inflicted by the evil Lord Voldemort, who launched a brutal takeover of the Wizarding world, only to vanish after failing to kill Harry.
 
+Though Harry''s first year at Hogwarts is the best of his life, not everything is perfect. There is a dangerous secret object hidden within the castle walls, and Harry believes it''s his responsibility to prevent it from falling into evil hands. But doing so will bring him into contact with forces more terrifying than he ever could have imagined.
+
+Full of sympathetic characters, wildly imaginative situations, and countless exciting details, the first installment in the series assembles an unforgettable magical world and sets the stage for many high-stakes adventures to come. '
+WHERE id = 2;
+
+UPDATE book
+SET
+    description = 'About three things I was absolutely positive.
+
+First, Edward was a vampire.
+
+Second, there was a part of him—and I didn''t know how dominant that part might be—that thirsted for my blood.
+
+And third, I was unconditionally and irrevocably in love with him.
+
+Deeply seductive and extraordinarily suspenseful, Twilight is a love story with bite.'
+WHERE id = 3;
+
+UPDATE book
+SET
+    description = 'The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it, To Kill A Mockingbird became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic.
+
+Compassionate, dramatic, and deeply moving, To Kill A Mockingbird takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. Harper Lee always considered her book to be a simple love story. Today it is regarded as a masterpiece of American literature.'
+WHERE id = 4;
+
+UPDATE book
+SET
+    description = 'The Great Gatsby, F. Scott Fitzgerald''s third book, stands as the supreme achievement of his career. This exemplary novel of the Jazz Age has been acclaimed by generations of readers. The story is of the fabulously wealthy Jay Gatsby and his new love for the beautiful Daisy Buchanan, of lavish parties on Long Island at a time when The New York Times noted "gin was the national drink and sex the national obsession," it is an exquisitely crafted tale of America in the 1920s.
+
+The Great Gatsby is one of the great classics of twentieth-century literature.'
+WHERE id = 5;
+
+UPDATE book
+SET
+    description = 'The war against Voldemort is not going well; even Muggle governments are noticing. Ron scans the obituary pages of the Daily Prophet, looking for familiar names. Dumbledore is absent from Hogwarts for long stretches of time, and the Order of the Phoenix has already suffered losses.
+
+And yet . . .
+
+As in all wars, life goes on. The Weasley twins expand their business. Sixth-year students learn to Apparate - and lose a few eyebrows in the process. Teenagers flirt and fight and fall in love. Classes are never straightforward, through Harry receives some extraordinary help from the mysterious Half-Blood Prince.
+
+So it''s the home front that takes center stage in the multilayered sixth installment of the story of Harry Potter. Here at Hogwarts, Harry will search for the full and complete story of the boy who became Lord Voldemort - and thereby find what may be his only vulnerability.'
+WHERE id = 27;
 
 
 

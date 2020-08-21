@@ -1,10 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout :: layout (~{::body}, 'random')}" >
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Show Authors</title>
 </head>
 <body>
+<!--/*@thymesVar id="author" type="com.thanhdhoang.clonegoodreads.persistence.model.Book "*/-->
+<!--/*@thymesVar id="genre" type="com.thanhdhoang.clonegoodreads.persistence.model.Genre "*/-->
+<!--/*@thymesVar id="author" type="com.thanhdhoang.clonegoodreads.persistence.model.Author "*/-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+<!--            image-->
+            <img th:src="${(book.imageUrl != null) ? book.imageUrl : '/images/book_image.png'}"
+                 alt="Book Cover Image" clas="pull-left">
+        </div>
+
+        <div class="col">
+            <h3 th:text="${book.title}"></h3>
+            <h5><a th:href="${'/author/show/' + book.author.id}"
+                   th:text="${'by ' + book.author.name}"></a></h5>
+            <div>Avg Rating: ???</div>
+            <div>Rating details (# rating, #reviews)</div>
+
+            <hr>
+            <div th:if="${book.isbn != null && book.isbn.length()>0}">
+                <span th:text="${'ISBN: ' + book.isbn}">ISBN: ???</span>
+            </div>
+
+            <div th:if="${book.description != null && book.isbn.length()>0}">
+                <br>
+                <div th:utext='${book.description.replaceAll("\n", "<br>")}'>Description</div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div>Social/Sharing</div>
+            <div>
+                <small><b>Similar books</b></small>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>

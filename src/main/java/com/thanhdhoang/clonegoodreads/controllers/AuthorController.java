@@ -26,7 +26,7 @@ public class AuthorController {
     }
 
     @GetMapping("/show/{id}")
-    public String viewAuthor(@PathVariable Long id, Model model) {
+    public String showAuthor(@PathVariable Long id, Model model) {
         log.debug("Getting author with id: " + id);
 
         Author author = authorService.findById(id);
