@@ -20,7 +20,7 @@ public class Book extends BaseEntity {
     @Column(columnDefinition = "TEXT")
     private String description;
 
-    private String coverImageUrl;
+    private String imageUrl;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "book")
     private Set<Review> reviews = new HashSet<>();

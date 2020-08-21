@@ -13,7 +13,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <img th:src="${(author.urlImage != null) ? author.urlImage : '/images/user_image.png'}"
+            <img th:src="${(author.imageUrl != null) ? author.imageUrl : '/images/user_image.png'}"
                  alt="Author Image" class="pull-left">
 
 <!--            <img src="https://images.gr-assets.com/authors/1596216614p5/1077326.jpg"-->
@@ -69,13 +69,14 @@
             </div>
 
             <div style="float: right;">
-                <a th:href="${'/author/edit/' + author.id}">edit data</a>
+                <a th:href="${'/author/edit/' + author.id}"><small>edit data</small></a>
             </div>
 
             <div th:if="${author.bio != null && author.bio.length() > 0}">
                 <br>
-                <p th:text="${author.bio}"></p>
+                <div th:utext='${author.bio.replaceAll("\n", "<br>")}'></div>
             </div>
+            
 
         </div>
     </div>

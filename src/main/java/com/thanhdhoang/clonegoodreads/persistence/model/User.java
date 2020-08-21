@@ -19,7 +19,7 @@ public class User extends BaseEntity {
 
     @Column(unique = true)
     private String username;
-    private String sessionToken;
+//    private String sessionToken;
     private String password;
     private String firstName;
     private String lastName;

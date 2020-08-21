@@ -1,5 +1,6 @@
 package com.thanhdhoang.clonegoodreads.controllers;
 
+import com.thanhdhoang.clonegoodreads.persistence.model.Author;
 import com.thanhdhoang.clonegoodreads.services.springdatajpa.AuthorSDJService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -27,7 +28,10 @@ public class AuthorController {
     @GetMapping("/show/{id}")
     public String viewAuthor(@PathVariable Long id, Model model) {
         log.debug("Getting author with id: " + id);
-        model.addAttribute("author", authorService.findById(id));
+
+        Author author = authorService.findById(id);
+
+        model.addAttribute("author", author);
         return "author/showAuthor";
     }
 

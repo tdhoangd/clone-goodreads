@@ -17,7 +17,7 @@ public class Author extends BaseEntity {
 
     @Builder
     public Author(Long id, String name, Date birthday, String birthPlace, String bio,
-                  String website, String twitter, String urlImage, Set<Genre> genres) {
+                  String website, String twitter, String imageUrl, Set<Genre> genres) {
         super(id);
         this.name = name;
         this.birthday = birthday;
@@ -25,7 +25,7 @@ public class Author extends BaseEntity {
         this.bio = bio;
         this.website = website;
         this.twitter = twitter;
-        this.urlImage = urlImage;
+        this.imageUrl = imageUrl;
         if (genres == null || genres.size() > 0) {
             this.genres = genres;
         }
@@ -42,7 +42,7 @@ public class Author extends BaseEntity {
     private String bio;
     private String website;
     private String twitter;
-    private String urlImage;
+    private String imageUrl;
 
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.EAGER)
     @JoinTable(name = "author_genre",
