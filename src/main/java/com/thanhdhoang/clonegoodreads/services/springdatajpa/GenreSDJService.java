@@ -1,11 +1,10 @@
 package com.thanhdhoang.clonegoodreads.services.springdatajpa;
 
-import com.thanhdhoang.clonegoodreads.persistence.model.Genre;
+import com.thanhdhoang.clonegoodreads.persistence.domain.Genre;
 import com.thanhdhoang.clonegoodreads.persistence.repositories.GenreRepository;
 import com.thanhdhoang.clonegoodreads.services.GenreService;
 import com.thanhdhoang.clonegoodreads.exception.NotFoundException;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashSet;
 

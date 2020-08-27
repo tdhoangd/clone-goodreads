@@ -1,4 +1,4 @@
-package com.thanhdhoang.clonegoodreads.persistence.model;
+package com.thanhdhoang.clonegoodreads.persistence.domain;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -20,7 +20,7 @@
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"><b>CG</b></a>
+    <a class="navbar-brand" href="/"><b>CG</b></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,8 +38,10 @@
             <li th:replace="::menuItem ('/','home','home page', 'Home')">
             </li>
 
-            <li th:replace="::menuItem ('/book/find','book','Find Book', 'Find Book')">
+            <li th:replace="::menuItem ('/book','book','Book', 'Book')">
             </li>
+
+            <li th:replace="::menuItem ('/author','author','Author','Author')"></li>
 
             <li th:replace="::menuItem ('/genres','genres','Genres','Genres')">
             </li>

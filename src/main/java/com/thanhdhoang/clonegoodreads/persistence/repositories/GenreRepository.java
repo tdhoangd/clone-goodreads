@@ -1,6 +1,6 @@
 package com.thanhdhoang.clonegoodreads.persistence.repositories;
 
-import com.thanhdhoang.clonegoodreads.persistence.model.Genre;
+import com.thanhdhoang.clonegoodreads.persistence.domain.Genre;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

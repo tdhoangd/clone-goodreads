@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
-      th:replace="~{layout :: layout (~{::body}, 'random')}" >
+      th:replace="~{layout :: layout (~{::body}, 'book')}" >
 <head>
     <meta charset="UTF-8">
-    <title>Show Authors</title>
+    <title>Show Books</title>
 </head>
 <body>
-<!--/*@thymesVar id="author" type="com.thanhdhoang.clonegoodreads.persistence.model.Book "*/-->
-<!--/*@thymesVar id="genre" type="com.thanhdhoang.clonegoodreads.persistence.model.Genre "*/-->
-<!--/*@thymesVar id="author" type="com.thanhdhoang.clonegoodreads.persistence.model.Author "*/-->
+<!--/*@thymesVar id="author" type="com.thanhdhoang.clonegoodreads.persistence.domain.Book "*/-->
+<!--/*@thymesVar id="genre" type="com.thanhdhoang.clonegoodreads.persistence.domain.Genre "*/-->
+<!--/*@thymesVar id="author" type="com.thanhdhoang.clonegoodreads.persistence.domain.Author "*/-->
 
 <div class="container">
     <div class="row">
@@ -20,7 +20,7 @@
 
         <div class="col">
             <h3 th:text="${book.title}"></h3>
-            <h5><a th:href="${'/author/show/' + book.author.id}"
+            <h5><a th:href="${'/author/' + book.author.id + '/show'}"
                    th:text="${'by ' + book.author.name}"></a></h5>
             <div>Avg Rating: ???</div>
             <div>Rating details (# rating, #reviews)</div>

@@ -1,6 +1,6 @@
 package com.thanhdhoang.clonegoodreads.services.springdatajpa;
 
-import com.thanhdhoang.clonegoodreads.persistence.model.Review;
+import com.thanhdhoang.clonegoodreads.persistence.domain.Review;
 import com.thanhdhoang.clonegoodreads.persistence.repositories.ReviewRepository;
 import com.thanhdhoang.clonegoodreads.services.ReviewService;
 import org.springframework.stereotype.Service;

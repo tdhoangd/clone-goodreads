@@ -1,6 +1,6 @@
 package com.thanhdhoang.clonegoodreads.services;
 
-import com.thanhdhoang.clonegoodreads.persistence.model.Genre;
+import com.thanhdhoang.clonegoodreads.persistence.domain.Genre;
 
 public interface GenreService extends CrudService<Genre, Long> {
 

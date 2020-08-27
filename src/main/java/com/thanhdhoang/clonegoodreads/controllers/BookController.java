@@ -1,6 +1,6 @@
 package com.thanhdhoang.clonegoodreads.controllers;
 
-import com.thanhdhoang.clonegoodreads.persistence.model.Book;
+import com.thanhdhoang.clonegoodreads.persistence.domain.Book;
 import com.thanhdhoang.clonegoodreads.services.springdatajpa.BookSDJService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;

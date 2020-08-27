@@ -1,6 +1,6 @@
 package com.thanhdhoang.clonegoodreads.services.springdatajpa;
 
-import com.thanhdhoang.clonegoodreads.persistence.model.Book;
+import com.thanhdhoang.clonegoodreads.persistence.domain.Book;
 import com.thanhdhoang.clonegoodreads.persistence.repositories.BookRepository;
 import com.thanhdhoang.clonegoodreads.persistence.repositories.GenreRepository;
 import com.thanhdhoang.clonegoodreads.persistence.repositories.ReviewRepository;

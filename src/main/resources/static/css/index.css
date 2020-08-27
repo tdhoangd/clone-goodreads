@@ -3,3 +3,7 @@
     color: white;
     background-color: antiquewhite;
 }
+
+form label {
+    font-weight: bold;
+}

@@ -1,6 +1,6 @@
 package com.thanhdhoang.clonegoodreads.services.springdatajpa;
 
-import com.thanhdhoang.clonegoodreads.persistence.model.Author;
+import com.thanhdhoang.clonegoodreads.persistence.domain.Author;
 import com.thanhdhoang.clonegoodreads.persistence.repositories.AuthorRepository;
 import com.thanhdhoang.clonegoodreads.services.AuthorService;
 import org.springframework.stereotype.Service;

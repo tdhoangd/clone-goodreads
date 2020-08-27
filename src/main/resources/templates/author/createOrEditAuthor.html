@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout :: layout (~{::body}, 'author')}" >
+<head>
+    <meta charset="UTF-8">
+    <title>Create or edit author</title>
+</head>
+<body>
+<!--/*@thymesVar id="author" type="com.thanhdhoang.clonegoodreads.persistence.domain.Author "*/-->
+<!--/*@thymesVar id="genre" type="com.thanhdhoang.clonegoodreads.persistence.domain.Genre "*/-->
+
+<h2><b>Author</b></h2>
+
+<form th:object="${author}" id="add-author-form" method="post">
+    <div>
+        <input th:replace="~{fragments/input :: input ('Name', 'name', 'text')}" />
+        <input th:replace="~{fragments/input :: input ('Birthday', 'birthday', 'date')}" />
+        <input th:replace="~{fragments/input :: input ('Birthplace', 'birthPlace', 'text')}" />
+        <input th:replace="~{fragments/input :: input ('Website', 'website', 'text')}" />
+        <input th:replace="~{fragments/input :: input ('Twitter', 'twitter', 'text')}" />
+        <input th:replace="~{fragments/input :: input ('Image URL', 'imageUrl', 'text')}" />
+        <input th:replace="~{fragments/input :: input ('Bio', 'bio', 'textarea')}" />
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 offset-sm-2">
+            <button
+                    th:with="text=${author.id == null} ? 'Add Author' : 'Update Author'"
+                    class="btn btn-dark" type="submit" th:text="${text}">Add
+                Author</button>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>

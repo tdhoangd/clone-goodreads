@@ -1,11 +1,12 @@
-package com.thanhdhoang.clonegoodreads.persistence.model;
+package com.thanhdhoang.clonegoodreads.persistence.domain;
 
 import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
-import java.sql.Date;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -33,6 +34,8 @@ public class Author extends BaseEntity {
     }
 
     @NotNull
+    @Column(nullable = false)
+    @NotEmpty(message = "Name may not be empty")
     private String name;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
