@@ -1,5 +1,6 @@
 package com.thanhdhoang.clonegoodreads.services.springdatajpa;
 
+import com.thanhdhoang.clonegoodreads.persistence.domain.Author;
 import com.thanhdhoang.clonegoodreads.persistence.domain.Genre;
 import com.thanhdhoang.clonegoodreads.persistence.repositories.GenreRepository;
 import com.thanhdhoang.clonegoodreads.services.GenreService;
@@ -7,7 +8,6 @@ import com.thanhdhoang.clonegoodreads.exception.NotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
-
 import java.util.Optional;
 import java.util.Set;
 
@@ -30,7 +30,10 @@ public class GenreSDJService implements GenreService {
 
     @Override
     public Genre findById(Long aLong) {
-        return genreRepository.findById(aLong).orElse(null);
+        Optional<Genre> optionalGenre = genreRepository.findById(aLong);
+        if (optionalGenre.isEmpty())
+            throw new NotFoundException("Genre by id " + aLong + " not found");
+        return optionalGenre.get();
     }
 
     @Override

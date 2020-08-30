@@ -7,3 +7,11 @@
 form label {
     font-weight: bold;
 }
+
+.invalid-feedback{
+    display:none;
+}
+
+.invalid .invalid-feedback {
+    display:block;
+}

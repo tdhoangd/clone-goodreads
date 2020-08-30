@@ -1,11 +1,14 @@
 package com.thanhdhoang.clonegoodreads.services.springdatajpa;
 
+import com.thanhdhoang.clonegoodreads.exception.NotFoundException;
+import com.thanhdhoang.clonegoodreads.persistence.domain.Author;
 import com.thanhdhoang.clonegoodreads.persistence.domain.User;
 import com.thanhdhoang.clonegoodreads.persistence.repositories.UserRepository;
 import com.thanhdhoang.clonegoodreads.services.UserService;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.Set;
 
 @Service
@@ -26,7 +29,10 @@ public class UserSDJService implements UserService {
 
     @Override
     public User findById(Long aLong) {
-        return userRepository.findById(aLong).orElse(null);
+        Optional<User> optionalUser = userRepository.findById(aLong);
+        if (optionalUser.isEmpty())
+            throw new NotFoundException("User by id " + aLong + " not found");
+        return optionalUser.get();
     }
 
     @Override

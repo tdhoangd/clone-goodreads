@@ -1,6 +1,7 @@
 package com.thanhdhoang.clonegoodreads.persistence.domain;
 
 import lombok.*;
+import org.hibernate.validator.constraints.URL;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
@@ -28,7 +29,7 @@ public class Author extends BaseEntity {
         this.website = website;
         this.twitter = twitter;
         this.imageUrl = imageUrl;
-        if (genres == null || genres.size() > 0) {
+        if (genres != null) {
             this.genres = genres;
         }
     }
@@ -45,8 +46,12 @@ public class Author extends BaseEntity {
 
     @Column(columnDefinition = "TEXT")
     private String bio;
+
+    @URL
     private String website;
     private String twitter;
+
+    @URL
     private String imageUrl;
 
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.EAGER)

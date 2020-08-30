@@ -27,7 +27,6 @@ public class GenreController {
 
     @RequestMapping("/{name}")
     public String getGenre(@PathVariable String name, Model model) {
-        log.debug("Getting genre" + name);
         model.addAttribute("genre", genreService.findByName(name));
         return "genre/showGenre";
     }

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.validation.Valid;
+import java.util.Optional;
 
 @Controller
 @Slf4j
@@ -32,11 +33,7 @@ public class AuthorController {
 
     @GetMapping("/{id}/show")
     public String showAuthor(@PathVariable Long id, Model model) {
-        log.debug("Getting author with id: " + id);
-
-        Author author = authorService.findById(id);
-
-        model.addAttribute("author", author);
+        model.addAttribute("author", authorService.findById(id));
         return "author/showAuthor";
     }
 
@@ -49,12 +46,10 @@ public class AuthorController {
     @PostMapping("/new")
     public String processCreationFrom(@Valid Author author, BindingResult result) {
         if (result.hasErrors()) {
-            System.out.println(result.getAllErrors());
-            System.out.println(result.getErrorCount());
             return AUTHOR_CREATE_OR_EDIT_FORM;
         } else {
             Author savedAuthor = authorService.save(author);
-            return "redirect:/author/show/" + savedAuthor.getId();
+            return "redirect:/author/" + savedAuthor.getId() + "/show";
         }
     }
 
@@ -68,14 +63,10 @@ public class AuthorController {
     public String processEditAuthorForm(@Valid Author author, BindingResult result,
                                         @PathVariable Long id) {
         if (result.hasErrors()) {
-            System.out.println("ERROR when process edit author form");
-            System.out.println(result.getAllErrors());
-            System.out.println(result.getErrorCount());
             return AUTHOR_CREATE_OR_EDIT_FORM;
         } else {
             author.setId(id);
             Author savedAuthor = authorService.save(author);
-            System.out.println("Updated author");
             return "redirect:/author/" + savedAuthor.getId() + "/show";
         }
     }

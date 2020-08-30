@@ -1,11 +1,13 @@
 package com.thanhdhoang.clonegoodreads.services.springdatajpa;
 
+import com.thanhdhoang.clonegoodreads.exception.NotFoundException;
 import com.thanhdhoang.clonegoodreads.persistence.domain.Author;
 import com.thanhdhoang.clonegoodreads.persistence.repositories.AuthorRepository;
 import com.thanhdhoang.clonegoodreads.services.AuthorService;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.Set;
 
 @Service
@@ -26,7 +28,10 @@ public class AuthorSDJService implements AuthorService {
 
     @Override
     public Author findById(Long aLong) {
-        return authorRepository.findById(aLong).orElse(null);
+        Optional<Author> optionalAuthor = authorRepository.findById(aLong);
+        if (optionalAuthor.isEmpty())
+            throw new NotFoundException("Author by id " + aLong + " not found");
+        return optionalAuthor.get();
     }
 
     @Override

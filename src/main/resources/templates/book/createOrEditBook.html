@@ -10,8 +10,26 @@
 <!--/*@thymesVar id="genre" type="com.thanhdhoang.clonegoodreads.persistence.domain.Genre "*/-->
 <!--/*@thymesVar id="author" type="com.thanhdhoang.clonegoodreads.persistence.domain.Author "*/-->
 
-<div class="container">
-</div>
+
+
+<h2><b>Book</b></h2>
+<form th:object="${book}" class="form-group" id="add-book-form" method="post">
+    <div>
+        <input th:replace="~{fragments/input :: input ('Title', 'title', 'text')}">
+        <input th:replace="~{fragments/input :: input ('Isbn', 'isbn', 'text')}">
+        <input th:replace="~{fragments/input :: input ('Description', 'description', 'textarea')}">
+        <input th:replace="~{fragments/input :: input ('Image URL', 'imageUrl', 'text')}">
+
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 offset-sm-2">
+            <button
+                    th:with="text=${book.id == null} ? 'Add Book' : 'Update Book'"
+                    class="btn btn-dark" type="submit" th:text="${text}">Add
+                Author</button>
+        </div>
+    </div>
+</form>
 
 
 </body>
