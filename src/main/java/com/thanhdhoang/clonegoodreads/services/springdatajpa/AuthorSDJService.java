@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
+import java.util.List;
 
 @Service
 public class AuthorSDJService implements AuthorService {
@@ -47,5 +48,10 @@ public class AuthorSDJService implements AuthorService {
     @Override
     public void deleteById(Long aLong) {
         authorRepository.deleteById(aLong);
+    }
+
+    @Override
+    public List<Author> findAllByNameLikeIgnoreCase(String name) {
+        return authorRepository.findByNameLikeIgnoreCase(name);
     }
 }

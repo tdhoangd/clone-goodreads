@@ -3,7 +3,7 @@
       th:replace="~{layout :: layout (~{::body}, 'author')}" >
 <head>
     <meta charset="UTF-8">
-    <title>Author main page</title>
+    <title>Find author</title>
 </head>
 <body>
 <!--/*@thymesVar id="author" type="com.thanhdhoang.clonegoodreads.persistence.domain.Author "*/-->
@@ -23,7 +23,17 @@
     </div>
 </form>
 
-<hr>
+<div th:if="${authors != null && authors.size() > 1}"  class="container">
+    <div th:each="vauthor : ${authors}" class="list-group">
+        <a class="list-group-item list-group-item-action list-group-item-light"
+            th:href="${'/author/' + vauthor.id + '/show'}" >
+            <img class="img-fluid" style="width: auto; height: 50px;" alt="image"
+                 th:src="${(vauthor.imageUrl != null && vauthor.imageUrl.length() > 0) ? vauthor.imageUrl : '/images/user_image.png'}" >
+            <span class="ml-1" th:text="${vauthor.name}"></span>
+        </a>
+
+    </div>
+</div>
 
 </body>
 </html>

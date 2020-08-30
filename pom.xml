@@ -25,6 +25,7 @@
         <webjars-jquery.version>3.5.1</webjars-jquery.version>
         <webjars-popper.js.version>2.0.2</webjars-popper.js.version>
         <wro4j.version>1.8.0</wro4j.version>
+        <font-awesome.version>5.14.0</font-awesome.version>
     </properties>
 
     <dependencies>
@@ -92,6 +93,12 @@
             <artifactId>bootstrap</artifactId>
             <version>${webjars-bootstrap.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>font-awesome</artifactId>
+            <version>${font-awesome.version}</version>
+        </dependency>
+
         <!-- end of webjars -->
 
 

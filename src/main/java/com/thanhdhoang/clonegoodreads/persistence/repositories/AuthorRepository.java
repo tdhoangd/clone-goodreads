@@ -10,4 +10,6 @@ import java.util.List;
 public interface AuthorRepository extends CrudRepository<Author,Long> {
 
     List<Author> findByNameLike(String name);
+
+    List<Author> findByNameLikeIgnoreCase(String name);
 }

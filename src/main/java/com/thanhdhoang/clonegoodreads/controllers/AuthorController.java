@@ -12,22 +12,25 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.validation.Valid;
-import java.util.Optional;
+import java.util.List;
 
 @Controller
 @Slf4j
 @RequestMapping("/author")
 public class AuthorController {
 
-    public static final String AUTHOR_CREATE_OR_EDIT_FORM = "author/createOrEditAuthor";
+    public static final String CREATE_OR_EDIT_FORM = "author/createOrEditAuthor";
+    public static final String FIND_FORM = "author/findAuthor";
     private final AuthorSDJService authorService;
 
     public AuthorController(AuthorSDJService authorService) {
         this.authorService = authorService;
     }
 
+
     @RequestMapping({"", "/"})
-    public String getIndex() {
+    public String index(Model model) {
+        model.addAttribute("author", Author.builder().build());
         return "author/index";
     }
 
@@ -40,13 +43,13 @@ public class AuthorController {
     @GetMapping("/new")
     public String initCreationForm(Model model) {
         model.addAttribute("author", Author.builder().build());
-        return AUTHOR_CREATE_OR_EDIT_FORM;
+        return CREATE_OR_EDIT_FORM;
     }
 
     @PostMapping("/new")
     public String processCreationFrom(@Valid Author author, BindingResult result) {
         if (result.hasErrors()) {
-            return AUTHOR_CREATE_OR_EDIT_FORM;
+            return CREATE_OR_EDIT_FORM;
         } else {
             Author savedAuthor = authorService.save(author);
             return "redirect:/author/" + savedAuthor.getId() + "/show";
@@ -56,18 +59,40 @@ public class AuthorController {
     @GetMapping("/{id}/edit")
     public String initEditAuthorForm(@PathVariable Long id, Model model) {
         model.addAttribute(authorService.findById(id));
-        return AUTHOR_CREATE_OR_EDIT_FORM;
+        return CREATE_OR_EDIT_FORM;
     }
 
     @PostMapping({"/{id}/edit"})
     public String processEditAuthorForm(@Valid Author author, BindingResult result,
                                         @PathVariable Long id) {
         if (result.hasErrors()) {
-            return AUTHOR_CREATE_OR_EDIT_FORM;
+            return CREATE_OR_EDIT_FORM;
         } else {
             author.setId(id);
             Author savedAuthor = authorService.save(author);
             return "redirect:/author/" + savedAuthor.getId() + "/show";
+        }
+    }
+
+    @GetMapping({"/find"})
+    public String processFindForm(Author author, BindingResult result, Model model) {
+        if (author.getName() == null || author.getName().length() == 0) {
+            return FIND_FORM;
+        }
+
+        List<Author> authors = authorService.findAllByNameLikeIgnoreCase("%" + author.getName() +
+                "%");
+
+        if (authors.isEmpty()) {
+            result.rejectValue("name", "notFound", "not found");
+            return FIND_FORM;
+        } else if (authors.size() == 1) {
+            author = authors.get(0);
+            return "redirect:/author/" + author.getId() + "/show";
+        } else {
+            // multiple authors
+            model.addAttribute("authors", authors);
+            return FIND_FORM;
         }
     }
 }
