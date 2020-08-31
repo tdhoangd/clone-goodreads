@@ -1,12 +1,12 @@
 package com.thanhdhoang.clonegoodreads.services;
 
 import com.thanhdhoang.clonegoodreads.persistence.domain.Author;
-import java.util.List;
+import java.util.Set;
 
 public interface AuthorService extends CrudService<Author, Long> {
 
 //    Genre findByName(String name);
 
-    List<Author> findAllByNameLikeIgnoreCase(String name);
+    Set<Author> findAllByNameLikeIgnoreCase(String name);
 
 }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout :: layout (~{::body}, 'book')}" >
+<head>
+    <meta charset="UTF-8">
+    <title>Book main page</title>
+</head>
+<body>
+<!--/*@thymesVar id="author" type="com.thanhdhoang.clonegoodreads.persistence.domain.Book "*/-->
+<!--/*@thymesVar id="genre" type="com.thanhdhoang.clonegoodreads.persistence.domain.Genre "*/-->
+<!--/*@thymesVar id="genre" type="java.util.List "*/-->
+
+<h2><b>Find book</b></h2>
+
+<form th:action="@{/book/find}" id="find-book-form" method="get">
+    <div class="input-group" >
+        <input th:name="search-query" type="text" class="form-control" placeholder="Search">
+        <div class="input-group-append">
+            <button class="btn btn-secondary" type="submit">
+                Submit
+            </button>
+        </div>
+    </div>
+</form>
+
+<hr>
+
+</body>
+</html>

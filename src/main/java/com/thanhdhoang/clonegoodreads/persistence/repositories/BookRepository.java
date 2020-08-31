@@ -9,5 +9,7 @@ import java.util.List;
 @Repository
 public interface BookRepository extends PagingAndSortingRepository<Book,Long> {
 
-    List<Book> findByTitleLike(String title);
+    List<Book> findByTitleLikeIgnoreCase(String title);
+
+    List<Book> findByIsbnLike(String isbn);
 }

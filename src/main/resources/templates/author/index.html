@@ -12,7 +12,7 @@
 
 <h2><b>Find Author</b></h2>
 
-<form th:object="${author}" th:action="@{/author/find}" id="add-author-form" method="get">
+<form th:object="${author}" th:action="@{/author/find}" id="find-author-form" method="get">
     <div>
         <input th:replace="~{fragments/input :: input ('Author name', 'name', 'text')}" />
     </div>

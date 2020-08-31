@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 @Controller
 @Slf4j
@@ -80,14 +82,14 @@ public class AuthorController {
             return FIND_FORM;
         }
 
-        List<Author> authors = authorService.findAllByNameLikeIgnoreCase("%" + author.getName() +
+        Set<Author> authors = authorService.findAllByNameLikeIgnoreCase("%" + author.getName() +
                 "%");
 
         if (authors.isEmpty()) {
             result.rejectValue("name", "notFound", "not found");
             return FIND_FORM;
         } else if (authors.size() == 1) {
-            author = authors.get(0);
+            author = authors.stream().collect(Collectors.toList()).get(0);
             return "redirect:/author/" + author.getId() + "/show";
         } else {
             // multiple authors

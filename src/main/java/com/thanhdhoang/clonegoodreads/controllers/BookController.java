@@ -7,13 +7,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 @RequestMapping("/book")
 @Slf4j
@@ -30,7 +28,6 @@ public class BookController {
 
     @RequestMapping({"", "/"})
     public String index(Model model) {
-        model.addAttribute("book", Book.builder().build());
         return "book/index";
     }
 
@@ -75,27 +72,27 @@ public class BookController {
     }
 
     @GetMapping({"/find"})
-    public String processFindForm(Book book, BindingResult result, Model model) {
-        return "";
-//        if (book.getTitle() == null || author.getName().length() == 0) {
-//            return FIND_FORM;
-//        }
-//
-//        List<Book> books = bookService.findAllByNameLikeIgnoreCase("%" + author.getName() +
-//                "%");
-//
-//        System.out.println("RET SIZE" + authors.size());
-//
-//        if (authors.isEmpty()) {
-//            result.rejectValue("name", "notFound", "not found");
-//            return FIND_FORM;
-//        } else if (authors.size() == 1) {
-//            author = authors.get(0);
-//            return "redirect:/author/" + author.getId() + "/show";
-//        } else {
-//            // multiple authors
-//            model.addAttribute("authors", authors);
-//            return FIND_FORM;
-//        }
+    public String processFindForm(@RequestParam(name ="search-query") String q, Model model) {
+        if (q == null || q.length() == 0) {
+            return FIND_FORM;
+        }
+
+        Set<Book> books = bookService.findByKeyword("%" + q + "%");
+
+        System.out.println(books.size());
+
+        if (books.isEmpty()) {
+            model.addAttribute("notFoundError", "found nothing");
+            return FIND_FORM;
+        } else if (books.size() == 1) {
+            Book book = books.stream().collect(Collectors.toList()).get(0);
+            model.addAttribute("book", book);
+            return "redirect:/book/" + book.getId() + "/show";
+        } else {
+            // multiple books
+            // TODO: add pagination
+            model.addAttribute("books", books);
+            return FIND_FORM;
+        }
     }
 }

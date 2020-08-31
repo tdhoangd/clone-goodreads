@@ -51,7 +51,9 @@ public class AuthorSDJService implements AuthorService {
     }
 
     @Override
-    public List<Author> findAllByNameLikeIgnoreCase(String name) {
-        return authorRepository.findByNameLikeIgnoreCase(name);
+    public Set<Author> findAllByNameLikeIgnoreCase(String name) {
+        Set<Author> authors = new HashSet<>();
+        authorRepository.findByNameLikeIgnoreCase(name).forEach(authors::add);
+        return authors;
     }
 }

@@ -1,7 +1,6 @@
 package com.thanhdhoang.clonegoodreads.services.springdatajpa;
 
 import com.thanhdhoang.clonegoodreads.exception.NotFoundException;
-import com.thanhdhoang.clonegoodreads.persistence.domain.Author;
 import com.thanhdhoang.clonegoodreads.persistence.domain.Book;
 import com.thanhdhoang.clonegoodreads.persistence.repositories.BookRepository;
 import com.thanhdhoang.clonegoodreads.persistence.repositories.GenreRepository;
@@ -56,5 +55,16 @@ public class BookSDJService implements BookService {
     @Override
     public void deleteById(Long aLong) {
         bookRepository.deleteById(aLong);
+    }
+
+    @Override
+    public Set<Book> findByKeyword(String q) {
+        // q can be title or isbn
+        Set<Book> books = new HashSet<>();
+
+        bookRepository.findByIsbnLike(q).forEach(books::add);
+        bookRepository.findByTitleLikeIgnoreCase(q).forEach(books::add);
+
+        return books;
     }
 }

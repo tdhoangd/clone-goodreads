@@ -8,15 +8,15 @@
 <body>
 <!--/*@thymesVar id="author" type="com.thanhdhoang.clonegoodreads.persistence.domain.Author "*/-->
 <!--/*@thymesVar id="genre" type="com.thanhdhoang.clonegoodreads.persistence.domain.Genre "*/-->
-<!--/*@thymesVar id="genre" type="java.util.List "*/-->
+<!--/*@thymesVar id="genre" type="java.util.Set "*/-->
 
 <h2><b>Find Author</b></h2>
 
-<form th:object="${author}" th:action="@{/author/find}" id="add-author-form" method="get">
+<form th:object="${author}" th:action="@{/author/find}" id="find-author-form" method="get">
     <div>
         <input th:replace="~{fragments/input :: input ('Author name', 'name', 'text')}" />
     </div>
-    <div class="form-row">
+    <div class="form-row mb-3" >
         <div class="offset-sm-2 col-sm-10">
             <button class="btn btn-dark" type="submit">Find Author</button>
         </div>

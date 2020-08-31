@@ -1,17 +1,65 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
-      th:replace="~{layout :: layout (~{::body}, 'random')}" >
+      th:replace="~{layout :: layout (~{::body}, 'book')}" >
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Book main page</title>
 </head>
 <body>
 <!--/*@thymesVar id="author" type="com.thanhdhoang.clonegoodreads.persistence.domain.Book "*/-->
 <!--/*@thymesVar id="genre" type="com.thanhdhoang.clonegoodreads.persistence.domain.Genre "*/-->
-<!--/*@thymesVar id="author" type="com.thanhdhoang.clonegoodreads.persistence.domain.Author "*/-->
+<!--/*@thymesVar id="genre" type="java.util.Set "*/-->
+
+<h2><b>Find book</b></h2>
+
+<form th:action="@{/book/find}" class="mb-3" id="find-book-form" method="get">
+    <div class="input-group" >
+        <input th:name="search-query" type="text" class="form-control" placeholder="Search">
+        <div class="input-group-append">
+            <button class="btn btn-secondary" type="submit">
+                Submit
+            </button>
+        </div>
+    </div>
+    <th:block th:if="${notFoundError != null}">
+        <div th:text="${notFoundError}" class="mt-3 mb-3" ></div>
+    </th:block>
+</form>
 
 <div class="container">
+    <table class="table table-hover">
+        <tbody>
+            <tr th:each="book : ${books}">
+                <th scope="row">
+                    <a th:href="${'/book/' + book.id + '/show'}">
+                        <img class="img-fluid" style="width: auto; height: 60px;"
+                             th:alt="${book.title}"
+                             th:src="${(book.imageUrl != null && book.imageUrl.length() > 0) ? book.imageUrl : '/images/book_image.png'}" >
+                    </a>
+                </th>
+                <td>
+                    <a th:href="${'/book/' + book.id + '/show'}">
+                        <b><span th:text="${book.title}"></span></b>
+                    </a><br>
+                    <span>by</span>
+                    <th:block th:if="${book.author != null}">
+                        <a
+                                th:href="${'/author/' + book.author.id + '/show'}"><span
+                                th:text="${book.author.name}"></span></a>
+                    </th:block>
+                    <div>
+                        rating and others
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
+
+
+
+
+
 
 
 </body>
