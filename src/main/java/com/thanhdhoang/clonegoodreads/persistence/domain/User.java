@@ -29,4 +29,5 @@ public class User extends BaseEntity {
 
     @OneToMany(cascade = CascadeType.ALL , mappedBy = "user", orphanRemoval = true)
     private Set<Review> reviews = new HashSet<>();
+
 }

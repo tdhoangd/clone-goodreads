@@ -54,7 +54,8 @@ public class Author extends BaseEntity {
     @URL
     private String imageUrl;
 
-    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.EAGER)
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE},
+            fetch = FetchType.EAGER)
     @JoinTable(name = "author_genre",
             joinColumns = @JoinColumn(name = "author_id", referencedColumnName = "id",
                     nullable = false),
@@ -62,6 +63,9 @@ public class Author extends BaseEntity {
                     nullable = false))
     private Set<Genre> genres = new HashSet<>();
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "author", orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.ALL,
+            fetch = FetchType.EAGER,
+            mappedBy = "author",
+            orphanRemoval = true)
     private Set<Book> books = new HashSet<>();
 }

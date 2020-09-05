@@ -1,10 +1,12 @@
 package com.thanhdhoang.clonegoodreads.services.springdatajpa;
 
 import com.thanhdhoang.clonegoodreads.exception.NotFoundException;
-import com.thanhdhoang.clonegoodreads.persistence.domain.Author;
 import com.thanhdhoang.clonegoodreads.persistence.domain.Review;
+import com.thanhdhoang.clonegoodreads.persistence.repositories.BookRepository;
 import com.thanhdhoang.clonegoodreads.persistence.repositories.ReviewRepository;
 import com.thanhdhoang.clonegoodreads.services.ReviewService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
@@ -15,9 +17,11 @@ import java.util.Set;
 public class ReviewSDJService implements ReviewService {
 
     private final ReviewRepository reviewRepository;
+    private final BookRepository bookRepository;
 
-    public ReviewSDJService(ReviewRepository reviewRepository) {
+    public ReviewSDJService(ReviewRepository reviewRepository, BookRepository bookRepository) {
         this.reviewRepository = reviewRepository;
+        this.bookRepository = bookRepository;
     }
 
     @Override
@@ -48,5 +52,12 @@ public class ReviewSDJService implements ReviewService {
     @Override
     public void deleteById(Long aLong) {
         reviewRepository.deleteById(aLong);
+    }
+
+    @Override
+    public Page<Review> findByBookId(Long id, Pageable pageable) {
+        //         return bookRepository.findByTitleLikeIgnoreCaseOrIsbnLike(q, q, pageable);
+
+        return reviewRepository.findByBookId(id, pageable);
     }
 }

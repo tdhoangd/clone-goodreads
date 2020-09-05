@@ -6,6 +6,8 @@ import com.thanhdhoang.clonegoodreads.persistence.repositories.BookRepository;
 import com.thanhdhoang.clonegoodreads.persistence.repositories.GenreRepository;
 import com.thanhdhoang.clonegoodreads.persistence.repositories.ReviewRepository;
 import com.thanhdhoang.clonegoodreads.services.BookService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
@@ -58,13 +60,10 @@ public class BookSDJService implements BookService {
     }
 
     @Override
-    public Set<Book> findByKeyword(String q) {
+    public Page<Book> findByKeyword(String q, Pageable pageable) {
         // q can be title or isbn
-        Set<Book> books = new HashSet<>();
-
-        bookRepository.findByIsbnLike(q).forEach(books::add);
-        bookRepository.findByTitleLikeIgnoreCase(q).forEach(books::add);
-
-        return books;
+//        Set<Book> books = new HashSet<>();
+//        bookRepository.findByTitleLikeIgnoreCaseOrIsbnLike(q, q).forEach(books::add);
+        return bookRepository.findByTitleLikeIgnoreCaseOrIsbnLike(q, q, pageable);
     }
 }

@@ -13,10 +13,9 @@
 <div class="container">
     <div class="row">
         <div class="col-md-2">
-<!--            image-->
             <img
                     th:src="${(book.imageUrl != null && book.imageUrl.length() > 0) ? book.imageUrl : '/images/book_image.png'}"
-                 alt="Book Cover Image" clas="pull-left">
+                    alt="Book Cover Image" clas="pull-left">
         </div>
 
         <div class="col">
@@ -24,7 +23,7 @@
 
             <h5 th:if="${book.author != null}" ><a
                     th:href="${'/author/' + book.author.id + '/show'}"
-                   th:text="${'by ' + book.author.name}"></a></h5>
+                    th:text="${'by ' + book.author.name}"></a></h5>
             <h5 th:unless="${book.author != null}">by Unknown</h5>
 
             <div>Avg Rating: ???</div>
@@ -42,14 +41,57 @@
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-2">
             <div>Social/Sharing</div>
             <div>
                 <small><b>Similar books</b></small>
             </div>
         </div>
     </div>
+
+    <div>
+        <div>
+            <h5><b>REVIEWS</b></h5>
+        </div>
+        <div>
+            <div class="mb-2">Review Summary: Avg rating; Rating details: ??</div>
+            <div>Your review or init write a review</div>
+            <div id="reviewsListId">
+            </div>
+        </div>
+    </div>
 </div>
+
+<script type="text/javascript">
+
+    console.log(window.location.href.split('/')[4]);
+
+    $(document).ready(function () {
+        let url = "/review/" + window.location.href.split('/')[4];
+        console.log(url);
+        $.ajax({
+            type: "GET",
+            url: url,
+            success: function (data) {
+                console.log('loaded')
+                console.log(data)
+                $("#reviewsListId").html(data);
+            }
+        });
+    });
+
+    function getNewPage(path) {
+        console.log(path);
+        $.ajax({
+            type: "GET",
+            url: path,
+            success: function (data) {
+                $("#reviewsListId").html(data);
+            }
+        });
+    }
+
+</script>
 
 
 </body>

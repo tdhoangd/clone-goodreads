@@ -1,0 +1,92 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<!--/*@thymesVar id="author" type="com.thanhdhoang.clonegoodreads.persistence.domain.Book "*/-->
+<!--/*@thymesVar id="genre" type="com.thanhdhoang.clonegoodreads.persistence.domain.Genre "*/-->
+<!--/*@thymesVar id="genre" type="com.thanhdhoang.clonegoodreads.persistence.domain.Review "*/-->
+<!--/*@thymesVar id="genre" type="org.springframework.data.domain.Page "*/-->
+
+<th:block th:fragment="reviewListContent" >
+    <div >
+        <table class="table table-hover">
+            <tbody>
+            <tr th:each="entry : ${reviewUserMap}">
+
+                <th style="width: 70px" scope="row">
+                    <a  th:href="${'/user/' + entry.key.id + '/show'}">
+                        <img class="img-fluid" style="width: 50px; height: auto"
+                             th:alt="${entry.value.firstName + ' ' + entry.value.lastName}"
+                             src="/images/user_image.png" >
+                    </a>
+                </th>
+                <td>
+                    <div>
+                        <span><b
+                                th:text="${entry.value.firstName + ' ' + entry.value.lastName}"></b></span>
+                        <th:block
+                                th:if="${entry.key.ratingValue != null && entry.key.ratingValue > 0}">
+                            <span> rated it</span>
+                            <span
+                                    th:text="${#strings.repeat('&#10029;', entry.key.ratingValue)}"></span>
+                        </th:block>
+                    </div>
+
+                    <div th:if="${entry.key.reviewText != null && entry.key.reviewText.length() > 0}">
+                        <div th:utext='${entry.key.reviewText.replaceAll("\n", "<br>")}'></div>
+                    </div>
+
+                </td>
+
+            </tr>
+            </tbody>
+        </table>
+
+<!--        PAGINATION -->
+        <nav th:if="${reviewlist.totalPages != 1}"  aria-label="Book List Pages">
+            <ul class="pagination justify-content-center">
+
+                <li th:class="${(reviewlist.number == 0) ? 'page-item disabled' : 'page-item'}">
+                    <a class="page-link" href="#"
+                       th:onclick="|getNewPage('/review/${bookId}?page=${1}')|"
+                        >&laquo;
+                    </a>
+                </li>
+
+                <li th:class="${(reviewlist.number == 0) ? 'page-item disabled' : 'page-item'}">
+                    <a class="page-link" href="#"
+                       th:onclick="|getNewPage('/review/${bookId}?page=${reviewlist.number}')|"
+                        >&larr;
+                    </a>
+                </li>
+
+                <li th:class="${reviewlist.number == (page - 1)? 'page-item active pointer-disabled' : 'page-item'}"
+                    th:each="page : ${#numbers.sequence(pageModel.startPage, pageModel.endPage)}">
+                    <a class="page-link" href="#"
+                       th:onclick="|getNewPage('/review/${bookId}?page=${page}')|"
+                       th:text="${page}"></a>
+                </li>
+
+                <li th:class="${reviewlist.number + 1 == reviewlist.totalPages? 'page-item disabled' : 'page-item'}">
+                    <a class="page-link" href="#"
+                       th:onclick="|getNewPage('/review/${bookId}?page=${reviewlist.number + 2}')|"
+                       >&rarr;</a>
+                </li>
+
+                <li th:class="${reviewlist.number + 1 == reviewlist.totalPages? 'page-item disabled' : 'page-item'}">
+                    <a class="page-link" href="#"
+                       th:onclick="|getNewPage('/review/${bookId}?page=${reviewlist.totalPages}')|"
+                       >&raquo;</a>
+                </li>
+
+            </ul>
+        </nav>
+
+
+
+    </div>
+</th:block>
+
+</body>
+</html>
+
+

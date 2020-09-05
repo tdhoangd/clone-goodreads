@@ -3,9 +3,9 @@ package com.thanhdhoang.clonegoodreads.persistence.domain;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Getter
@@ -14,19 +14,23 @@ import java.util.Date;
 @Entity
 public class Review extends BaseEntity {
 
-    private String text;
+    @Column(columnDefinition = "TEXT")
+    private String reviewText;
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private Date reviewDate;
+    @NotNull
+    @Column(columnDefinition = "TINYINT UNSIGNED ")
+    private Short ratingValue;
 
-    @Column(nullable = false )
-    private Integer rating;
+//    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @Column(columnDefinition = "DATE DEFAULT CURRENT_DATE")
+    private Date timestamp;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id")
+
+    @ManyToOne(fetch = FetchType.EAGER)
+//    @JoinColumn(name = "user_id")
     private User user;
 
-    @ManyToOne
-    @JoinColumn(name = "book_id")
+    @ManyToOne(fetch = FetchType.EAGER)
+//    @JoinColumn(name = "book_id")
     private Book book;
 }

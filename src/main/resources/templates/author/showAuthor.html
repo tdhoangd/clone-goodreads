@@ -8,7 +8,7 @@
 <body>
 <!--/*@thymesVar id="author" type="com.thanhdhoang.clonegoodreads.persistence.domain.Author "*/-->
 <!--/*@thymesVar id="genre" type="com.thanhdhoang.clonegoodreads.persistence.domain.Genre "*/-->
-
+<!--/*@thymesVar id="genre" type="com.thanhdhoang.clonegoodreads.persistence.domain.Book "*/-->
 
 <div class="container">
     <div class="row">
@@ -19,8 +19,8 @@
         </div>
         <div class="col">
             <h3 th:text="${author.name}">Author Name</h3>
-            <hr>
 
+            <hr>
             <div th:if="${author.birthPlace != null ||  author.birthday != null}" class="row">
                 <div class="col-md-2">
                     <b>Born</b>
@@ -74,12 +74,53 @@
                 <br>
                 <div th:utext='${author.bio.replaceAll("\n", "<br>")}'></div>
             </div>
-            
 
+<!--        LIST OF BOOKS-->
+            <hr>
+            <br>
+            <div>
+                <div>
+                    <h5><b th:text="${author.name + ' Books'}"></b></h5>
+                </div>
+                <div>
+                    <div class="mb-2"><small>Average rating: ??? &middot; Total Rating ??? &middot;
+                        ???
+                        Reviews</small></div>
+                    <div>
+                        <table class="table table-hover">
+                            <tbody>
+                            <tr th:each="book : ${author.books}">
+                                <th scope="row">
+                                    <a th:href="${'/book/' + book.id + '/show'}">
+                                        <img class="img-fluid" style="width: 50px; height: auto"
+                                             th:alt="${book.title}"
+                                             th:src="${(book.imageUrl != null && book.imageUrl.length() > 0) ? book.imageUrl : '/images/book_image.png'}" >
+                                    </a>
+                                </th>
+                                <td>
+                                    <a th:href="${'/book/' + book.id + '/show'}">
+                                        <b><span th:text="${book.title}"></span></b>
+                                    </a><br>
+                                    <span>by</span>
+                                    <th:block th:if="${book.author != null}">
+                                        <a
+                                                th:href="${'/author/' + book.author.id + '/show'}"><span
+                                                th:text="${book.author.name}"></span></a>
+                                    </th:block>
+                                    <div>
+                                        rating and others
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+<!--        END LIST OF BOOKS    -->
         </div>
     </div>
 </div>
-
 
 </body>
 </html>

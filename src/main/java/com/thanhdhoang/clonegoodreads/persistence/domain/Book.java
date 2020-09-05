@@ -38,7 +38,6 @@ public class Book extends BaseEntity {
         }
     }
 
-
     @NotNull
     @NotEmpty(message = "Title may not be empty")
     private String title;
@@ -50,10 +49,8 @@ public class Book extends BaseEntity {
     @URL
     private String imageUrl;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "book")
-    private Set<Review> reviews = new HashSet<>();
-
-    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.EAGER)
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE},
+            fetch = FetchType.EAGER)
     @JoinTable(name = "book_genre",
             joinColumns = @JoinColumn(name = "book_id", referencedColumnName = "id",
                     nullable = false),
@@ -63,5 +60,11 @@ public class Book extends BaseEntity {
 
     @ManyToOne
     private Author author;
+
+    @OneToMany( mappedBy = "book",
+            fetch = FetchType.LAZY,
+            cascade = CascadeType.ALL,
+            orphanRemoval = true)
+    private Set<Review> reviews = new HashSet<>();
 
 }
