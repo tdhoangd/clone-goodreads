@@ -2,7 +2,106 @@
 insert into user
 (id, username, password, first_name, last_name, email)
 values
-(1,'user1','QVX54GTG1IX','Noelle','Wood','ligula.Aenean@purus.co.uk'),(2,'user2','ORE17SYP5XE','Wade','Maddox','mus@ultricessitamet.net'),(3,'user3','FWF96HMU1LD','Brandon','Newman','Curabitur.egestas.nunc@Integer.com'),(4,'user4','QCL44AGX1YT','Sonia','Hancock','felis.adipiscing@Nullasemper.net'),(5,'user5','JAL89QZD0SU','Yuli','Perkins','Etiam.ligula.tortor@antelectusconvallis.com'),(6,'user6','MRQ92RWQ5FC','Neil','Cole','justo.Proin@pedeac.edu'),(7,'user7','VGT22OJE1QG','Lewis','Ballard','at.velit.Pellentesque@dapibusquam.co.uk'),(8,'user8','VFA21WVR3OU','Wallace','Holmes','nonummy@semper.com'),(9,'user9','VQT75YOC4VM','Casey','Knight','erat@tempusmauris.net'),(10,'user10','YGU03KWA4DW','Lacy','Robinson','enim@gravidaPraesent.ca'),(11,'user11','TRL19DYK8NH','Peter','Daniel','consectetuer.adipiscing@sit.net'),(12,'user12','SIK16XMJ9ET','Hillary','Bridges','sociis.natoque.penatibus@morbitristique.ca'),(13,'user13','RVK42AKW5VQ','Luke','Morrow','tristique.pellentesque.tellus@eu.co.uk'),(14,'user14','RVI28CUR3WN','Zachery','Ray','lacus.Etiam@Aeneanegetmagna.ca'),(15,'user15','HAK33GSI0NM','Ainsley','Knapp','elit.pharetra@arcuiaculisenim.org'),(16,'user16','MSR35YME8UT','Rooney','Justice','eget.odio@loremut.edu'),(17,'user17','TQM62ZXS0EV','Fitzgerald','Reilly','elit.erat@diamluctuslobortis.edu'),(18,'user18','GYO10XPS2YL','Colby','Welch','sit.amet@seddui.org'),(19,'user19','ISD74WOW1RS','Rajah','Donaldson','neque.In@arcu.ca'),(20,'user20','VTT12WZM3OD','Paloma','Anderson','molestie.orci.tincidunt@duinec.org'),(21,'user21','ZIE65GWC8ZZ','Miranda','Snyder','est.tempor@nislQuisque.com'),(22,'user22','WBA73CVY0ER','Leah','Reeves','pellentesque.Sed@lacusNullatincidunt.edu'),(23,'user23','ZII34VTC5BO','Otto','Blackwell','elit.elit@velsapienimperdiet.net'),(24,'user24','VEY57JYH8EG','Russell','Wise','ac.feugiat@elitAliquamauctor.ca'),(25,'user25','CMM61SBD8MW','Phyllis','Mcmillan','tristique.pharetra.Quisque@nunc.co.uk'),(26,'user26','SMW34NUW6CY','Zachary','Slater','quis.pede.Praesent@laciniaatiaculis.co.uk'),(27,'user27','NRR46MTT2WV','Noah','Goodman','mauris.id@Nullamlobortisquam.edu'),(28,'user28','SSI52FJM9NY','Davis','Roy','senectus.et@eutemporerat.co.uk'),(29,'user29','SFX85OHA4YR','Carol','Riley','aliquam@lacusCras.net'),(30,'user30','TEC24RBT0DT','Linda','Mcfadden','enim@estNunc.net'),(31,'user31','JMK01ETP2XA','Quinn','Adams','quam.vel@ametmassa.com'),(32,'user32','LDE47QEX2NS','Veda','Hensley','et.eros@elementumpurus.net'),(33,'user33','RQO26LXZ0EE','Rae','Bryant','urna.convallis@disparturient.org'),(34,'user34','XZH29QOL2YO','Mariko','Rogers','vitae.erat.Vivamus@consectetueripsum.org'),(35,'user35','NPZ24AVE8XD','Sybill','Crawford','Aliquam@lacus.ca'),(36,'user36','BUN24HJY7OG','Chantale','Waters','magna@SuspendisseeleifendCras.ca'),(37,'user37','FGP99KDX3AB','Josephine','Mccullough','Sed.dictum@miAliquam.com'),(38,'user38','ZNI85FXY9BS','Perry','Estrada','egestas@velsapien.edu'),(39,'user39','AHM17KZK8BO','Charity','Zimmerman','urna.Nullam.lobortis@erosnectellus.com'),(40,'user40','LVW62CAJ0OW','Rebekah','Vega','Cum@hymenaeosMaurisut.ca'),(41,'user41','AST28GNN7YB','Hadassah','Sweeney','ultrices.a@nislarcu.org'),(42,'user42','TTU85KJU5XM','Quyn','Romero','rhoncus.id@ipsumCurabitur.co.uk'),(43,'user43','XQE27UVE4BB','Riley','Kaufman','erat@gravidamaurisut.net'),(44,'user44','WZN60DEY2GH','Sandra','York','et.nunc.Quisque@semper.ca'),(45,'user45','QHK22FDC3KT','Aspen','Woodward','quis.lectus.Nullam@eleifend.com'),(46,'user46','MLU70PUM3YE','Griffith','Patel','Maecenas.ornare@dolorDonec.edu'),(47,'user47','EKI41LHE7CA','Carter','Barker','Sed.et@FuscemollisDuis.edu'),(48,'user48','XPR13OSQ3SU','Cameron','Harris','Phasellus.nulla.Integer@feugiatplaceratvelit.com'),(49,'user49','BJS15FQB2XZ','Shellie','Mccormick','sed@egestasadui.co.uk'),(50,'user50','POC95LDY7ME','Zeus','Greer','dolor.Quisque.tincidunt@mauris.net'),(51,'user51','AVR10WGK6DN','Bruno','Morrow','aliquet.lobortis@risusDonec.com'),(52,'user52','BSV96VUK3LO','Iris','Kerr','est@ornarelectusante.co.uk'),(53,'user53','PAC69QLQ7LG','Kimberly','Bennett','montes.nascetur@ligula.ca'),(54,'user54','SVO33JDQ4PG','Berk','Knapp','a.odio@semper.ca'),(55,'user55','HRG11JZB2LF','Alea','Reynolds','lorem.ipsum@magnaSuspendisse.org'),(56,'user56','CGP07MTE3VT','Kylynn','Webster','massa.non.ante@enimEtiamimperdiet.co.uk'),(57,'user57','NLI34JLK7PU','Caldwell','Salinas','neque.et.nunc@sitametluctus.org'),(58,'user58','NCB32XAV6AJ','Phyllis','Montoya','sed@egestasascelerisque.ca'),(59,'user59','THE11PYO6YT','Quail','Shannon','lectus.Cum.sociis@nuncacmattis.ca'),(60,'user60','GIL62UMZ5CM','Sierra','Hoover','faucibus.leo.in@suscipitnonummy.ca'),(61,'user61','VWJ99MLJ8MA','Zena','Chandler','Mauris@risus.ca'),(62,'user62','CUS59UHT8VJ','Charles','Richmond','egestas@tacitisociosquad.org'),(63,'user63','ZUZ61RLJ8OZ','Flynn','Nash','mauris.rhoncus@Ut.co.uk'),(64,'user64','ADA09UVF8QV','Isadora','Beasley','sapien@Cumsociisnatoque.ca'),(65,'user65','ZST19UEW4JY','Maryam','Reyes','orci.sem.eget@enimMaurisquis.com'),(66,'user66','KOQ37JJZ6LT','George','David','Quisque.libero.lacus@tellusimperdietnon.com'),(67,'user67','XKR41FWC1LK','Hedy','Calhoun','a.mi@Loremipsum.edu'),(68,'user68','GSO88EVC9SD','Porter','Carney','consectetuer.rhoncus.Nullam@auctor.edu'),(69,'user69','DGZ33YDZ1NX','Florence','Hammond','feugiat@sollicitudin.com'),(70,'user70','TXD75LNW9NT','Winter','Medina','tellus.lorem@Nullamsuscipitest.net'),(71,'user71','ZDY77CCD9LX','Ella','Aguilar','quis@purusmauris.co.uk'),(72,'user72','BOT89ROU5KP','Philip','Banks','molestie.orci.tincidunt@inaliquet.org'),(73,'user73','HYR54JOB7XM','Wesley','Hendrix','Sed.congue@fringilla.org'),(74,'user74','IQV68GFV4AM','Odysseus','Mullins','sed@Donecconsectetuermauris.ca'),(75,'user75','OMU61TJC8AD','Ronan','Whitley','libero.Proin@mauris.org'),(76,'user76','WFS12EEM4UH','Lacey','Mckay','Aliquam.nisl@fermentum.com'),(77,'user77','GWB79QEE2IQ','Tatum','Albert','erat.Sed.nunc@consectetuermaurisid.org'),(78,'user78','KHI59HHT9FE','Savannah','Jordan','iaculis@necligula.edu'),(79,'user79','BIE95CPB3DE','Hu','Valenzuela','molestie@in.edu'),(80,'user80','PRP75VTP4AF','Elaine','Stevenson','lorem.lorem.luctus@Nunc.co.uk'),(81,'user81','PBZ28VOM6OE','Ivana','Castaneda','non.sapien@ullamcorper.ca'),(82,'user82','UQS91UEP0JY','Yvonne','Sears','magnis@gravidaAliquam.net'),(83,'user83','HKM65OLJ7AD','Jin','Calderon','diam@dolor.net'),(84,'user84','NTS00CMU4VG','Bevis','Meyers','eros.Proin@egestasAliquamfringilla.edu'),(85,'user85','KAV25CJM4FR','Cooper','Woodard','vitae@ut.com'),(86,'user86','NSU60OVC6WY','Hammett','Spence','et.magnis.dis@luctusfelispurus.org'),(87,'user87','LNZ58UHR5KO','Paul','Ingram','facilisis.eget.ipsum@ac.edu'),(88,'user88','DFE90YPN9SP','Ahmed','Sparks','Lorem.ipsum.dolor@Phasellus.com'),(89,'user89','JHC51VYT1WG','Roary','Jimenez','ultrices.Vivamus@consequatenim.org'),(90,'user90','VWA92FDP7LP','Idona','Aguilar','vehicula@urnaetarcu.org'),(91,'user91','UHO68QPJ8LG','Miranda','Holland','ut.pharetra@tinciduntadipiscingMauris.co.uk'),(92,'user92','CER03IJW8BB','Galvin','Decker','Cum.sociis.natoque@Utsemper.edu'),(93,'user93','HNQ85MCT4WH','Beau','Wade','pede.nonummy@facilisisloremtristique.com'),(94,'user94','BCV86TPR6FI','Yetta','Gomez','pellentesque.tellus@scelerisquenequesed.edu'),(95,'user95','EFI33LPV3DA','Maggie','Sargent','litora@conubianostraper.org'),(96,'user96','LPX08FSR7KZ','Zane','Moore','enim@Fusce.com'),(97,'user97','QSL10MKR7LL','India','Jensen','magnis.dis.parturient@inaliquet.org'),(98,'user98','KMA39DVP2HW','Shelly','Greene','quam@pretiumet.org'),(99,'user99','VBW38CHH6NZ','Breanna','Rosales','Nullam@eu.com'),(100,'user100','EYP07ZVF5PI','Avye','Ware','auctor.non.feugiat@nequeMorbi.co.uk');
+(1,'user1','$2a$10$NzPkvUN96SHR/UADqjR6EuKX9R1nLwoCuoB.ABcWduCYzpN/T.oE2','Noelle','Wood','ligula.Aenean@purus.co.uk'),
+       (2,'user2','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Wade','Maddox','mus@ultricessitamet.net'),
+       (3,'user3','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Brandon','Newman','Curabitur.egestas.nunc@Integer.com'),
+       (4,'user4','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Sonia','Hancock','felis.adipiscing@Nullasemper.net'),
+       (5,'user5','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Yuli','Perkins','Etiam.ligula.tortor@antelectusconvallis.com'),
+       (6,'user6','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Neil','Cole','justo.Proin@pedeac.edu'),
+       (7,'user7','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Lewis','Ballard','at.velit.Pellentesque@dapibusquam.co.uk'),
+       (8,'user8','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Wallace','Holmes','nonummy@semper.com'),
+       (9,'user9','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Casey','Knight','erat@tempusmauris.net'),
+       (10,'user10','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Lacy','Robinson','enim@gravidaPraesent.ca'),
+       (11,'user11','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Peter','Daniel','consectetuer.adipiscing@sit.net'),
+       (12,'user12','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Hillary','Bridges','sociis.natoque.penatibus@morbitristique.ca'),
+       (13,'user13','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Luke','Morrow','tristique.pellentesque.tellus@eu.co.uk'),
+       (14,'user14','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Zachery','Ray','lacus.Etiam@Aeneanegetmagna.ca'),
+       (15,'user15','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Ainsley','Knapp','elit.pharetra@arcuiaculisenim.org'),
+       (16,'user16','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Rooney','Justice','eget.odio@loremut.edu'),
+       (17,'user17','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Fitzgerald','Reilly','elit.erat@diamluctuslobortis.edu'),
+       (18,'user18','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Colby','Welch','sit.amet@seddui.org'),
+       (19,'user19','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Rajah','Donaldson','neque.In@arcu.ca'),
+       (20,'user20','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Paloma','Anderson','molestie.orci.tincidunt@duinec.org'),
+       (21,'user21','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Miranda','Snyder','est.tempor@nislQuisque.com'),
+       (22,'user22','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Leah','Reeves','pellentesque.Sed@lacusNullatincidunt.edu'),
+       (23,'user23','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Otto','Blackwell','elit.elit@velsapienimperdiet.net'),
+       (24,'user24','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Russell','Wise','ac.feugiat@elitAliquamauctor.ca'),
+       (25,'user25','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Phyllis','Mcmillan','tristique.pharetra.Quisque@nunc.co.uk'),
+       (26,'user26','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Zachary','Slater','quis.pede.Praesent@laciniaatiaculis.co.uk'),
+       (27,'user27','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Noah','Goodman','mauris.id@Nullamlobortisquam.edu'),
+       (28,'user28','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Davis','Roy','senectus.et@eutemporerat.co.uk'),
+       (29,'user29','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Carol','Riley','aliquam@lacusCras.net'),
+       (30,'user30','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Linda','Mcfadden','enim@estNunc.net'),
+       (31,'user31','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Quinn','Adams','quam.vel@ametmassa.com'),
+       (32,'user32','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Veda','Hensley','et.eros@elementumpurus.net'),
+       (33,'user33','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Rae','Bryant','urna.convallis@disparturient.org'),
+       (34,'user34','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Mariko','Rogers','vitae.erat.Vivamus@consectetueripsum.org'),
+       (35,'user35','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Sybill','Crawford','Aliquam@lacus.ca'),
+       (36,'user36','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Chantale','Waters','magna@SuspendisseeleifendCras.ca'),
+       (37,'user37','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Josephine','Mccullough','Sed.dictum@miAliquam.com'),
+       (38,'user38','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Perry','Estrada','egestas@velsapien.edu'),
+       (39,'user39','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Charity','Zimmerman','urna.Nullam.lobortis@erosnectellus.com'),
+       (40,'user40','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Rebekah','Vega','Cum@hymenaeosMaurisut.ca'),
+       (41,'user41','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Hadassah','Sweeney','ultrices.a@nislarcu.org'),
+       (42,'user42','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Quyn','Romero','rhoncus.id@ipsumCurabitur.co.uk'),
+       (43,'user43','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Riley','Kaufman','erat@gravidamaurisut.net'),
+       (44,'user44','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Sandra','York','et.nunc.Quisque@semper.ca'),
+       (45,'user45','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Aspen','Woodward','quis.lectus.Nullam@eleifend.com'),
+       (46,'user46','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Griffith','Patel','Maecenas.ornare@dolorDonec.edu'),
+       (47,'user47','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Carter','Barker','Sed.et@FuscemollisDuis.edu'),
+       (48,'user48','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Cameron','Harris','Phasellus.nulla.Integer@feugiatplaceratvelit.com'),
+       (49,'user49','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Shellie','Mccormick','sed@egestasadui.co.uk'),
+       (50,'user50','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Zeus','Greer','dolor.Quisque.tincidunt@mauris.net'),
+       (51,'user51','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Bruno','Morrow','aliquet.lobortis@risusDonec.com'),
+       (52,'user52','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Iris','Kerr','est@ornarelectusante.co.uk'),
+       (53,'user53','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Kimberly','Bennett','montes.nascetur@ligula.ca'),
+       (54,'user54','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Berk','Knapp','a.odio@semper.ca'),
+       (55,'user55','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Alea','Reynolds','lorem.ipsum@magnaSuspendisse.org'),
+       (56,'user56','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Kylynn','Webster','massa.non.ante@enimEtiamimperdiet.co.uk'),
+       (57,'user57','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Caldwell','Salinas','neque.et.nunc@sitametluctus.org'),
+       (58,'user58','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Phyllis','Montoya','sed@egestasascelerisque.ca'),
+       (59,'user59','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Quail','Shannon','lectus.Cum.sociis@nuncacmattis.ca'),
+       (60,'user60','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Sierra','Hoover','faucibus.leo.in@suscipitnonummy.ca'),
+       (61,'user61','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Zena','Chandler','Mauris@risus.ca'),
+       (62,'user62','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Charles','Richmond','egestas@tacitisociosquad.org'),
+       (63,'user63','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Flynn','Nash','mauris.rhoncus@Ut.co.uk'),
+       (64,'user64','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Isadora','Beasley','sapien@Cumsociisnatoque.ca'),
+       (65,'user65','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Maryam','Reyes','orci.sem.eget@enimMaurisquis.com'),
+       (66,'user66','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','George','David','Quisque.libero.lacus@tellusimperdietnon.com'),
+       (67,'user67','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Hedy','Calhoun','a.mi@Loremipsum.edu'),
+       (68,'user68','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Porter','Carney','consectetuer.rhoncus.Nullam@auctor.edu'),
+       (69,'user69','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Florence','Hammond','feugiat@sollicitudin.com'),
+       (70,'user70','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Winter','Medina','tellus.lorem@Nullamsuscipitest.net'),
+       (71,'user71','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Ella','Aguilar','quis@purusmauris.co.uk'),
+       (72,'user72','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Philip','Banks','molestie.orci.tincidunt@inaliquet.org'),
+       (73,'user73','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Wesley','Hendrix','Sed.congue@fringilla.org'),
+       (74,'user74','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Odysseus','Mullins','sed@Donecconsectetuermauris.ca'),
+       (75,'user75','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Ronan','Whitley','libero.Proin@mauris.org'),
+       (76,'user76','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Lacey','Mckay','Aliquam.nisl@fermentum.com'),
+       (77,'user77','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Tatum','Albert','erat.Sed.nunc@consectetuermaurisid.org'),
+       (78,'user78','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Savannah','Jordan','iaculis@necligula.edu'),
+       (79,'user79','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Hu','Valenzuela','molestie@in.edu'),
+       (80,'user80','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Elaine','Stevenson','lorem.lorem.luctus@Nunc.co.uk'),
+       (81,'user81','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Ivana','Castaneda','non.sapien@ullamcorper.ca'),
+       (82,'user82','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Yvonne','Sears','magnis@gravidaAliquam.net'),
+       (83,'user83','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Jin','Calderon','diam@dolor.net'),
+       (84,'user84','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Bevis','Meyers','eros.Proin@egestasAliquamfringilla.edu'),
+       (85,'user85','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Cooper','Woodard','vitae@ut.com'),
+       (86,'user86','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Hammett','Spence','et.magnis.dis@luctusfelispurus.org'),
+       (87,'user87','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Paul','Ingram','facilisis.eget.ipsum@ac.edu'),
+       (88,'user88','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Ahmed','Sparks','Lorem.ipsum.dolor@Phasellus.com'),
+       (89,'user89','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Roary','Jimenez','ultrices.Vivamus@consequatenim.org'),
+       (90,'user90','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Idona','Aguilar','vehicula@urnaetarcu.org'),
+       (91,'user91','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Miranda','Holland','ut.pharetra@tinciduntadipiscingMauris.co.uk'),
+       (92,'user92','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Galvin','Decker','Cum.sociis.natoque@Utsemper.edu'),
+       (93,'user93','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Beau','Wade','pede.nonummy@facilisisloremtristique.com'),
+       (94,'user94','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Yetta','Gomez','pellentesque.tellus@scelerisquenequesed.edu'),
+       (95,'user95','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Maggie','Sargent','litora@conubianostraper.org'),
+       (96,'user96','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Zane','Moore','enim@Fusce.com'),
+       (97,'user97','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','India','Jensen','magnis.dis.parturient@inaliquet.org'),
+       (98,'user98','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Shelly','Greene','quam@pretiumet.org'),
+       (99,'user99','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Breanna','Rosales','Nullam@eu.com'),
+       (100,'user100','$2a$10$CCakI6tHwHJRWW1jHLwAr.iREOcvfy2X6/Zb87z4kCOfRFz7NcQ/y','Avye','Ware','auctor.non.feugiat@nequeMorbi.co.uk');
 ;
 
 insert into author
@@ -224,7 +323,6 @@ In the ruins of a place once known as North America lies the nation of Panem, a 
 Sixteen-year-old Katniss Everdeen regards it as a death sentence when she steps forward to take her sister''s place in the Games. But Katniss has been close to dead before—and survival, for her, is second nature. Without really meaning to, she becomes a contender. But if she is to win, she will have to start making choices that weight survival against humanity and life against love. '
 where id = 1;
 
-
 UPDATE book
 SET
     description = 'Harry Potter''s life is miserable. His parents are dead and he''s stuck with his heartless relatives, who force him to live in a tiny closet under the stairs. But his fortune changes when he receives a letter that tells him the truth about himself: he''s a wizard. A mysterious visitor rescues him from his relatives and takes him to his new home, Hogwarts School of Witchcraft and Wizardry.
@@ -280,10 +378,7 @@ VALUES
 (1, 'Art', 'Books that showcase particular types of art.'),
 (2, 'Biography', 'A biography (from the Greek words bios meaning "life", and graphos meaning "write") is a non-fictional account of a person''s life. Biographies are written by an author who is not the subject/focus of the book. '),
 (3, 'Business', 'A business (also known as enterprise or firm) is an organization engaged in the trade of goods, services, or both to consumers. Businesses are predominant in capitalist economies, where most of them are privately owned and administered to earn profit to increase the wealth of their owners. Businesses may also be not-for-profit or state-owned. A business owned by multiple individuals may be referred to as a company, although that term also has a more precise meaning.'),
-(4, 'Childrens', 'Children''s literature is for readers and listeners up to about age 12. It is ' ||
-                 'often illustrated. The term is used in senses that sometimes exclude young-adult fiction, ' ||
-                 'comic books, or other genres. Books specifically for children existed at least ' ||
-                 'several hundred years ago.'),
+(4, 'Childrens', 'Childrens literature is for readers and listeners up to about age 12. It is often illustrated. The term is used in senses that sometimes exclude young-adult fiction, comic books, or other genres. Books specifically for children existed at least several hundred years ago.'),
 (5, 'Christian', 'The term "Christian" is used adjectivally to describe anything associated with Christianity, or in a proverbial sense "all that is noble, and good, and Christ-like". It can also refer to content produced by a christian without the content being explicitly Christian.'),
 (6, 'Classics', 'A classic stands the test of time. The work is usually considered to be a representation of the period in which it was written; and the work merits lasting recognition. In other words, if the book was published in the recent past, the work is not a classic.
 
@@ -291,259 +386,188 @@ A classic has a certain universal appeal. Great works of literature touch us to 
 
 Although the term is often associated with the Western canon, it can be applied to works of literature from all traditions, such as the Chinese classics or the Indian Vedas.
 
-Disambiguation: The study of ancient ("classical") civilisations and languages, see Classical ' ||
-                'studies.'),
-(7, 'Comics', 'A comic book or comicbook, also called comic magazine or simply comic, is a ' ||
-    'publication that consists of comic art in the form of sequential juxtaposed panels that ' ||
-              'represent individual scenes. Panels are often accompanied by brief descriptive prose and written narrative, usually dialog contained in word balloons emblematic of the comics art form.'),
-(8, 'Cookbooks', 'Non-fiction books that contain a collection of recipes, techniques, and tricks ' ||
-                 'of the trade or else focus on the exploration of food, cooking, and culture of ' ||
-                 'food. Many cookbooks are divided into sections such as baking, dinner, and ' ||
-                 'breakfast. A specialty cookbook may focus only on a certain country''s cuisine, such as Italian or Cajun. There are some cookbooks that are written to highlight one ingredient (i.e. honey), and some cookbooks focused on only one branch of cooking (such as bread.) Even further, some cookbooks focus on types of cooking (microwave, barbecue, baking.)'),
+Disambiguation: The study of ancient ("classical") civilisations and languages, see Classical studies.'),
+(7, 'Comics', 'A comic book or comicbook, also called comic magazine or simply comic, is a publication that consists of comic art in the form of sequential juxtaposed panels that represent individual scenes. Panels are often accompanied by brief descriptive prose and written narrative, usually dialog contained in word balloons emblematic of the comics art form.'),
+(8, 'Cookbooks', 'Non-fiction books that contain a collection of recipes, techniques, and tricks of the trade or else focus on the exploration of food, cooking, and culture of food. Many cookbooks are divided into sections such as baking, dinner, and breakfast. A specialty cookbook may focus only on a certain country''s cuisine, such as Italian or Cajun. There are some cookbooks that are written to highlight one ingredient (i.e. honey), and some cookbooks focused on only one branch of cooking (such as bread.) Even further, some cookbooks focus on types of cooking (microwave, barbecue, baking.)'),
 (9, 'Fantasy', 'Fantasy is a genre that uses magic and other supernatural forms as a primary element of plot, theme, and/or setting. Fantasy is generally distinguished from science fiction and horror by the expectation that it steers clear of technological and macabre themes, respectively, though there is a great deal of overlap between the three (collectively known as speculative fiction or science fiction/fantasy)
 
-In its broadest sense, fantasy comprises works by many writers, artists, filmmakers, and ' ||
-               'musicians, from ancient myths and legends to many recent works embraced by a wide' ||
-               '  audience today, including young adults, most of whom are represented by the ' ||
-               'works below. ('),
-(10, 'Fiction', 'Fiction is the telling of stories which are not real. More specifically, fiction' ||
-                ' is an imaginative form of narrative, one of the four basic rhetorical modes. ' ||
-                'Although the word fiction is derived from the Latin fingo, fingere, finxi, ' ||
-                'fictum, "to form, create", works of fiction need not be entirely imaginary and  ' ||
-                'may include real people, places, and events. Fiction may be either written or ' ||
-                'oral. Although not all fiction is necessarily artistic, fiction is largely ' ||
-                'perceived as a form of art or entertainment. The ability to create fiction and ' ||
-                'other artistic works is considered to be a fundamental aspect of human culture, ' ||
-                'one of the defining characteristics of humanity.'),
-(11, 'Graphic Novels', 'A graphic novel is a narrative work in which the story is conveyed to the' ||
-                       ' reader using sequential art in either an experimental design or in a ' ||
-                       'traditional comics format. The term is employed in a broad manner, ' ||
-                       'encompassing non-fiction works and thematically linked short stories as ' ||
-                       'well as fictional stories across a number of genres.'),
+In its broadest sense, fantasy comprises works by many writers, artists, filmmakers, and musicians, from ancient myths and legends to many recent works embraced by a wide  audience today, including young adults, most of whom are represented by the works below. '),
+(10, 'Fiction', 'Fiction is the telling of stories which are not real. More specifically, fiction is an imaginative form of narrative, one of the four basic rhetorical modes. Although the word fiction is derived from the Latin fingo, fingere, finxi, fictum, "to form, create", works of fiction need not be entirely imaginary and  may include real people, places, and events. Fiction may be either written or oral. Although not all fiction is necessarily artistic, fiction is largely perceived as a form of art or entertainment. The ability to create fiction and other artistic works is considered to be a fundamental aspect of human culture, one of the defining characteristics of humanity.'),
+(11, 'Graphic Novels', 'A graphic novel is a narrative work in which the story is conveyed to the reader using sequential art in either an experimental design or in a traditional comics format. The term is employed in a broad manner, encompassing non-fiction works and thematically linked short stories as well as fictional stories across a number of genres.'),
 (12, 'Historical Fiction', 'Historical fiction presents a story set in the past, often during a significant time period. In historical fiction, the time period is an important part of the setting and often of the story itself.
 
 Historical fiction may include fictional characters, well-known historical figures or a mixture of the two. Authors of historical fiction usually pay close attention to the details of their stories (settings, clothing, dialogue, etc.) to ensure that they fit the time periods in which the narratives take place.
 
 In some historical fiction, famous events appear from points of view not recorded in history, showing historical figures dealing with actual events while depicting them in a way that is not recorded in history. Other times, the historical event or time period complements a story''s narrative, forming a framework and background for the characters'' lives. Sometimes, historical fiction can be for the most part true, but the names of people and places have been in some way altered.
 
-As this is fiction, artistic license is permitted in regard to presentation and subject matter, ' ||
-                           'so long as it does not deviate in significant ways from established ' ||
-                           'history. If events should deviate significantly, the story may then ' ||
-                           'fall into the genre of alternate history, which is known for ' ||
-                           'speculating on what could have happened if a significant historical ' ||
-                           'event had gone differently. On a similar note, events occurring in ' ||
-                           'historical fiction must adhere to the laws of physics. Stories that ' ||
-                           'extend into the magical or fantastic are often considered historical ' ||
-                           'fantasy.'),
+As this is fiction, artistic license is permitted in regard to presentation and subject matter, so long as it does not deviate in significant ways from established history. If events should deviate significantly, the story may then fall into the genre of alternate history, which is known for speculating on what could have happened if a significant historical event had gone differently. On a similar note, events occurring in historical fiction must adhere to the laws of physics. Stories that extend into the magical or fantastic are often considered historical fantasy.'),
 
 (13, 'History', 'History (from Greek ἱστορία - historia, meaning "inquiry, knowledge acquired by investigation") is the discovery, collection, organization, and presentation of information about past events. History can also mean the period of time after writing was invented. Scholars who write about history are called historians. It is a field of research which uses a narrative to examine and analyse the sequence of events, and it sometimes attempts to investigate objectively the patterns of cause and effect that determine events. Historians debate the nature of history and its usefulness. This includes discussing the study of the discipline as an end in itself and as a way of providing "perspective" on the problems of the present. The stories common to a particular culture, but not supported by external sources (such as the legends surrounding King Arthur) are usually classified as cultural heritage rather than the "disinterested investigation" needed by the discipline of history. Events of the past prior to written record are considered prehistory.
-Amongst scholars, the fifth century BC Greek historian Herodotus is considered to be the "father ' ||
-                'of history", and, along with his contemporary Thucydides, forms the foundations ' ||
-                'for the modern study of history. Their influence, along with other historical ' ||
-                'traditions in other parts of their world, have spawned many different ' ||
-                'interpretations of the nature of history which has evolved over the centuries ' ||
-                'and are continuing to change. The modern study of history has many different ' ||
-                'fields including those that focus on certain regions and those which focus on ' ||
-                'certain topical or thematical elements of historical investigation. Often ' ||
-                'history is taught as part of primary and secondary education, and the academic ' ||
-                'study of history is a major discipline in University studies.'),
-(14, 'Horror', 'Horror fiction is fiction in any medium intended to scare, unsettle, or horrify ' ||
-               'the audience. Historically, the cause of the "horror" experience has often been ' ||
-               'the intrusion of a supernatural element into everyday human experience. Since the' ||
-               ' 1960s, any work of fiction with a morbid, gruesome, surreal, or exceptionally ' ||
-               'suspenseful or frightening theme has come to be called "horror". Horror fiction ' ||
-               'often overlaps science fiction or fantasy, all three of which categories are ' ||
-               'sometimes placed under the umbrella classification speculative fiction.'),
-(15, 'Memoir', 'As a literary genre, a memoir (from the French: mémoire from the Latin memoria, ' ||
-               'meaning "memory", or a reminiscence), forms a subclass of autobiography – ' ||
-               'although the terms ''memoir'' and ''autobiography'' are almost interchangeable in' ||
-               ' modern parlance. Memoir is autobiographical writing, but not all ' ||
-               'autobiographical writing follows the criteria for memoir.
+Amongst scholars, the fifth century BC Greek historian Herodotus is considered to be the "father of history", and, along with his contemporary Thucydides, forms the foundations for the modern study of history. Their influence, along with other historical traditions in other parts of their world, have spawned many different interpretations of the nature of history which has evolved over the centuries and are continuing to change. The modern study of history has many different fields including those that focus on certain regions and those which focus on certain topical or thematical elements of historical investigation. Often history is taught as part of primary and secondary education, and the academic study of history is a major discipline in University studies.'),
+(14, 'Horror', 'Horror fiction is fiction in any medium intended to scare, unsettle, or horrify the audience. Historically, the cause of the "horror" experience has often been the intrusion of a supernatural element into everyday human experience. Since the 1960s, any work of fiction with a morbid, gruesome, surreal, or exceptionally suspenseful or frightening theme has come to be called "horror". Horror fiction often overlaps science fiction or fantasy, all three of which categories are sometimes placed under the umbrella classification speculative fiction.'),
+(15, 'Memoir', 'As a literary genre, a memoir (from the French: mémoire from the Latin memoria, meaning "memory", or a reminiscence), forms a subclass of autobiography – although the terms ''memoir'' and ''autobiography'' are almost interchangeable in modern parlance. Memoir is autobiographical writing, but not all autobiographical writing follows the criteria for memoir.
 
-Memoirs are structured differently from formal autobiographies which tend to encompass the ' ||
-               'writer''s entire life span, focusing on the development of his/her personality. ' ||
-               'The chronological scope of memoir is determined by the work''s context and is ' ||
-               'therefore more focused and flexible than the traditional arc of birth to ' ||
-               'childhood to old age as found in an autobiography.
+Memoirs are structured differently from formal autobiographies which tend to encompass the writers entire life span, focusing on the development of his/her personality. The chronological scope of memoir is determined by the work''s context and is therefore more focused and flexible than the traditional arc of birth to childhood to old age as found in an autobiography.
 
-Memoirs tended to be written by politicians or people in court society, later joined by military ' ||
-               'leaders and businessmen, and often dealt exclusively with the writer''s careers ' ||
-               'rather than their private life. Historically, memoirs have dealt with public ' ||
-               'matters, rather than personal. Many older memoirs contain little or no ' ||
-               'information about the writer, and are almost entirely concerned with other people' ||
-               '. Modern expectations have changed this, even for heads of government. Like most ' ||
-               'autobiographies, memoirs are generally written from the first person point of view.
+Memoirs tended to be written by politicians or people in court society, later joined by military leaders and businessmen, and often dealt exclusively with the writer''s careers rather than their private life. Historically, memoirs have dealt with public matters, rather than personal. Many older memoirs contain little or no information about the writer, and are almost entirely concerned with other people. Modern expectations have changed this, even for heads of government. Like most autobiographies, memoirs are generally written from the first person point of view.
 
-Gore Vidal, in his own memoir Palimpsest, gave a personal definition: "a memoir is how one ' ||
-               'remembers one''s own life, while an autobiography is history, requiring research,' ||
-               ' dates, facts double-checked." It is more about what can be gleaned from a ' ||
-               'section of one''s life than about the outcome of the life as a whole.
+Gore Vidal, in his own memoir Palimpsest, gave a personal definition: "a memoir is how one remembers ones own life, while an autobiography is history, requiring research, dates, facts double-checked." It is more about what can be gleaned from a section of one''s life than about the outcome of the life as a whole.
 
-Humorist Will Rogers put it a little more pithily: "Memoirs means when you put down the good ' ||
-               'things you ought to have done and leave out the bad ones you did do."'),
+Humorist Will Rogers put it a little more pithily: "Memoirs means when you put down the good things you ought to have done and leave out the bad ones you did do."'),
 (16, 'Music', 'Books about music history, music genres and musicians.'),
-(17, 'Mystery', 'Mystery fiction is a loosely-defined term that is often used as a synonym of ' ||
-                'detective fiction — in other words a novel or short story in which a detective ' ||
-                '(either professional or amateur) solves a crime. The term "mystery fiction" may ' ||
-                'sometimes be limited to the subset of detective stories in which the emphasis is' ||
-                ' on the puzzle element and its logical solution (cf. whodunit), as a contrast to' ||
-                ' hardboiled detective stories which focus on action and gritty realism. However,' ||
-                ' in more general usage "mystery" may be used to describe any form of crime ' ||
-                'fiction, even if there is no mystery to be solved. For example, the Mystery ' ||
-                'Writers of America describes itself as "the premier organization for mystery ' ||
-                'writers, professionals allied to the crime writing field, aspiring crime ' ||
-                'writers, and those who are devoted to the genre".
+(17, 'Mystery', 'Mystery fiction is a loosely-defined term that is often used as a synonym of detective fiction — in other words a novel or short story in which a detective (either professional or amateur) solves a crime. The term "mystery fiction" may sometimes be limited to the subset of detective stories in which the emphasis is on the puzzle element and its logical solution (cf. whodunit), as a contrast to hardboiled detective stories which focus on action and gritty realism. However, in more general usage "mystery" may be used to describe any form of crime fiction, even if there is no mystery to be solved. For example, the Mystery Writers of America describes itself as "the premier organization for mystery writers, professionals allied to the crime writing field, aspiring crime writers, and those who are devoted to the genre".
 
-Although normally associated with the crime genre, the term "mystery fiction" may in certain ' ||
-                'situations refer to a completely different genre, where the focus is on ' ||
-                'supernatural mystery (even if no crime is involved). This usage was common in ' ||
-                'the pulp magazines of the 1930s and 1940s, where titles such as Dime Mystery, ' ||
-                'Thrilling Mystery and Spicy Mystery offered what at the time were described as ' ||
-                '"weird menace" stories – supernatural horror in the vein of Grand Guignol. This ' ||
-                'contrasted with parallel titles such as Dime Detective, Thrilling Detective and ' ||
-                'Spicy Detective, which contained conventional hardboiled crime fiction. The ' ||
-                'first use of "mystery" in this sense was by Dime Mystery, which started out as ' ||
-                'an ordinary crime fiction magazine but switched to "weird menace" during the ' ||
-                'latter part of 1933'),
-(18, 'Nonfiction', 'Nonfiction is an account or representation of a subject which is presented as' ||
-                   ' fact. This presentation may be accurate or not; that is, it can give either ' ||
-                   'a true or a false account of the subject in question. However, it is ' ||
-                   'generally assumed that the authors of such accounts believe them to be ' ||
-                   'truthful at the time of their composition. Note that reporting the beliefs of' ||
-                   ' others in a nonfiction format is not necessarily an endorsement of the ' ||
-                   'ultimate veracity of those beliefs, it is simply saying that it is true that ' ||
-                   'people believe that (for such topics as mythology, religion). Nonfiction can ' ||
-                   'also be written about fiction, giving information about these other work
+Although normally associated with the crime genre, the term "mystery fiction" may in certain situations refer to a completely different genre, where the focus is on supernatural mystery (even if no crime is involved). This usage was common in the pulp magazines of the 1930s and 1940s, where titles such as Dime Mystery, Thrilling Mystery and Spicy Mystery offered what at the time were described as "weird menace" stories – supernatural horror in the vein of Grand Guignol. This contrasted with parallel titles such as Dime Detective, Thrilling Detective and Spicy Detective, which contained conventional hardboiled crime fiction. The first use of "mystery" in this sense was by Dime Mystery, which started out as an ordinary crime fiction magazine but switched to "weird menace" during the latter part of 1933'),
+(18, 'Nonfiction', 'Nonfiction is an account or representation of a subject which is presented as fact. This presentation may be accurate or not; that is, it can give either a true or a false account of the subject in question. However, it is generally assumed that the authors of such accounts believe them to be truthful at the time of their composition. Note that reporting the beliefs of others in a nonfiction format is not necessarily an endorsement of the ultimate veracity of those beliefs, it is simply saying that it is true that people believe that (for such topics as mythology, religion). Nonfiction can also be written about fiction, giving information about these other work
 
-Nonfiction is one of the two main divisions in writing, particularly used in libraries, the other' ||
-                   ' being fiction. However, nonfiction need not be written text necessarily, ' ||
-                   'since pictures and film can also purport to present a factual account of a ' ||
-                   'subject. '),
-(19, 'Poetry', 'Poetry is a form of literary art in which language is used for its aesthetic and ' ||
-               'evocative qualities in addition to, or in lieu of, its apparent meaning. Poetry ' ||
-               'may be written independently, as discrete poems, or may occur in conjunction with' ||
-               ' other arts, as in poetic drama, hymns or lyrics.
+Nonfiction is one of the two main divisions in writing, particularly used in libraries, the other being fiction. However, nonfiction need not be written text necessarily, since pictures and film can also purport to present a factual account of a subject. '),
+(19, 'Poetry', 'Poetry is a form of literary art in which language is used for its aesthetic and evocative qualities in addition to, or in lieu of, its apparent meaning. Poetry may be written independently, as discrete poems, or may occur in conjunction with other arts, as in poetic drama, hymns or lyrics.
 
-Poetry, and discussions of it, have a long history. Early attempts to define poetry, such as ' ||
-               'Aristotle''s Poetics, focused on the uses of speech in rhetoric, drama, song and ' ||
-               'comedy.[1] Later attempts concentrated on features such as repetition and rhyme, ' ||
-               'and emphasised the aesthetics which distinguish poetry from prose.[2] From the ' ||
-               'mid-20th century, poetry has sometimes been more loosely defined as a fundamental' ||
-               ' creative act using language.[3]
+Poetry, and discussions of it, have a long history. Early attempts to define poetry, such as Aristotles Poetics, focused on the uses of speech in rhetoric, drama, song and comedy.[1] Later attempts concentrated on features such as repetition and rhyme, and emphasised the aesthetics which distinguish poetry from prose.[2] From the mid-20th century, poetry has sometimes been more loosely defined as a fundamental creative act using language.[3]
 
-Poetry often uses particular forms and conventions to expand the literal meaning of the words, or' ||
-               ' to evoke emotional or sensual responses. Devices such as assonance, ' ||
-               'alliteration, onomatopoeia and rhythm are sometimes used to achieve musical or ' ||
-               'incantatory effects. Poetry''s use of ambiguity, symbolism, irony and other ' ||
-               'stylistic elements of poetic diction often leaves a poem open to multiple ' ||
-               'interpretations. Similarly, metaphor and simile create a resonance between ' ||
-               'otherwise disparate images—a layering of meanings, forming connections previously' ||
-               ' not perceived. Kindred forms of resonance may exist, between individual verses, ' ||
-               'in their patterns of rhyme or rhythm.
+Poetry often uses particular forms and conventions to expand the literal meaning of the words, or to evoke emotional or sensual responses. Devices such as assonance, alliteration, onomatopoeia and rhythm are sometimes used to achieve musical or incantatory effects. Poetry''s use of ambiguity, symbolism, irony and other stylistic elements of poetic diction often leaves a poem open to multiple interpretations. Similarly, metaphor and simile create a resonance between otherwise disparate images—a layering of meanings, forming connections previously not perceived. Kindred forms of resonance may exist, between individual verses, in their patterns of rhyme or rhythm.
 
-Some forms of poetry are specific to particular cultures and genres, responding to the ' ||
-               'characteristics of the language in which the poet writes. While readers ' ||
-               'accustomed to identifying poetry with Dante, Goethe, Mickiewicz and Rumi may ' ||
-               'think of it as being written in rhyming lines and regular meter, there are ' ||
-               'traditions, such as those of Du Fu and Beowulf, that use other approaches to ' ||
-               'achieve rhythm and euphony. In today''s globalized world, poets often borrow ' ||
-               'styles, techniques and forms from diverse cultures and languages.'),
+Some forms of poetry are specific to particular cultures and genres, responding to the characteristics of the language in which the poet writes. While readers accustomed to identifying poetry with Dante, Goethe, Mickiewicz and Rumi may think of it as being written in rhyming lines and regular meter, there are traditions, such as those of Du Fu and Beowulf, that use other approaches to achieve rhythm and euphony. In today''s globalized world, poets often borrow styles, techniques and forms from diverse cultures and languages.'),
 (20, 'Psychology', 'Books that involve psychology; the study of mental processes and human behavior.'),
-(21, 'Romance', ' According to the Romance Writers of America, "Two basic elements comprise every' ||
-                ' romance novel: a central love story and an emotionally-satisfying and ' ||
-                'optimistic ending." Both the conflict and the climax of the novel should be ' ||
-                'directly related to that core theme of developing a romantic relationship, ' ||
-                'although the novel can also contain subplots that do not specifically relate to ' ||
-                'the main characters'' romantic love. Other definitions of a romance novel may be' ||
-                ' broader, including other plots and endings or more than two people, or ' ||
-                'narrower, restricting the types of romances or conflicts.'),
-(22, 'Science', 'Science (from the Latin scientia, meaning “knowledge”) is the effort to ' ||
-                'discover, and increase human understanding of how the physical world works. ' ||
-                'Through controlled methods, science uses observable physical evidence of natural' ||
-                ' phenomena to collect data, and analyzes this information to explain what and ' ||
-                'how things work.'),
-(23, 'Science Fiction', 'Science fiction (abbreviated SF or sci-fi with varying punctuation and ' ||
-                        'capitalization) is a broad genre of fiction that often involves ' ||
-                        'speculations based on current or future science or technology. Science ' ||
-                        'fiction is found in books, art, television, films, games, theatre, and ' ||
-                        'other media. In organizational or marketing contexts, science fiction ' ||
-                        'can be synonymous with the broader definition of speculative fiction, ' ||
-                        'encompassing creative works incorporating imaginative elements not found' ||
-                        ' in contemporary reality; this includes fantasy, horror and related ' ||
-                        'genres.
+(21, 'Romance', ' According to the Romance Writers of America, "Two basic elements comprise every romance novel: a central love story and an emotionally-satisfying and optimistic ending." Both the conflict and the climax of the novel should be directly related to that core theme of developing a romantic relationship, although the novel can also contain subplots that do not specifically relate to the main characters'' romantic love. Other definitions of a romance novel may be broader, including other plots and endings or more than two people, or narrower, restricting the types of romances or conflicts.'),
+(22, 'Science', 'Science (from the Latin scientia, meaning “knowledge”) is the effort to discover, and increase human understanding of how the physical world works. Through controlled methods, science uses observable physical evidence of natural phenomena to collect data, and analyzes this information to explain what and how things work.'),
+(23, 'Science Fiction', 'Science fiction (abbreviated SF or sci-fi with varying punctuation and capitalization) is a broad genre of fiction that often involves speculations based on current or future science or technology. Science fiction is found in books, art, television, films, games, theatre, and other media. In organizational or marketing contexts, science fiction can be synonymous with the broader definition of speculative fiction, encompassing creative works incorporating imaginative elements not found in contemporary reality; this includes fantasy, horror and related genres.
 
-Although the two genres are often conflated as science fiction/fantasy, science fiction differs ' ||
-                        'from fantasy in that, within the context of the story, its imaginary ' ||
-                        'elements are largely possible within scientifically established or ' ||
-                        'scientifically postulated laws of nature (though some elements in a ' ||
-                        'story might still be pure imaginative speculation). Exploring the ' ||
-                        'consequences of such differences is the traditional purpose of science ' ||
-                        'fiction, making it a "literature of ideas". Science fantasy is largely ' ||
-                        'based on writing entertainingly and rationally about alternate ' ||
-                        'possibilities in settings that are contrary to known reality. '),
-(24, 'Self Help', 'Self-help, or self-improvement, is a self-guided improvement[1]—economically, ' ||
-                  'intellectually, or emotionally—often with a substantial psychological basis. ' ||
-                  'Many different self-help groupings exist and each has its own focus, ' ||
-                  'techniques, associated beliefs, proponents and in some cases, leaders. ' ||
-                  '"Self-help culture, particularly Twelve-Step culture, has provided some of our' ||
-                  ' most robust new language: recovery, dysfunctional families, and codependency' ||
-                  '."[2]'),
-(25, 'Sports', 'Sports : engagement in physical activity intended to create a benefit to the ' ||
-               'participant. Ranging from Amateur to Professional, from incompetent to ' ||
-               'proficient, for all levels of ability, all nations, all creeds, all genders. As ' ||
-               'James Joyce said "I am, a stride at a time"'),
-(26, 'Thriller', 'Thrillers are characterized by fast pacing, frequent action, and resourceful ' ||
-                 'heroes who must thwart the plans of more-powerful and better-equipped villains.' ||
-                 ' Literary devices such as suspense, red herrings and cliffhangers are used ' ||
-                 'extensively.
+Although the two genres are often conflated as science fiction/fantasy, science fiction differs from fantasy in that, within the context of the story, its imaginary elements are largely possible within scientifically established or scientifically postulated laws of nature (though some elements in a story might still be pure imaginative speculation). Exploring the consequences of such differences is the traditional purpose of science fiction, making it a "literature of ideas". Science fantasy is largely based on writing entertainingly and rationally about alternate possibilities in settings that are contrary to known reality. '),
+(24, 'Self Help', 'Self-help, or self-improvement, is a self-guided improvement[1]—economically, intellectually, or emotionally—often with a substantial psychological basis. Many different self-help groupings exist and each has its own focus, techniques, associated beliefs, proponents and in some cases, leaders. "Self-help culture, particularly Twelve-Step culture, has provided some of our most robust new language: recovery, dysfunctional families, and codependency."[2]'),
+(25, 'Sports', 'Sports : engagement in physical activity intended to create a benefit to the participant. Ranging from Amateur to Professional, from incompetent to proficient, for all levels of ability, all nations, all creeds, all genders. As James Joyce said "I am, a stride at a time"'),
+(26, 'Thriller', 'Thrillers are characterized by fast pacing, frequent action, and resourceful heroes who must thwart the plans of more-powerful and better-equipped villains. Literary devices such as suspense, red herrings and cliffhangers are used extensively.
 
-Thrillers often overlap with mystery stories, but are distinguished by the structure of their ' ||
-                 'plots. In a thriller, the hero must thwart the plans of an enemy, rather than ' ||
-                 'uncover a crime that has already happened. Thrillers also occur on a much ' ||
-                 'grander scale: the crimes that must be prevented are serial or mass murder, ' ||
-                 'terrorism, assassination, or the overthrow of governments. Jeopardy and violent' ||
-                 ' confrontations are standard plot elements. While a mystery climaxes when the ' ||
-                 'mystery is solved, a thriller climaxes when the hero finally defeats the ' ||
-                 'villain, saving his own life and often the lives of others. '),
-(27, 'Travel', 'Travel is the movement of people or objects (such as airplanes, boats, trains and' ||
-               ' other conveyances) between relatively distant geographical locations. The term ' ||
-               '"travel" originates from the Old French word travail. Travel writing is a genre ' ||
-               'that has, as its focus, accounts of real or imaginary places. The genre ' ||
-               'encompasses a number of styles that may range from the documentary to the ' ||
-               'evocative, from literary to journalistic, and from the humorous to the serious. ' ||
-               'Travel writing is often associated with tourism, and includes works of an ' ||
-               'ephemeral nature such as guide books and reviews, with the intent being to ' ||
-               'educate the reader about the destination, provide helpful advice for those ' ||
-               'visiting the destination, and inspire readers to travel to the destination. ' ||
-               'Travel writing has also been produced by other types of travelers, such as ' ||
-               'military officers, missionaries, explorers, scientists, pilgrims, and migrants.'),
-(28, 'Young Adult', 'Young-adult fiction (often abbreviated as YA) is fiction written for, ' ||
-    'published for, or marketed to adolescents and young adults, roughly ages 13 to 18.
+Thrillers often overlap with mystery stories, but are distinguished by the structure of their plots. In a thriller, the hero must thwart the plans of an enemy, rather than uncover a crime that has already happened. Thrillers also occur on a much grander scale: the crimes that must be prevented are serial or mass murder, terrorism, assassination, or the overthrow of governments. Jeopardy and violent confrontations are standard plot elements. While a mystery climaxes when the mystery is solved, a thriller climaxes when the hero finally defeats the villain, saving his own life and often the lives of others. '),
+(27, 'Travel', 'Travel is the movement of people or objects (such as airplanes, boats, trains and other conveyances) between relatively distant geographical locations. The term "travel" originates from the Old French word travail. Travel writing is a genre that has, as its focus, accounts of real or imaginary places. The genre encompasses a number of styles that may range from the documentary to the evocative, from literary to journalistic, and from the humorous to the serious. Travel writing is often associated with tourism, and includes works of an ephemeral nature such as guide books and reviews, with the intent being to educate the reader about the destination, provide helpful advice for those visiting the destination, and inspire readers to travel to the destination. Travel writing has also been produced by other types of travelers, such as military officers, missionaries, explorers, scientists, pilgrims, and migrants.'),
+(28, 'Young Adult', 'Young-adult fiction (often abbreviated as YA) is fiction written for, published for, or marketed to adolescents and young adults, roughly ages 13 to 18.
 
-Young-adult fiction, whether in the form of novels or short stories, has distinct attributes that' ||
-                    ' distinguish it from the other age categories of fiction. The vast majority ' ||
-                    'of YA stories portray an adolescent as the protagonist, rather than an adult' ||
-                    ' or a child. The subject matter and story lines are typically consistent ' ||
-                    'with the age and experience of the main character, but beyond that YA ' ||
-                    'stories span the entire spectrum of fiction genres. The settings of YA ' ||
-                    'stories are limited only by the imagination and skill of the author.
+Young-adult fiction, whether in the form of novels or short stories, has distinct attributes that distinguish it from the other age categories of fiction. The vast majority of YA stories portray an adolescent as the protagonist, rather than an adult or a child. The subject matter and story lines are typically consistent with the age and
+                        experience of the main character, but beyond that YA stories span the entire spectrum of fiction genres. The settings of YA stories are limited only by the imagination and skill of the author.
 
-Themes in YA stories often focus on the challenges of youth, so much so that the entire age ' ||
-                    'category is sometimes referred to as problem novels or coming of age novel. ' ||
-                    'Writing styles of YA stories range widely, from the richness of literary ' ||
-                    'style to the clarity and speed of the unobtrusive. Despite its unique ' ||
-                    'characteristics, YA shares the fundamental elements of fiction with other ' ||
-                    'stories: character, plot, setting, theme, and style.')
+Themes in YA stories often focus on the challenges of youth, so much so that the entire age category is sometimes referred to as problem novels or coming of age novel. Writing styles of YA stories range widely, from the richness of literary style to the clarity and speed of the unobtrusive. Despite its unique characteristics, YA shares the fundamental elements of fiction with other stories: character, plot, setting, theme, and style.')
 
 ;
+
+INSERT INTO role
+(id, name)
+VALUES
+(1, 'ROLE_ADMIN'), (2, 'ROLE_USER'), (3, 'ROLE_EDITOR')
+;
+
+
+INSERT INTO users_roles
+(user_id, role_id)
+VALUES
+(1, 2),
+(2, 2),
+(3, 2),
+(4, 2),
+(5, 2),
+(6, 2),
+(7, 2),
+(8, 2),
+(9, 2),
+(10, 2),
+(11, 2),
+(12, 2),
+(13, 2),
+(14, 2),
+(15, 2),
+(16, 2),
+(17, 2),
+(18, 2),
+(19, 2),
+(20, 2),
+(21, 2),
+(22, 2),
+(23, 2),
+(24, 2),
+(25, 2),
+(26, 2),
+(27, 2),
+(28, 2),
+(29, 2),
+(30, 2),
+(31, 2),
+(32, 2),
+(33, 2),
+(34, 2),
+(35, 2),
+(36, 2),
+(37, 2),
+(38, 2),
+(39, 2),
+(40, 2),
+(41, 2),
+(42, 2),
+(43, 2),
+(44, 2),
+(45, 2),
+(46, 2),
+(47, 2),
+(48, 2),
+(49, 2),
+(50, 2),
+(51, 2),
+(52, 2),
+(53, 2),
+(54, 2),
+(55, 2),
+(56, 2),
+(57, 2),
+(58, 2),
+(59, 2),
+(60, 2),
+(61, 2),
+(62, 2),
+(63, 2),
+(64, 2),
+(65, 2),
+(66, 2),
+(67, 2),
+(68, 2),
+(69, 2),
+(70, 2),
+(71, 2),
+(72, 2),
+(73, 2),
+(74, 2),
+(75, 2),
+(76, 2),
+(77, 2),
+(78, 2),
+(79, 2),
+(80, 2),
+(81, 2),
+(82, 2),
+(83, 2),
+(84, 2),
+(85, 2),
+(86, 2),
+(87, 2),
+(88, 2),
+(89, 2),
+(90, 2),
+(91, 2),
+(92, 2),
+(93, 2),
+(94, 2),
+(95, 2),
+(96, 2),
+(97, 2),
+(98, 2),
+(99, 2),
+(100, 2);
+
+
 
 
 INSERT INTO review
 (id, book_id, user_id, rating_value, review_text)
 VALUES
 (1,1,1,1,'in sodales elit erat vitae risus. Duis a mi fringilla mi lacinia mattis. Integer eu lacus. Quisque imperdiet, erat nonummy ultricies ornare, elit elit fermentum risus, at fringilla purus mauris a nunc. In at pede. Cras vulputate velit eu sem. Pellentesque ut ipsum ac'),(2,1,2,2,'arcu. Vestibulum ut eros non enim commodo hendrerit. Donec porttitor tellus non magna. Nam ligula elit, pretium et, rutrum non, hendrerit id, ante. Nunc mauris sapien, cursus in, hendrerit consectetuer, cursus et, magna. Praesent interdum ligula eu enim. Etiam imperdiet dictum'),(3,1,3,3,'sem ut dolor dapibus gravida. Aliquam tincidunt, nunc ac mattis ornare, lectus ante dictum mi,'),(4,1,4,1,'malesuada ut, sem. Nulla interdum. Curabitur dictum. Phasellus in felis. Nulla tempor augue ac ipsum. Phasellus vitae mauris sit amet lorem semper auctor. Mauris vel turpis. Aliquam adipiscing lobortis risus. In mi pede, nonummy ut, molestie in, tempus eu, ligula. Aenean'),(5,1,5,1,'quis arcu vel quam dignissim pharetra. Nam ac nulla. In tincidunt congue turpis. In condimentum. Donec at arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec tincidunt. Donec vitae erat vel pede blandit congue. In scelerisque'),(6,1,6,1,'urna suscipit nonummy. Fusce fermentum fermentum arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus ornare. Fusce mollis. Duis sit amet diam eu dolor'),(7,1,7,3,'est. Nunc laoreet lectus quis massa. Mauris vestibulum, neque sed dictum eleifend, nunc risus varius orci, in consequat enim diam vel arcu. Curabitur ut odio vel est tempor bibendum. Donec felis orci, adipiscing non, luctus sit amet, faucibus ut, nulla. Cras eu tellus eu augue porttitor interdum. Sed'),(8,1,8,2,'consequat auctor, nunc nulla vulputate dui, nec tempus mauris erat eget ipsum. Suspendisse sagittis. Nullam vitae diam.'),(9,1,9,1,'Nulla aliquet. Proin velit. Sed malesuada augue ut lacus. Nulla tincidunt, neque vitae semper egestas, urna justo faucibus lectus,'),(10,1,10,5,'malesuada fames ac turpis egestas. Fusce aliquet magna a neque. Nullam ut nisi a odio semper'),(11,1,11,2,'molestie dapibus ligula. Aliquam erat volutpat. Nulla dignissim. Maecenas ornare egestas ligula. Nullam feugiat placerat velit. Quisque varius. Nam porttitor scelerisque neque. Nullam nisl. Maecenas malesuada fringilla est. Mauris eu turpis. Nulla aliquet.'),(12,1,12,4,'vitae velit egestas lacinia. Sed congue, elit sed consequat auctor, nunc nulla'),(13,1,13,3,'nunc nulla vulputate dui, nec tempus mauris erat eget ipsum. Suspendisse sagittis. Nullam vitae diam. Proin dolor. Nulla semper tellus id nunc interdum feugiat. Sed nec metus facilisis lorem tristique aliquet. Phasellus fermentum convallis ligula. Donec luctus aliquet odio. Etiam ligula tortor, dictum eu, placerat eget, venenatis'),(14,1,14,1,'velit eu sem. Pellentesque ut ipsum ac mi eleifend egestas. Sed pharetra, felis eget varius ultrices, mauris ipsum porta elit, a feugiat tellus'),(15,1,15,2,'massa. Mauris vestibulum, neque sed dictum eleifend, nunc risus varius orci, in'),(16,1,16,2,'in, dolor. Fusce feugiat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam auctor, velit eget laoreet posuere, enim nisl elementum purus,'),(17,1,17,4,'tellus id nunc interdum feugiat. Sed nec metus facilisis lorem tristique aliquet. Phasellus fermentum convallis'),(18,1,18,2,'Nam ligula elit, pretium et, rutrum non, hendrerit id, ante. Nunc mauris sapien, cursus in, hendrerit'),(19,1,19,3,'mauris. Morbi non sapien molestie orci tincidunt adipiscing. Mauris molestie pharetra nibh. Aliquam'),(20,1,20,4,'Integer sem elit, pharetra ut, pharetra sed, hendrerit a, arcu. Sed et libero. Proin mi. Aliquam gravida mauris ut mi. Duis risus odio,'),(21,1,21,4,'a, dui. Cras pellentesque. Sed dictum. Proin eget odio. Aliquam vulputate ullamcorper magna. Sed eu eros. Nam consequat dolor vitae dolor. Donec fringilla. Donec feugiat metus sit amet ante. Vivamus non lorem vitae odio sagittis semper. Nam tempor diam dictum sapien.'),(22,1,22,2,'faucibus orci luctus et ultrices posuere cubilia Curae; Donec tincidunt. Donec vitae erat vel pede blandit congue. In scelerisque scelerisque dui. Suspendisse ac'),(23,1,23,5,'odio vel est tempor bibendum. Donec felis orci, adipiscing non, luctus sit amet, faucibus ut, nulla. Cras eu tellus eu'),(24,1,24,4,'tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam fringilla cursus purus. Nullam scelerisque neque sed sem egestas blandit. Nam nulla magna, malesuada vel, convallis in, cursus et, eros. Proin ultrices. Duis volutpat nunc sit amet metus. Aliquam erat volutpat. Nulla facilisis.'),(25,1,25,2,'enim, condimentum eget, volutpat ornare, facilisis eget, ipsum. Donec sollicitudin adipiscing ligula. Aenean gravida nunc sed pede. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vel arcu eu odio tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae,'),(26,1,26,5,'Nullam ut nisi a odio semper cursus. Integer mollis. Integer tincidunt aliquam arcu. Aliquam ultrices iaculis odio. Nam interdum enim non nisi. Aenean eget metus. In nec orci. Donec nibh. Quisque nonummy ipsum non arcu. Vivamus sit amet risus. Donec egestas. Aliquam nec enim. Nunc ut'),(27,1,27,4,'purus. Duis elementum, dui quis accumsan convallis, ante lectus convallis est, vitae sodales nisi magna sed dui. Fusce aliquam, enim nec tempus scelerisque, lorem ipsum sodales purus, in molestie tortor'),(28,1,28,1,'neque et nunc. Quisque ornare tortor at risus. Nunc ac'),(29,1,29,1,'blandit viverra. Donec tempus, lorem fringilla ornare placerat, orci lacus vestibulum lorem, sit amet ultricies sem magna nec quam. Curabitur vel lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec dignissim magna a tortor. Nunc commodo auctor velit. Aliquam nisl. Nulla eu'),(30,1,30,1,'metus eu erat semper rutrum. Fusce dolor quam, elementum at, egestas a, scelerisque sed, sapien. Nunc pulvinar arcu et pede. Nunc'),(31,1,31,2,'non, cursus non, egestas a, dui. Cras pellentesque. Sed dictum. Proin eget odio. Aliquam vulputate ullamcorper magna. Sed eu'),(32,1,32,1,'sit amet, dapibus id, blandit at, nisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vel nisl. Quisque fringilla euismod enim. Etiam gravida molestie arcu. Sed eu nibh vulputate mauris sagittis'),(33,1,33,4,'et magnis dis parturient montes, nascetur ridiculus mus. Proin vel arcu eu odio tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae, sodales at, velit. Pellentesque ultricies dignissim lacus. Aliquam rutrum'),(34,1,34,2,'molestie tortor nibh sit amet orci. Ut sagittis lobortis mauris. Suspendisse aliquet molestie tellus. Aenean egestas hendrerit neque. In ornare sagittis felis. Donec tempor, est ac mattis semper, dui lectus rutrum urna, nec luctus felis purus ac tellus. Suspendisse sed dolor. Fusce mi lorem, vehicula'),(35,1,35,3,'Sed nunc est, mollis non, cursus non, egestas a, dui. Cras pellentesque. Sed dictum. Proin eget odio. Aliquam vulputate ullamcorper magna. Sed eu eros. Nam consequat dolor vitae dolor. Donec fringilla. Donec feugiat metus sit amet ante. Vivamus non lorem vitae odio sagittis'),(36,1,36,1,'in, dolor. Fusce feugiat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam auctor, velit eget laoreet posuere, enim'),(37,1,37,1,'ornare, lectus ante dictum mi, ac mattis velit justo nec ante. Maecenas mi felis, adipiscing fringilla, porttitor vulputate, posuere vulputate, lacus. Cras interdum. Nunc sollicitudin commodo ipsum. Suspendisse non leo. Vivamus nibh dolor, nonummy ac, feugiat non, lobortis'),(38,1,38,1,'dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eget magna.'),(39,1,39,5,'magna et ipsum cursus vestibulum. Mauris magna. Duis dignissim tempor arcu. Vestibulum ut eros non enim commodo hendrerit. Donec'),(40,1,40,4,'In condimentum. Donec at arcu. Vestibulum ante ipsum primis in faucibus'),(41,1,41,3,'montes, nascetur ridiculus mus. Donec dignissim magna a tortor. Nunc commodo auctor velit. Aliquam nisl. Nulla eu neque pellentesque massa lobortis ultrices. Vivamus rhoncus. Donec est. Nunc ullamcorper, velit in aliquet lobortis, nisi nibh lacinia orci, consectetuer euismod est arcu ac orci. Ut semper pretium neque. Morbi'),(42,1,42,2,'Sed id risus quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent'),(43,1,43,4,'justo. Praesent luctus. Curabitur egestas nunc sed libero. Proin sed turpis nec mauris blandit mattis. Cras eget nisi dictum augue malesuada malesuada. Integer id magna et ipsum cursus vestibulum. Mauris magna. Duis dignissim tempor arcu. Vestibulum ut eros'),(44,1,44,1,'quam, elementum at, egestas a, scelerisque sed, sapien. Nunc pulvinar arcu et pede. Nunc sed orci lobortis augue scelerisque'),(45,1,45,3,'a feugiat tellus lorem eu metus. In lorem. Donec elementum, lorem ut aliquam iaculis, lacus pede sagittis augue, eu'),(46,1,46,3,'Sed nulla ante, iaculis nec, eleifend non, dapibus rutrum, justo. Praesent luctus. Curabitur egestas nunc sed libero. Proin sed turpis nec mauris blandit mattis. Cras eget nisi dictum augue malesuada malesuada. Integer id magna et ipsum cursus vestibulum. Mauris magna. Duis dignissim tempor arcu.'),(47,1,47,3,'ligula. Aliquam erat volutpat. Nulla dignissim. Maecenas ornare egestas ligula. Nullam feugiat placerat velit. Quisque varius. Nam porttitor scelerisque neque.'),(48,1,48,3,'eros nec tellus. Nunc lectus pede, ultrices a, auctor non, feugiat nec, diam. Duis mi enim, condimentum eget, volutpat ornare, facilisis eget, ipsum. Donec sollicitudin adipiscing ligula. Aenean gravida nunc sed pede. Cum sociis natoque penatibus et'),(49,1,49,2,'at, egestas a, scelerisque sed, sapien. Nunc pulvinar arcu et pede. Nunc sed orci lobortis augue'),(50,1,50,4,'sit amet metus. Aliquam erat volutpat. Nulla facilisis. Suspendisse commodo tincidunt nibh. Phasellus nulla. Integer vulputate, risus a ultricies adipiscing, enim mi tempor lorem, eget mollis lectus pede et risus. Quisque libero lacus, varius et, euismod et, commodo at, libero. Morbi accumsan laoreet ipsum. Curabitur consequat, lectus sit amet luctus'),(51,1,51,4,'mauris id sapien. Cras dolor dolor, tempus non, lacinia at, iaculis quis, pede. Praesent eu dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eget magna. Suspendisse tristique neque venenatis'),(52,1,52,4,'leo, in lobortis tellus justo sit amet nulla. Donec non justo. Proin non massa non ante bibendum ullamcorper. Duis cursus, diam'),(53,1,53,4,'quam, elementum at, egestas a, scelerisque sed, sapien. Nunc pulvinar arcu et pede. Nunc sed orci lobortis augue scelerisque mollis. Phasellus libero mauris, aliquam eu, accumsan sed, facilisis vitae, orci. Phasellus dapibus quam quis diam. Pellentesque habitant morbi tristique senectus et netus et malesuada'),(54,1,54,3,'nisi nibh lacinia orci, consectetuer euismod est arcu ac orci. Ut semper pretium neque. Morbi quis urna. Nunc quis arcu vel quam dignissim pharetra. Nam ac nulla. In tincidunt congue turpis. In condimentum. Donec at arcu. Vestibulum'),(55,1,55,2,'ante. Maecenas mi felis, adipiscing fringilla, porttitor vulputate, posuere vulputate, lacus.'),(56,1,56,4,'molestie tellus. Aenean egestas hendrerit neque. In ornare sagittis felis. Donec tempor, est ac mattis semper, dui lectus rutrum'),(57,1,57,3,'ornare egestas ligula. Nullam feugiat placerat velit. Quisque varius. Nam porttitor scelerisque neque. Nullam nisl. Maecenas malesuada fringilla est. Mauris eu turpis. Nulla aliquet. Proin velit. Sed malesuada augue'),(58,1,58,3,'at pretium aliquet, metus urna convallis erat, eget tincidunt dui augue eu tellus. Phasellus elit pede, malesuada vel, venenatis vel, faucibus id, libero. Donec consectetuer mauris id sapien. Cras dolor dolor, tempus non, lacinia at, iaculis quis, pede. Praesent eu dui. Cum sociis natoque penatibus et magnis dis parturient montes,'),(59,1,59,4,'Nulla interdum. Curabitur dictum. Phasellus in felis. Nulla tempor augue ac ipsum. Phasellus vitae mauris sit amet lorem semper auctor. Mauris vel turpis. Aliquam adipiscing lobortis risus.'),(60,1,60,2,'sodales elit erat vitae risus. Duis a mi fringilla mi lacinia mattis. Integer eu lacus. Quisque imperdiet, erat nonummy ultricies ornare, elit elit fermentum risus, at fringilla purus mauris a nunc. In at pede. Cras vulputate velit eu sem. Pellentesque ut ipsum'),(61,1,61,1,'Sed molestie. Sed id risus quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris ut quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas.'),(62,1,62,3,'varius ultrices, mauris ipsum porta elit, a feugiat tellus lorem eu metus. In lorem. Donec elementum, lorem ut aliquam iaculis, lacus pede sagittis augue, eu tempor erat neque non quam. Pellentesque habitant morbi tristique senectus et netus et malesuada'),(63,1,63,2,'Integer urna. Vivamus molestie dapibus ligula. Aliquam erat volutpat. Nulla dignissim. Maecenas ornare egestas ligula. Nullam feugiat placerat velit. Quisque varius. Nam porttitor scelerisque neque. Nullam nisl. Maecenas malesuada fringilla est. Mauris eu turpis. Nulla aliquet. Proin'),(64,1,64,2,'arcu eu odio tristique pharetra. Quisque ac libero nec ligula'),(65,1,65,4,'dui lectus rutrum urna, nec luctus felis purus ac tellus. Suspendisse sed dolor. Fusce mi lorem, vehicula et, rutrum eu, ultrices sit amet, risus. Donec nibh enim, gravida sit amet, dapibus id, blandit at, nisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur'),(66,1,66,4,'libero at auctor ullamcorper, nisl arcu iaculis enim, sit amet ornare lectus justo eu arcu. Morbi sit amet massa. Quisque porttitor eros nec tellus. Nunc lectus pede, ultrices'),(67,1,67,1,'nisi a odio semper cursus. Integer mollis. Integer tincidunt aliquam arcu. Aliquam ultrices iaculis odio. Nam interdum enim non nisi. Aenean eget metus. In nec orci.'),(68,1,68,4,'posuere cubilia Curae; Phasellus ornare. Fusce mollis. Duis sit amet diam eu dolor egestas rhoncus. Proin nisl sem, consequat nec, mollis vitae, posuere at, velit. Cras lorem'),(69,1,69,3,'dis parturient montes, nascetur ridiculus mus. Donec dignissim magna a tortor. Nunc commodo auctor velit. Aliquam nisl. Nulla eu neque pellentesque massa lobortis ultrices. Vivamus rhoncus.'),(70,1,70,3,'sodales at, velit. Pellentesque ultricies dignissim lacus. Aliquam rutrum lorem ac risus. Morbi metus. Vivamus euismod urna. Nullam lobortis quam a felis ullamcorper viverra. Maecenas iaculis aliquet diam. Sed diam lorem, auctor quis, tristique ac, eleifend vitae, erat. Vivamus'),(71,1,71,1,'dapibus ligula. Aliquam erat volutpat. Nulla dignissim. Maecenas ornare egestas ligula. Nullam feugiat placerat velit. Quisque varius. Nam porttitor scelerisque neque. Nullam nisl. Maecenas malesuada fringilla est. Mauris eu'),(72,1,72,2,'Proin vel arcu eu odio tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae, sodales at, velit. Pellentesque ultricies dignissim lacus. Aliquam rutrum lorem ac risus. Morbi metus. Vivamus euismod urna. Nullam lobortis quam a felis'),(73,1,73,1,'molestie tortor nibh sit amet orci. Ut sagittis lobortis mauris. Suspendisse aliquet molestie tellus. Aenean egestas hendrerit neque. In ornare sagittis felis. Donec tempor, est ac mattis semper, dui lectus rutrum urna, nec luctus felis purus ac tellus. Suspendisse sed dolor. Fusce mi lorem, vehicula et,'),(74,1,74,4,'lectus sit amet luctus vulputate, nisi sem semper erat, in consectetuer ipsum nunc id enim. Curabitur massa. Vestibulum accumsan neque et nunc. Quisque ornare tortor at risus. Nunc ac sem ut dolor dapibus gravida. Aliquam tincidunt, nunc ac mattis ornare, lectus ante dictum mi,'),(75,1,75,4,'non quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam fringilla cursus purus. Nullam scelerisque neque sed sem egestas blandit. Nam nulla magna, malesuada vel, convallis in, cursus et, eros. Proin ultrices. Duis volutpat nunc sit amet metus. Aliquam erat'),(76,1,76,1,'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec tincidunt. Donec vitae erat vel pede blandit congue. In'),(77,1,77,3,'orci lacus vestibulum lorem, sit amet ultricies sem magna nec quam. Curabitur vel lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec dignissim magna a tortor. Nunc commodo'),(78,1,78,2,'sem ut dolor dapibus gravida. Aliquam tincidunt, nunc ac mattis ornare, lectus ante dictum mi, ac mattis velit justo nec ante. Maecenas mi felis, adipiscing fringilla, porttitor vulputate, posuere vulputate, lacus. Cras'),(79,1,79,3,'Duis volutpat nunc sit amet metus. Aliquam erat volutpat. Nulla facilisis. Suspendisse commodo tincidunt nibh. Phasellus nulla. Integer vulputate, risus a ultricies adipiscing, enim'),(80,1,80,4,'odio vel est tempor bibendum. Donec felis orci, adipiscing non, luctus sit amet, faucibus ut, nulla. Cras eu tellus eu augue porttitor interdum. Sed auctor odio a purus. Duis elementum, dui'),(81,1,81,1,'dolor, tempus non, lacinia at, iaculis quis, pede. Praesent eu'),(82,1,82,2,'ornare. Fusce mollis. Duis sit amet diam eu dolor egestas rhoncus. Proin nisl sem, consequat nec, mollis vitae, posuere at, velit. Cras lorem lorem, luctus ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed id risus'),(83,1,83,1,'sed dui. Fusce aliquam, enim nec tempus scelerisque, lorem ipsum sodales purus, in molestie tortor nibh sit amet orci. Ut sagittis lobortis mauris. Suspendisse aliquet molestie'),(84,1,84,2,'placerat velit. Quisque varius. Nam porttitor scelerisque neque. Nullam nisl. Maecenas malesuada fringilla est. Mauris eu'),(85,1,85,3,'nunc interdum feugiat. Sed nec metus facilisis lorem tristique aliquet. Phasellus fermentum convallis ligula. Donec luctus aliquet odio. Etiam ligula tortor, dictum eu, placerat eget, venenatis a, magna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam laoreet, libero et tristique pellentesque, tellus sem mollis'),(86,1,86,5,'dignissim magna a tortor. Nunc commodo auctor velit. Aliquam nisl. Nulla eu neque pellentesque massa lobortis ultrices. Vivamus rhoncus. Donec est. Nunc ullamcorper, velit in aliquet lobortis,'),(87,1,87,4,'facilisis non, bibendum sed, est. Nunc laoreet lectus quis massa. Mauris vestibulum, neque sed dictum eleifend, nunc risus varius orci, in consequat enim diam vel arcu. Curabitur ut odio vel est tempor bibendum. Donec felis orci, adipiscing non, luctus sit amet, faucibus ut, nulla. Cras eu tellus eu'),(88,1,88,3,'vitae odio sagittis semper. Nam tempor diam dictum sapien. Aenean massa. Integer vitae nibh. Donec est mauris, rhoncus id, mollis nec, cursus a, enim. Suspendisse aliquet, sem ut cursus luctus, ipsum leo elementum sem, vitae aliquam eros turpis non enim. Mauris quis turpis'),(89,1,89,2,'amet ante. Vivamus non lorem vitae odio sagittis semper. Nam tempor diam dictum sapien. Aenean massa. Integer vitae nibh. Donec est mauris, rhoncus id, mollis nec, cursus a, enim. Suspendisse aliquet,'),(90,1,90,1,'Sed molestie. Sed id risus quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris ut'),(91,1,91,4,'Phasellus dolor elit, pellentesque a, facilisis non, bibendum sed, est. Nunc laoreet lectus quis massa. Mauris vestibulum, neque sed dictum eleifend, nunc risus varius orci,'),(92,1,92,1,'penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec dignissim magna a tortor. Nunc commodo auctor velit. Aliquam nisl. Nulla eu neque pellentesque massa lobortis ultrices. Vivamus rhoncus. Donec est. Nunc ullamcorper, velit in aliquet lobortis, nisi nibh lacinia orci, consectetuer euismod est arcu'),(93,1,93,5,'vitae purus gravida sagittis. Duis gravida. Praesent eu nulla at sem molestie sodales. Mauris blandit enim consequat purus. Maecenas libero est, congue a, aliquet vel, vulputate eu, odio. Phasellus at augue id ante dictum cursus.'),(94,1,94,5,'mauris sapien, cursus in, hendrerit consectetuer, cursus et, magna. Praesent interdum ligula eu enim. Etiam imperdiet dictum magna. Ut tincidunt orci quis lectus. Nullam suscipit, est ac facilisis facilisis, magna tellus faucibus leo,'),(95,1,95,5,'consequat nec, mollis vitae, posuere at, velit. Cras lorem lorem, luctus ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed id risus quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos'),(96,1,96,5,'elit sed consequat auctor, nunc nulla vulputate dui, nec tempus mauris erat eget'),(97,1,97,3,'massa. Quisque porttitor eros nec tellus. Nunc lectus pede, ultrices a, auctor non, feugiat nec, diam. Duis mi enim, condimentum eget, volutpat ornare, facilisis eget, ipsum. Donec sollicitudin adipiscing ligula. Aenean gravida nunc sed pede. Cum sociis natoque'),(98,1,98,2,'id nunc interdum feugiat. Sed nec metus facilisis lorem tristique aliquet. Phasellus fermentum convallis ligula. Donec luctus aliquet odio. Etiam ligula tortor, dictum eu, placerat eget, venenatis a, magna. Lorem'),(99,1,99,2,'dictum. Phasellus in felis. Nulla tempor augue ac ipsum. Phasellus vitae mauris sit amet lorem semper auctor. Mauris vel turpis. Aliquam adipiscing lobortis risus. In mi pede, nonummy ut, molestie in, tempus eu, ligula. Aenean euismod mauris'),(100,1,100,3,'facilisis eget, ipsum. Donec sollicitudin adipiscing ligula. Aenean gravida nunc sed pede. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vel arcu eu odio tristique')
-,(101,2,1,3,'sit amet, consectetuer adipiscing elit. Etiam laoreet, libero et tristique ' ||
-            'pellentesque, tellus'),(102,2,2,1,'vel arcu eu odio tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae, sodales at, velit. Pellentesque ultricies dignissim lacus. Aliquam rutrum lorem ac risus. Morbi metus. Vivamus euismod urna. Nullam lobortis quam a felis ullamcorper viverra.'),(103,2,3,5,'sit amet nulla. Donec non justo. Proin non massa non ante bibendum ullamcorper. Duis cursus, diam at pretium aliquet, metus urna convallis'),(104,2,4,1,'vitae, aliquet nec, imperdiet nec, leo. Morbi neque tellus, imperdiet non, vestibulum nec, euismod in, dolor. Fusce'),(105,2,5,1,'at risus. Nunc ac sem ut dolor dapibus gravida. Aliquam tincidunt,'),(106,2,6,3,'ac risus. Morbi metus. Vivamus euismod urna. Nullam lobortis quam a felis ullamcorper viverra. Maecenas iaculis aliquet diam. Sed diam lorem, auctor quis, tristique ac, eleifend vitae, erat. Vivamus nisi. Mauris nulla.'),(107,2,7,4,'metus eu erat semper rutrum. Fusce dolor quam, elementum at, egestas a, scelerisque sed,'),(108,2,8,3,'aliquet nec, imperdiet nec, leo. Morbi neque tellus, imperdiet non, vestibulum nec, euismod in, dolor. Fusce feugiat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam auctor, velit eget laoreet posuere, enim nisl elementum purus, accumsan interdum libero dui nec'),(109,2,9,5,'Aliquam erat volutpat. Nulla dignissim. Maecenas ornare egestas ligula. Nullam feugiat placerat velit. Quisque varius. Nam porttitor scelerisque neque. Nullam nisl. Maecenas malesuada fringilla est. Mauris eu'),(110,2,10,1,'Phasellus in felis. Nulla tempor augue ac ipsum. Phasellus vitae mauris sit amet lorem semper auctor. Mauris vel turpis. Aliquam adipiscing lobortis risus. In mi pede, nonummy ut, molestie in, tempus eu, ligula. Aenean euismod')
+,(101,2,1,3,'sit amet, consectetuer adipiscing elit. Etiam laoreet, libero et tristique pellentesque, tellus'),(102,2,2,1,'vel arcu eu odio tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae, sodales at, velit. Pellentesque ultricies dignissim lacus. Aliquam rutrum lorem ac risus. Morbi metus. Vivamus euismod urna. Nullam lobortis quam a felis ullamcorper viverra.'),(103,2,3,5,'sit amet nulla. Donec non justo. Proin non massa non ante bibendum ullamcorper. Duis cursus, diam at pretium aliquet, metus urna convallis'),(104,2,4,1,'vitae, aliquet nec, imperdiet nec, leo. Morbi neque tellus, imperdiet non, vestibulum nec, euismod in, dolor. Fusce'),(105,2,5,1,'at risus. Nunc ac sem ut dolor dapibus gravida. Aliquam tincidunt,'),(106,2,6,3,'ac risus. Morbi metus. Vivamus euismod urna. Nullam lobortis quam a felis ullamcorper viverra. Maecenas iaculis aliquet diam. Sed diam lorem, auctor quis, tristique ac, eleifend vitae, erat. Vivamus nisi. Mauris nulla.'),(107,2,7,4,'metus eu erat semper rutrum. Fusce dolor quam, elementum at, egestas a, scelerisque sed,'),(108,2,8,3,'aliquet nec, imperdiet nec, leo. Morbi neque tellus, imperdiet non, vestibulum nec, euismod in, dolor. Fusce feugiat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam auctor, velit eget laoreet posuere, enim nisl elementum purus, accumsan interdum libero dui nec'),(109,2,9,5,'Aliquam erat volutpat. Nulla dignissim. Maecenas ornare egestas ligula. Nullam feugiat placerat velit. Quisque varius. Nam porttitor scelerisque neque. Nullam nisl. Maecenas malesuada fringilla est. Mauris eu'),(110,2,10,1,'Phasellus in felis. Nulla tempor augue ac ipsum. Phasellus vitae mauris sit amet lorem semper auctor. Mauris vel turpis. Aliquam adipiscing lobortis risus. In mi pede, nonummy ut, molestie in, tempus eu, ligula. Aenean euismod')
 ,(111,3,1,5,'ipsum. Donec sollicitudin adipiscing ligula. Aenean gravida nunc sed pede. Cum sociis natoque penatibus et magnis'),(112,3,2,4,'tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae, sodales at, velit. Pellentesque'),(113,3,3,1,'rhoncus. Proin nisl sem, consequat nec, mollis vitae, posuere at, velit. Cras lorem lorem, luctus ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed id risus quis diam luctus lobortis.'),(114,3,4,5,'magnis dis parturient montes, nascetur ridiculus mus. Proin vel arcu eu odio tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus.'),(115,3,5,5,'ultrices iaculis odio. Nam interdum enim non nisi. Aenean eget metus. In nec orci. Donec nibh. Quisque nonummy ipsum non arcu. Vivamus sit amet risus. Donec egestas. Aliquam'),(116,3,6,1,'magnis dis parturient montes, nascetur ridiculus mus. Proin vel nisl. Quisque fringilla euismod enim. Etiam gravida molestie arcu. Sed eu'),(117,3,7,2,'gravida. Aliquam tincidunt, nunc ac mattis ornare, lectus ante dictum mi, ac mattis velit justo nec ante. Maecenas mi felis, adipiscing fringilla, porttitor vulputate,'),(118,3,8,3,'magna. Cras convallis convallis dolor. Quisque tincidunt pede ac urna. Ut tincidunt vehicula risus. Nulla eget metus eu erat semper rutrum. Fusce dolor quam, elementum at, egestas a, scelerisque sed, sapien. Nunc pulvinar arcu et pede. Nunc sed orci'),(119,3,9,3,'pede, malesuada vel, venenatis vel, faucibus id, libero. Donec consectetuer mauris id sapien. Cras dolor dolor, tempus non, lacinia at, iaculis quis, pede. Praesent eu dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eget magna. Suspendisse tristique neque venenatis lacus. Etiam'),(120,3,10,1,'pede. Praesent eu dui. Cum sociis natoque penatibus et magnis dis parturient'),(121,3,11,5,'ridiculus mus. Proin vel arcu eu odio tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae, sodales at, velit. Pellentesque ultricies dignissim lacus. Aliquam rutrum lorem ac risus. Morbi metus. Vivamus euismod'),(122,3,12,1,'facilisis facilisis, magna tellus faucibus leo, in lobortis tellus justo sit amet nulla. Donec non justo.'),(123,3,13,3,'adipiscing elit. Curabitur sed tortor. Integer aliquam adipiscing lacus. Ut nec urna et arcu imperdiet ullamcorper. Duis at lacus. Quisque purus sapien, gravida'),(124,3,14,5,'In condimentum. Donec at arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec'),(125,3,15,1,'rutrum urna, nec luctus felis purus ac tellus. Suspendisse sed dolor. Fusce mi lorem, vehicula et, rutrum eu, ultrices sit amet, risus. Donec nibh enim, gravida sit amet, dapibus id, blandit at, nisi. Cum sociis natoque penatibus et magnis'),(126,3,16,3,'velit eu sem. Pellentesque ut ipsum ac mi eleifend egestas. Sed pharetra, felis eget varius ultrices, mauris ipsum porta elit, a feugiat'),(127,3,17,3,'mi lacinia mattis. Integer eu lacus. Quisque imperdiet, erat nonummy ultricies ornare, elit elit fermentum risus, at fringilla purus mauris a nunc. In at pede. Cras vulputate velit eu sem. Pellentesque ut ipsum ac mi eleifend egestas. Sed pharetra, felis'),(128,3,18,1,'Ut tincidunt vehicula risus. Nulla eget metus eu erat semper rutrum. Fusce dolor quam, elementum at, egestas a, scelerisque sed, sapien. Nunc pulvinar arcu et pede. Nunc sed orci lobortis augue scelerisque mollis.'),(129,3,19,5,'nisi dictum augue malesuada malesuada. Integer id magna et ipsum cursus vestibulum. Mauris'),(130,3,20,3,'egestas, urna justo faucibus lectus, a sollicitudin orci sem eget massa. Suspendisse'),(131,3,21,4,'felis. Nulla tempor augue ac ipsum. Phasellus vitae mauris sit amet lorem semper auctor. Mauris vel turpis. Aliquam adipiscing lobortis risus. In mi pede, nonummy ut, molestie in, tempus eu, ligula. Aenean euismod mauris eu elit. Nulla facilisi. Sed neque. Sed eget'),(132,3,22,3,'vitae, posuere at, velit. Cras lorem lorem, luctus ut, pellentesque eget, dictum'),(133,3,23,4,'blandit. Nam nulla magna, malesuada vel, convallis in, cursus et, eros. Proin ultrices. Duis volutpat'),(134,3,24,1,'luctus vulputate, nisi sem semper erat, in consectetuer ipsum nunc id enim. Curabitur massa. Vestibulum accumsan neque et nunc. Quisque ornare tortor at risus. Nunc ac sem ut dolor dapibus gravida. Aliquam tincidunt, nunc ac mattis ornare, lectus ante dictum mi, ac'),(135,3,25,5,'neque venenatis lacus. Etiam bibendum fermentum metus. Aenean sed pede nec ante blandit viverra. Donec tempus, lorem fringilla ornare placerat, orci lacus vestibulum lorem,'),(136,3,26,2,'orci, consectetuer euismod est arcu ac orci. Ut semper pretium neque. Morbi quis urna. Nunc quis arcu vel quam dignissim pharetra. Nam ac nulla. In tincidunt congue turpis. In condimentum. Donec at arcu. Vestibulum ante ipsum'),(137,3,27,3,'malesuada fames ac turpis egestas. Aliquam fringilla cursus purus. Nullam scelerisque neque sed sem egestas blandit. Nam nulla magna, malesuada vel, convallis in,'),(138,3,28,4,'malesuada ut, sem. Nulla interdum. Curabitur dictum. Phasellus in felis. Nulla tempor augue ac ipsum. Phasellus vitae mauris sit amet lorem semper auctor. Mauris vel turpis. Aliquam adipiscing lobortis risus.'),(139,3,29,3,'Sed dictum. Proin eget odio. Aliquam vulputate ullamcorper magna. Sed eu eros. Nam consequat dolor vitae dolor. Donec fringilla. Donec feugiat metus sit amet ante.'),(140,3,30,2,'nulla at sem molestie sodales. Mauris blandit enim consequat purus. Maecenas libero est, congue a, aliquet vel, vulputate eu, odio. Phasellus at augue id ante dictum cursus. Nunc mauris elit, dictum')
 ;
 

@@ -40,6 +40,7 @@ public class Author extends BaseEntity {
     private String name;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @Column(columnDefinition = "DATE")
     private Date birthday;
 
     private String birthPlace;

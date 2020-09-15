@@ -23,15 +23,15 @@ public class Book extends BaseEntity {
 
     @Builder
     public Book(Long id, String title, String isbn, String description, String imageUrl,
-                Set<Review> reviews, Set<Genre> genres, Author author) {
+                /*Set<Review> reviews,*/ Set<Genre> genres, Author author) {
         super(id);
         this.title = title;
         this.isbn = isbn;
         this.description = description;
         this.imageUrl = imageUrl;
-        if (reviews != null) {
-            this.reviews = reviews;
-        }
+//        if (reviews != null) {
+//            this.reviews = reviews;
+//        }
 
         if (genres != null) {
             this.genres = genres;
@@ -61,10 +61,7 @@ public class Book extends BaseEntity {
     @ManyToOne
     private Author author;
 
-    @OneToMany( mappedBy = "book",
-            fetch = FetchType.LAZY,
-            cascade = CascadeType.ALL,
-            orphanRemoval = true)
-    private Set<Review> reviews = new HashSet<>();
+//    @OneToMany( mappedBy = "book")
+//    private Set<Review> reviews = new HashSet<>();
 
 }
