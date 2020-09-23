@@ -31,6 +31,29 @@ public class ReviewController {
         this.reviewService = reviewService;
     }
 
+//    @GetMapping({"/{id}"})
+//    public String reviewList(@PathVariable Long id,
+//                             @RequestParam(name = "page") Optional<Integer> page, Model model) {
+//        int evalPage = (page.orElse(0) < 1) ? INIT_PAGE : page.get()-1;
+//        Pageable pageable = PageRequest.of(evalPage, PAGE_SIZE);
+//
+//        Page<Review> reviewlist = reviewService.findByBookId(id, pageable);
+//        long numOfReviews = reviewlist.getTotalElements();
+//        PageModel pageModel = new PageModel(reviewlist.getTotalPages(), evalPage);
+//
+//        Map<Review, User> reviewUserMap = reviewlist.getContent().stream().collect(
+//                Collectors.toMap(x -> x, x -> x.getUser()));
+//
+//        model.addAttribute("pageModel", pageModel);
+//        model.addAttribute("pageSize", PAGE_SIZE);
+//        model.addAttribute("reviewlist", reviewlist);
+//        model.addAttribute("bookId", id);
+//        model.addAttribute("reviewUserMap", reviewUserMap);
+//
+//        return "fragments/reviewList";
+//    }
+
+
     @GetMapping({"/{id}"})
     public String reviewList(@PathVariable Long id,
                              @RequestParam(name = "page") Optional<Integer> page, Model model) {
@@ -41,41 +64,18 @@ public class ReviewController {
         long numOfReviews = reviewlist.getTotalElements();
         PageModel pageModel = new PageModel(reviewlist.getTotalPages(), evalPage);
 
-        Map<Review, User> reviewUserMap = reviewlist.getContent().stream().collect(
-                Collectors.toMap(x -> x, x -> x.getUser()));
+//        Map<Review, User> reviewUserMap = reviewlist.getContent().stream().collect(
+//                Collectors.toMap(x -> x, x -> x.getUser()));
 
         model.addAttribute("pageModel", pageModel);
         model.addAttribute("pageSize", PAGE_SIZE);
         model.addAttribute("reviewlist", reviewlist);
         model.addAttribute("bookId", id);
-        model.addAttribute("reviewUserMap", reviewUserMap);
+//        model.addAttribute("reviewUserMap", reviewUserMap);
+        model.addAttribute("reviews", reviewlist.getContent());
 
         return "fragments/reviewList";
     }
 }
 
 
-/*
-Pageable pageable = PageRequest.of(evalPage, PAGE_SIZE);
-
-        Page<Book> booklist = bookService.findByKeyword(sq, pageable);
-        long numOfBooks = booklist.getTotalElements();
-
-            PageModel pageModel = new PageModel(booklist.getTotalPages(), evalPage);
-            model.addAttribute("pageModel", pageModel);
-            model.addAttribute("pageSize", PAGE_SIZE);
-            model.addAttribute("booklist", booklist);
-            model.addAttribute("searchQuery", q);
-            return FIND_FORM;
-
-
-
-@GetMapping({"/find"})
-    public String processFindForm(@RequestParam(name = "search-query") String q,
-                                  @RequestParam(name = "page") Optional<Integer> page,
-                                  Model model) {
-        if (q == null || q.length() == 0) {
-            return FIND_FORM;
-        }
-
- */

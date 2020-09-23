@@ -12,28 +12,35 @@
 
 <h2><b>Find Author</b></h2>
 
-<form th:object="${author}" th:action="@{/author/find}" id="find-author-form" method="get">
-    <div>
-        <input th:replace="~{fragments/input :: input ('Author name', 'name', 'text')}" />
-    </div>
-    <div class="form-row mb-3" >
-        <div class="offset-sm-2 col-sm-10">
-            <button class="btn btn-dark" type="submit">Find Author</button>
+<form th:action="@{/author/find}" class="mb-3" id="find-book-form" method="get">
+    <div class="input-group" >
+        <input th:name="search-query" type="text" class="form-control" placeholder="Search">
+        <div class="input-group-append">
+            <button class="btn btn-secondary" type="submit">
+                Submit
+            </button>
         </div>
     </div>
+    <th:block th:if="${notFoundError != null}">
+        <div th:text="${notFoundError}" class="mt-3 mb-3" ></div>
+    </th:block>
 </form>
 
-<div th:if="${authors != null && authors.size() > 1}"  class="container">
-    <div th:each="vauthor : ${authors}" class="list-group">
-        <a class="list-group-item list-group-item-action list-group-item-light"
-            th:href="${'/author/' + vauthor.id + '/show'}" >
-            <img class="img-fluid" style="width: auto; height: 50px;" alt="image"
-                 th:src="${(vauthor.imageUrl != null && vauthor.imageUrl.length() > 0) ? vauthor.imageUrl : '/images/user_image.png'}" >
-            <span class="ml-1" th:text="${vauthor.name}"></span>
-        </a>
 
+<th:block th:if="${notFoundError == null}">
+    <div th:if="${authors != null && authors.size() > 1}"  class="container">
+        <div th:each="vauthor : ${authors}" class="list-group">
+            <a class="list-group-item list-group-item-action list-group-item-light"
+               th:href="${'/author/' + vauthor.id + '/show'}" >
+                <img class="img-fluid" style="width: auto; height: 50px;" alt="image"
+                     th:src="${(vauthor.imageUrl != null && vauthor.imageUrl.length() > 0) ? vauthor.imageUrl : '/images/user_image.png'}" >
+                <span class="ml-1" th:text="${vauthor.name}"></span>
+            </a>
+
+        </div>
     </div>
-</div>
+</th:block>
+
 
 </body>
 </html>

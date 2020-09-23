@@ -12,16 +12,20 @@
 
 <h2><b>Find Author</b></h2>
 
-<form th:object="${author}" th:action="@{/author/find}" id="find-author-form" method="get">
-    <div>
-        <input th:replace="~{fragments/input :: input ('Author name', 'name', 'text')}" />
-    </div>
-    <div class="form-row">
-        <div class="offset-sm-2 col-sm-10">
-            <button class="btn btn-dark" type="submit">Find Author</button>
+<form th:action="@{/author/find}" class="mb-3" id="find-book-form" method="get">
+    <div class="input-group" >
+        <input th:name="search-query" type="text" class="form-control" placeholder="Search">
+        <div class="input-group-append">
+            <button class="btn btn-secondary" type="submit">
+                Submit
+            </button>
         </div>
     </div>
+    <th:block th:if="${notFoundError != null}">
+        <div th:text="${notFoundError}" class="mt-3 mb-3" ></div>
+    </th:block>
 </form>
+
 <form th:action="@{/author/new}" method="get">
     <button class="btn btn-dark" type="submit">Add Author</button>
 </form>

@@ -7,7 +7,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -19,7 +19,7 @@ import java.util.Set;
 public class Author extends BaseEntity {
 
     @Builder
-    public Author(Long id, String name, Date birthday, String birthPlace, String bio,
+    public Author(Long id, String name, LocalDate birthday, String birthPlace, String bio,
                   String website, String twitter, String imageUrl, Set<Genre> genres) {
         super(id);
         this.name = name;
@@ -41,7 +41,7 @@ public class Author extends BaseEntity {
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Column(columnDefinition = "DATE")
-    private Date birthday;
+    private LocalDate birthday;
 
     private String birthPlace;
 
@@ -64,9 +64,9 @@ public class Author extends BaseEntity {
                     nullable = false))
     private Set<Genre> genres = new HashSet<>();
 
-    @OneToMany(cascade = CascadeType.ALL,
+    @OneToMany(cascade = CascadeType.PERSIST,
             fetch = FetchType.EAGER,
             mappedBy = "author",
-            orphanRemoval = true)
+            orphanRemoval = false)
     private Set<Book> books = new HashSet<>();
 }

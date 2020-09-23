@@ -30,7 +30,8 @@
                         <span th:text="${author.birthPlace}"></span>
                     </div>
                     <div th:if="${author.birthday != null}">
-                        <span th:text="${#dates.format(author.birthday, 'yyyy-MM-dd')}"></span>
+<!--                        <span th:text="${#dates.format(author.birthday, 'yyyy-MM-dd')}"></span>-->
+                        <span th:text="${author.birthday}"></span>
                     </div>
                 </div>
             </div>

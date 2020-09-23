@@ -102,8 +102,6 @@ public class BookController {
         } else {
             // multiple books
 
-//            booklist.getN
-
             PageModel pageModel = new PageModel(booklist.getTotalPages(), evalPage);
             model.addAttribute("pageModel", pageModel);
             model.addAttribute("pageSize", PAGE_SIZE);

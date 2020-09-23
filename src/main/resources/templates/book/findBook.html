@@ -25,71 +25,78 @@
     </th:block>
 </form>
 
-<div>
-    <table class="table table-hover">
-        <tbody>
-        <tr th:each="book : ${booklist.getContent()}">
-            <th scope="row">
-                <a th:href="${'/book/' + book.id + '/show'}">
-                    <img class="img-fluid" style="width: 50px; height: auto"
-                         th:alt="${book.title}"
-                         th:src="${(book.imageUrl != null && book.imageUrl.length() > 0) ? book.imageUrl : '/images/book_image.png'}" >
-                </a>
-            </th>
-            <td>
-                <a th:href="${'/book/' + book.id + '/show'}">
-                    <b><span th:text="${book.title}"></span></b>
-                </a><br>
-                <span>by</span>
-                <th:block th:if="${book.author != null}">
-                    <a
-                            th:href="${'/author/' + book.author.id + '/show'}"><span
-                            th:text="${book.author.name}"></span></a>
-                </th:block>
-                <div>
-                    rating and others
-                </div>
-            </td>
-        </tr>
-        </tbody>
-    </table>
+<th:block th:if="${notFoundError == null}">
+    <div>
+        <table class="table table-hover">
+            <tbody>
+            <tr th:each="book : ${booklist.getContent()}">
+                <th scope="row">
+                    <a th:href="${'/book/' + book.id + '/show'}">
+                        <img class="img-fluid" style="width: 50px; height: auto"
+                             th:alt="${book.title}"
+                             th:src="${(book.imageUrl != null && book.imageUrl.length() > 0) ? book.imageUrl : '/images/book_image.png'}" >
+                    </a>
+                </th>
+                <td>
+                    <a th:href="${'/book/' + book.id + '/show'}">
+                        <b><span th:text="${book.title}"></span></b>
+                    </a><br>
+                    <span>by</span>
+                    <th:block th:if="${book.author != null}">
+                        <a
+                                th:href="${'/author/' + book.author.id + '/show'}"><span
+                                th:text="${book.author.name}"></span></a>
+                    </th:block>
+                    <div>
+                        rating and others
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
 
-    <nav th:if="${booklist.totalPages != 1}"  aria-label="Book List Pages">
-        <ul class="pagination justify-content-center">
+        <nav th:if="${booklist.totalPages != 1}"  aria-label="Book List Pages">
+            <ul class="pagination justify-content-center">
 
-            <li th:class="${(booklist.number == 0) ? 'page-item disabled' : 'page-item'}">
-                <a class="page-link"
-                   th:href="@{/book/find(search-query=${searchQuery}, page=1)}">&laquo;
-                </a>
-            </li>
-            <li th:class="${(booklist.number == 0) ? 'page-item disabled' : 'page-item'}">
-                <a class="page-link"
-                   th:href="@{/book/find(search-query=${searchQuery}, page=${booklist.number})}">&larr;
-                </a>
-            </li>
+                <li th:class="${(booklist.number == 0) ? 'page-item disabled' : 'page-item'}">
+                    <a class="page-link"
+                       th:href="@{/book/find(search-query=${searchQuery}, page=1)}">&laquo;
+                    </a>
+                </li>
+                <li th:class="${(booklist.number == 0) ? 'page-item disabled' : 'page-item'}">
+                    <a class="page-link"
+                       th:href="@{/book/find(search-query=${searchQuery}, page=${booklist.number})}">&larr;
+                    </a>
+                </li>
 
-            <li
-                    th:class="${booklist.number == (page - 1)? 'page-item active pointer-disabled' : 'page-item'}"
-                    th:each="page : ${#numbers.sequence(pageModel.startPage, pageModel.endPage)}">
-                <a class="page-link"
-                   th:href="@{/book/find(search-query=${searchQuery}, page=${page})}"
-                   th:text="${page}"></a>
-            </li>
+                <li
+                        th:class="${booklist.number == (page - 1)? 'page-item active pointer-disabled' : 'page-item'}"
+                        th:each="page : ${#numbers.sequence(pageModel.startPage, pageModel.endPage)}">
+                    <a class="page-link"
+                       th:href="@{/book/find(search-query=${searchQuery}, page=${page})}"
+                       th:text="${page}"></a>
+                </li>
 
-            <li th:class="${booklist.number + 1 == booklist.totalPages? 'page-item disabled' : 'page-item'}">
-                <a class="page-link"
-                   th:href="@{/book/find(search-query=${searchQuery}, page=${booklist.number + 2})}">&rarr;</a>
-            </li>
+                <li th:class="${booklist.number + 1 == booklist.totalPages? 'page-item disabled' : 'page-item'}">
+                    <a class="page-link"
+                       th:href="@{/book/find(search-query=${searchQuery}, page=${booklist.number + 2})}">&rarr;</a>
+                </li>
 
-            <li th:class="${booklist.number + 1 == booklist.totalPages? 'page-item disabled' : 'page-item'}">
-                <a class="page-link"
-                   th:href="@{/book/find(search-query=${searchQuery}, page=${booklist.totalPages})}">&raquo;</a>
-            </li>
+                <li th:class="${booklist.number + 1 == booklist.totalPages? 'page-item disabled' : 'page-item'}">
+                    <a class="page-link"
+                       th:href="@{/book/find(search-query=${searchQuery}, page=${booklist.totalPages})}">&raquo;</a>
+                </li>
 
-        </ul>
-    </nav>
+            </ul>
+        </nav>
 
-</div>
+    </div>
+</th:block>
+
+
+
+
+
 
 
 </body>

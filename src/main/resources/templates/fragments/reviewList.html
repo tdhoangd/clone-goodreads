@@ -8,31 +8,64 @@
 
 <th:block th:fragment="reviewListContent" >
     <div >
+<!--        <table class="table table-hover">-->
+<!--            <tbody>-->
+<!--            <tr th:each="entry : ${reviewUserMap}">-->
+
+<!--                <th style="width: 70px" scope="row">-->
+<!--                    <a  th:href="${'/user/' + entry.key.id + '/show'}">-->
+<!--                        <img class="img-fluid" style="width: 50px; height: auto"-->
+<!--                             th:alt="${entry.value.firstName + ' ' + entry.value.lastName}"-->
+<!--                             src="/images/user_image.png" >-->
+<!--                    </a>-->
+<!--                </th>-->
+<!--                <td>-->
+<!--                    <div>-->
+<!--                        <span><b-->
+<!--                                th:text="${entry.value.firstName + ' ' + entry.value.lastName}"></b></span>-->
+<!--                        <th:block-->
+<!--                                th:if="${entry.key.ratingValue != null && entry.key.ratingValue > 0}">-->
+<!--                            <span> rated it</span>-->
+<!--                            <span-->
+<!--                                    th:text="${#strings.repeat('&#10029;', entry.key.ratingValue)}"></span>-->
+<!--                        </th:block>-->
+<!--                    </div>-->
+
+<!--                    <div th:if="${entry.key.reviewText != null && entry.key.reviewText.length() > 0}">-->
+<!--                        <div th:utext='${entry.key.reviewText.replaceAll("\n", "<br>")}'></div>-->
+<!--                    </div>-->
+
+<!--                </td>-->
+
+<!--            </tr>-->
+<!--            </tbody>-->
+<!--        </table>-->
+
         <table class="table table-hover">
             <tbody>
-            <tr th:each="entry : ${reviewUserMap}">
+            <tr th:each="review : ${reviews}">
 
                 <th style="width: 70px" scope="row">
-                    <a  th:href="${'/user/' + entry.key.id + '/show'}">
+                    <a  th:href="${'/user/' + review.user.id + '/show'}">
                         <img class="img-fluid" style="width: 50px; height: auto"
-                             th:alt="${entry.value.firstName + ' ' + entry.value.lastName}"
+                             th:alt="${review.user.firstName + ' ' + review.user.lastName}"
                              src="/images/user_image.png" >
                     </a>
                 </th>
                 <td>
                     <div>
                         <span><b
-                                th:text="${entry.value.firstName + ' ' + entry.value.lastName}"></b></span>
+                                th:text="${review.user.firstName + ' ' + review.user.lastName}"></b></span>
                         <th:block
-                                th:if="${entry.key.ratingValue != null && entry.key.ratingValue > 0}">
+                                th:if="${review.ratingValue != null && review.ratingValue > 0}">
                             <span> rated it</span>
                             <span
-                                    th:text="${#strings.repeat('&#10029;', entry.key.ratingValue)}"></span>
+                                    th:text="${#strings.repeat('&#10029;', review.ratingValue)}"></span>
                         </th:block>
                     </div>
 
-                    <div th:if="${entry.key.reviewText != null && entry.key.reviewText.length() > 0}">
-                        <div th:utext='${entry.key.reviewText.replaceAll("\n", "<br>")}'></div>
+                    <div th:if="${review.reviewText != null && review.reviewText.length() > 0}">
+                        <div th:utext='${review.reviewText.replaceAll("\n", "<br>")}'></div>
                     </div>
 
                 </td>
@@ -40,6 +73,7 @@
             </tr>
             </tbody>
         </table>
+
 
 <!--        PAGINATION -->
         <nav th:if="${reviewlist.totalPages != 1}"  aria-label="Book List Pages">
@@ -80,7 +114,6 @@
 
             </ul>
         </nav>
-
 
 
     </div>

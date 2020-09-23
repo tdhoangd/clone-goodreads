@@ -3,11 +3,12 @@ package com.thanhdhoang.clonegoodreads.persistence.domain;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
-import java.util.Date;
+
 
 @Getter
 @Setter
@@ -21,15 +22,20 @@ public class Review extends BaseEntity {
     @Column(columnDefinition = "TINYINT UNSIGNED ")
     private Short ratingValue;
 
-    @Column(columnDefinition = "TIMESTAMP")
-    private LocalDateTime timestamp;
+    @CreationTimestamp
+    @Column(columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP",
+            insertable=false, updatable=false)
+    private LocalDateTime createdDateTime;
+
+    @UpdateTimestamp
+    private LocalDateTime updatedDateTime;
 
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "book_id", referencedColumnName = "id")
     private Book book;
 }
